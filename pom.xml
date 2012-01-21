@@ -39,9 +39,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:${custom.gitpublic.url}globalpom.git</connection>
-		<developerConnection>scm:git:${custom.gitpublic.url}globalpom.git</developerConnection>
-		<url>scm:git:${custom.gitpublic.url}globalpom.git</url>
+		<connection>scm:git:${custom.gitpublic.url}globalpom-parent.git</connection>
+		<developerConnection>scm:git:${custom.gitpublic.url}globalpom-parent.git</developerConnection>
+		<url>scm:git:${custom.gitpublic.url}globalpom-parent.git</url>
 	</scm>
 
 	<dependencies>
