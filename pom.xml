@@ -437,11 +437,6 @@
             <!-- sscontrol -->
             <dependency>
                 <groupId>com.anrisoftware.sscontrol</groupId>
-                <artifactId>sscontrol-service</artifactId>
-                <version>1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.sscontrol</groupId>
                 <artifactId>sscontrol-database</artifactId>
                 <version>1.0</version>
             </dependency>
@@ -473,12 +468,17 @@
             <dependency>
                 <groupId>com.anrisoftware.sscontrol</groupId>
                 <artifactId>sscontrol-httpd</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.sscontrol</groupId>
                 <artifactId>sscontrol-network</artifactId>
                 <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-public</artifactId>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.sscontrol</groupId>
@@ -489,6 +489,31 @@
                 <groupId>com.anrisoftware.sscontrol</groupId>
                 <artifactId>sscontrol-resolv</artifactId>
                 <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-script</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-service</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-services</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-template</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.sscontrol</groupId>
+                <artifactId>sscontrol-workers</artifactId>
+                <version>1.1</version>
             </dependency>
 		</dependencies>
 	</dependencyManagement>
