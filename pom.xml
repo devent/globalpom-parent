@@ -88,12 +88,12 @@
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
 				<artifactId>globalpom-groovy</artifactId>
-				<version>1.4-SNAPSHOT</version>
+				<version>1.3</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
 				<artifactId>globalpom-groovy-izpack</artifactId>
-				<version>1.4-SNAPSHOT</version>
+				<version>1.3</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
@@ -102,13 +102,13 @@
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
-				<artifactId>globalpom-groovy-testutils</artifactId>
-				<version>1.4-SNAPSHOT</version>
+				<artifactId>globalpom-groovytestutils</artifactId>
+				<version>1.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
 				<artifactId>globalpom-log</artifactId>
-				<version>1.2-SNAPSHOT</version>
+				<version>1.2</version>
 			</dependency>
 
 			<!-- logging dependencies -->
