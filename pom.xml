@@ -567,6 +567,23 @@
 				<artifactId>gsanalysis-test</artifactId>
 				<version>2.1-SNAPSHOT</version>
 			</dependency>
+
+            <!-- gsanalysis -->
+            <dependency>
+                <groupId>com.anrisoftware.swingcomponents</groupId>
+                <artifactId>swingcomponents-slidingpanel</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.swingcomponents</groupId>
+                <artifactId>swingcomponents-fontcombobox</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.swingcomponents</groupId>
+                <artifactId>swingcomponents-fontchooser</artifactId>
+                <version>1.1</version>
+            </dependency>
 		</dependencies>
 	</dependencyManagement>
 
