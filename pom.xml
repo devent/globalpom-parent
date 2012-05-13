@@ -153,6 +153,13 @@
 				<version>1.1.6</version>
 			</dependency>
 
+			<!-- java-image-scaling -->
+			<dependency>
+				<groupId>com.mortennobel</groupId>
+				<artifactId>java-image-scaling</artifactId>
+				<version>0.8.5</version>
+			</dependency>
+
 			<!-- groovy -->
 			<dependency>
 				<groupId>org.codehaus.groovy</groupId>
