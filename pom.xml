@@ -331,15 +331,25 @@
 			</dependency>
 
 			<!-- prefdialog -->
+            <dependency>
+                <groupId>com.anrisoftware.prefdialog</groupId>
+                <artifactId>prefdialog-corefields</artifactId>
+                <version>2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.prefdialog</groupId>
+                <artifactId>prefdialog-panel</artifactId>
+                <version>2.1</version>
+            </dependency>
 			<dependency>
 				<groupId>com.anrisoftware.prefdialog</groupId>
 				<artifactId>prefdialog-dialog</artifactId>
-				<version>2.1-SNAPSHOT</version>
+				<version>2.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.prefdialog</groupId>
 				<artifactId>prefdialog-lookfeelpanel</artifactId>
-				<version>1.0-SNAPSHOT</version>
+				<version>1.0</version>
 			</dependency>
 
 			<!-- nativeloader -->
