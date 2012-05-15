@@ -385,14 +385,14 @@
 
 			<!-- noisedriver -->
 			<dependency>
-				<groupId>com.globalscalingsoftware.noisedriver</groupId>
+				<groupId>com.anrisoftware.noisedriver</groupId>
 				<artifactId>noisedriver-api</artifactId>
-				<version>3.2</version>
+				<version>4.0</version>
 			</dependency>
 			<dependency>
-				<groupId>com.globalscalingsoftware.noisedriver</groupId>
+				<groupId>com.anrisoftware.noisedriver</groupId>
 				<artifactId>noisedriver-native</artifactId>
-				<version>3.2</version>
+				<version>4.0</version>
 			</dependency>
 
 			<!-- qhdriver -->
