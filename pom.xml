@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.20</version>
+	<version>1.21-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -85,16 +85,16 @@
 	<dependencyManagement>
 		<dependencies>
 
-			<!-- own modules -->
+			<!-- globalpom -->
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
 				<artifactId>globalpom-groovy</artifactId>
-				<version>1.8</version>
+				<version>1.9</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
-				<artifactId>globalpom-groovy-izpack</artifactId>
-				<version>1.5</version>
+				<artifactId>globalpom-groovyizpack</artifactId>
+				<version>1.7</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
@@ -104,7 +104,7 @@
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
 				<artifactId>globalpom-groovytestutils</artifactId>
-				<version>1.6</version>
+				<version>1.7</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.globalpom</groupId>
@@ -341,17 +341,17 @@
             <dependency>
                 <groupId>com.anrisoftware.prefdialog</groupId>
                 <artifactId>prefdialog-corefields</artifactId>
-                <version>2.1</version>
+                <version>2.1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.prefdialog</groupId>
                 <artifactId>prefdialog-panel</artifactId>
-                <version>2.1</version>
+                <version>2.1.1</version>
             </dependency>
 			<dependency>
 				<groupId>com.anrisoftware.prefdialog</groupId>
 				<artifactId>prefdialog-dialog</artifactId>
-				<version>2.1</version>
+				<version>2.1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.prefdialog</groupId>
@@ -387,13 +387,18 @@
 			<dependency>
 				<groupId>com.anrisoftware.noisedriver</groupId>
 				<artifactId>noisedriver-api</artifactId>
-				<version>4.0</version>
+				<version>4.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.noisedriver</groupId>
 				<artifactId>noisedriver-native</artifactId>
 				<version>4.0</version>
 			</dependency>
+            <dependency>
+                <groupId>com.anrisoftware.noisedriver</groupId>
+                <artifactId>noisedriver-crbsnoise</artifactId>
+                <version>1.0</version>
+            </dependency>
 
 			<!-- qhdriver -->
 			<dependency>
@@ -568,6 +573,28 @@
                 <groupId>com.anrisoftware.swingcomponents</groupId>
                 <artifactId>swingcomponents-fontchooser</artifactId>
                 <version>1.1</version>
+            </dependency>
+
+            <!-- resources -->
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-api</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-icons</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-images</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-texts</artifactId>
+                <version>1.0</version>
             </dependency>
 		</dependencies>
 	</dependencyManagement>
