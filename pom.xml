@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.21</version>
+	<version>1.22-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -579,22 +579,40 @@
             <dependency>
                 <groupId>com.anrisoftware.resources</groupId>
                 <artifactId>resources-api</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-icons</artifactId>
+                <artifactId>resources-binary</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-binary-tests</artifactId>
                 <version>1.0</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.resources</groupId>
                 <artifactId>resources-images</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-images-tests</artifactId>
                 <version>1.0</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.anrisoftware.resources</groupId>
                 <artifactId>resources-texts</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anrisoftware.resources</groupId>
+                <artifactId>resources-text-tests</artifactId>
                 <version>1.0</version>
+                <scope>test</scope>
             </dependency>
 		</dependencies>
 	</dependencyManagement>
