@@ -153,12 +153,19 @@
 				<version>1.1.6</version>
 			</dependency>
 
-            <!-- ammentos -->
-            <dependency>
-                <groupId>it.biobytes.ammentos</groupId>
-                <artifactId>ammentos</artifactId>
-                <version>1.3.7</version>
-            </dependency>
+			<!-- jspf -->
+			<dependency>
+				<groupId>net.xeoh</groupId>
+				<artifactId>jspf-core</artifactId>
+				<version>1.0.3</version>
+			</dependency>
+
+			<!-- ammentos -->
+			<dependency>
+				<groupId>it.biobytes.ammentos</groupId>
+				<artifactId>ammentos</artifactId>
+				<version>1.3.7</version>
+			</dependency>
 
 			<!-- java-image-scaling -->
 			<dependency>
@@ -338,16 +345,16 @@
 			</dependency>
 
 			<!-- prefdialog -->
-            <dependency>
-                <groupId>com.anrisoftware.prefdialog</groupId>
-                <artifactId>prefdialog-corefields</artifactId>
-                <version>2.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.prefdialog</groupId>
-                <artifactId>prefdialog-panel</artifactId>
-                <version>2.1.1</version>
-            </dependency>
+			<dependency>
+				<groupId>com.anrisoftware.prefdialog</groupId>
+				<artifactId>prefdialog-corefields</artifactId>
+				<version>2.1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.prefdialog</groupId>
+				<artifactId>prefdialog-panel</artifactId>
+				<version>2.1.1</version>
+			</dependency>
 			<dependency>
 				<groupId>com.anrisoftware.prefdialog</groupId>
 				<artifactId>prefdialog-dialog</artifactId>
@@ -394,11 +401,11 @@
 				<artifactId>noisedriver-native</artifactId>
 				<version>4.0</version>
 			</dependency>
-            <dependency>
-                <groupId>com.anrisoftware.noisedriver</groupId>
-                <artifactId>noisedriver-crbsnoise</artifactId>
-                <version>1.0</version>
-            </dependency>
+			<dependency>
+				<groupId>com.anrisoftware.noisedriver</groupId>
+				<artifactId>noisedriver-crbsnoise</artifactId>
+				<version>1.0</version>
+			</dependency>
 
 			<!-- qhdriver -->
 			<dependency>
@@ -558,62 +565,62 @@
 				<version>1.1</version>
 			</dependency>
 
-            <!-- swingcomponents -->
-            <dependency>
-                <groupId>com.anrisoftware.swingcomponents</groupId>
-                <artifactId>swingcomponents-slidingpanel</artifactId>
-                <version>1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.swingcomponents</groupId>
-                <artifactId>swingcomponents-fontcombobox</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.swingcomponents</groupId>
-                <artifactId>swingcomponents-fontchooser</artifactId>
-                <version>1.1</version>
-            </dependency>
+			<!-- swingcomponents -->
+			<dependency>
+				<groupId>com.anrisoftware.swingcomponents</groupId>
+				<artifactId>swingcomponents-slidingpanel</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.swingcomponents</groupId>
+				<artifactId>swingcomponents-fontcombobox</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.swingcomponents</groupId>
+				<artifactId>swingcomponents-fontchooser</artifactId>
+				<version>1.1</version>
+			</dependency>
 
-            <!-- resources -->
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-api</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-binary</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-binary-tests</artifactId>
-                <version>1.0</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-images</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-images-tests</artifactId>
-                <version>1.0</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-texts</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.anrisoftware.resources</groupId>
-                <artifactId>resources-text-tests</artifactId>
-                <version>1.0</version>
-                <scope>test</scope>
-            </dependency>
+			<!-- resources -->
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-api</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-binary</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-binary-tests</artifactId>
+				<version>1.0</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-images</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-images-tests</artifactId>
+				<version>1.0</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-texts</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.anrisoftware.resources</groupId>
+				<artifactId>resources-text-tests</artifactId>
+				<version>1.0</version>
+				<scope>test</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
