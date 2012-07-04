@@ -33,7 +33,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.custom.groovy.version>1.8.4</project.custom.groovy.version>
+		<project.custom.groovy.version>1.8.6</project.custom.groovy.version>
 		<project.custom.gmaven.version>1.3</project.custom.gmaven.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
 		<project.custom.source.target>1.6</project.custom.source.target>
