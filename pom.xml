@@ -12,10 +12,10 @@
 
 	<developers>
 		<developer>
-			<id>devent</id>
-			<name>Erwin Mueller</name>
-			<organization>Global Scaling Software</organization>
-			<email>erwin.mueller@anr-institute.com</email>
+			<id>EM</id>
+			<name>Erwin Müller</name>
+			<organization>Advanced Natural Research Insitute GmbH</organization>
+			<email>erwin.mueller@deventm.org</email>
 			<roles>
 				<role>Owner</role>
 				<role>Developer</role>
