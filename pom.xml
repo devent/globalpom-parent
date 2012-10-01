@@ -116,7 +116,7 @@
 
 			<!-- junit -->
 			<dependency>
-				<!-- "Common Public License Version 1.0":http://www.opensource.org/licenses/cpl1.0.txt -->
+				<!-- Common Public License Version 1.0 -->
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.10</version>
@@ -124,7 +124,7 @@
 
 			<!-- perf4j -->
 			<dependency>
-				<!-- "Apache 2.0":http://www.apache.org/licenses/ -->
+				<!-- Apache 2.0 -->
 				<groupId>org.perf4j</groupId>
 				<artifactId>perf4j</artifactId>
 				<version>0.9.16</version>
@@ -132,7 +132,7 @@
 
 			<!-- perfidix -->
 			<dependency>
-				<!-- "New BSD":http://www.opensource.org/licenses/BSD-3-Clause -->
+				<!-- BSD-3 -->
 				<groupId>org.perfidix</groupId>
 				<artifactId>perfidix</artifactId>
 				<version>3.6.6</version>
@@ -202,7 +202,7 @@
 				<version>1.4.1</version>
 			</dependency>
 			<dependency>
-				<!-- "Apache 2.0":http://www.apache.org/licenses/LICENSE-2.0.txt -->
+				<!-- Apache 2.0 -->
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
 				<version>1.7</version>
