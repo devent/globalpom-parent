@@ -118,6 +118,7 @@
 
 			<!-- perf4j -->
 			<dependency>
+				<!-- "Apache 2":http://www.apache.org/licenses/ -->
 				<groupId>org.perf4j</groupId>
 				<artifactId>perf4j</artifactId>
 				<version>0.9.16</version>
@@ -125,6 +126,7 @@
 
 			<!-- perfidix -->
 			<dependency>
+				<!-- "New BSD":http://www.opensource.org/licenses/BSD-3-Clause -->
 				<groupId>org.perfidix</groupId>
 				<artifactId>perfidix</artifactId>
 				<version>3.6.6</version>
