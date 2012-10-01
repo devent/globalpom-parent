@@ -124,7 +124,7 @@
 
 			<!-- perf4j -->
 			<dependency>
-				<!-- "Apache 2":http://www.apache.org/licenses/ -->
+				<!-- "Apache 2.0":http://www.apache.org/licenses/ -->
 				<groupId>org.perf4j</groupId>
 				<artifactId>perf4j</artifactId>
 				<version>0.9.16</version>
@@ -202,9 +202,10 @@
 				<version>1.4.1</version>
 			</dependency>
 			<dependency>
+				<!-- "Apache 2.0":http://www.apache.org/licenses/LICENSE-2.0.txt -->
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
-				<version>1.6</version>
+				<version>1.7</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-collections</groupId>
