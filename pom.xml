@@ -33,10 +33,15 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<file.encoding>${project.build.sourceEncoding}</file.encoding>
+		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
 		<project.custom.groovy.version>1.8.6</project.custom.groovy.version>
 		<project.custom.gmaven.version>1.3</project.custom.gmaven.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
 		<project.custom.source.target>1.6</project.custom.source.target>
+		<project.custom.year>2012</project.custom.year>
+		<project.custom.user.name>Erwin Müller</project.custom.user.name>
+		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 
 		<!-- globalpom modules latest release versions -->
 		<project.custom.globalpom.groovy.version>1.11</project.custom.globalpom.groovy.version>
@@ -386,6 +391,30 @@
 				</executions>
 			</plugin>
 
+			<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<basedir>${basedir}</basedir>
+					<header>${basedir}/src/main/resources/header.txt</header>
+					<aggregate>true</aggregate>
+					<encoding>${file.encoding}</encoding>
+					<strictCheck>true</strictCheck>
+					<properties>
+						<project.name>${project.artifactId}</project.name>
+						<project.year>${project.custom.year}</project.year>
+						<project.user.name>${project.custom.user.name}</project.user.name>
+						<project.user.email>${project.custom.user.email}</project.user.email>
+					</properties>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 
 		<pluginManagement>
@@ -419,6 +448,11 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>2.8</version>
+				</plugin>
+				<plugin>
+					<groupId>com.mycila.maven-license-plugin</groupId>
+					<artifactId>maven-license-plugin</artifactId>
+					<version>1.9.0</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
