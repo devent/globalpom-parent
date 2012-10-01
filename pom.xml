@@ -305,9 +305,10 @@
 
 			<!-- jasypt -->
 			<dependency>
+                <!-- Apache 2.0 -->
 				<groupId>org.jasypt</groupId>
 				<artifactId>jasypt</artifactId>
-				<version>1.7</version>
+				<version>1.9.0</version>
 			</dependency>
 
 			<!-- ostermiller utils -->
