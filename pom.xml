@@ -347,9 +347,10 @@
 
 			<!-- tweenengine -->
 			<dependency>
+                <!-- Apache 2.0 -->
 				<groupId>aurelienribon.tweenengine</groupId>
 				<artifactId>tween-engine-api</artifactId>
-				<version>6.2.0</version>
+				<version>6.3.3</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
