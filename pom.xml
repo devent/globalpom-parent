@@ -225,14 +225,16 @@
 
 			<!-- google guava -->
 			<dependency>
+				<!-- Apache 2.0 -->
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>12.0.1</version>
+				<version>13.0.1</version>
 			</dependency>
 			<dependency>
+				<!-- Apache 2.0 -->
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava-testlib</artifactId>
-				<version>12.0.1</version>
+				<version>13.0.1</version>
 			</dependency>
 
 			<!-- google guice -->
