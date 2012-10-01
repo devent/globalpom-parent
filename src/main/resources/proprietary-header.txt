@@ -1,0 +1,3 @@
+Copyright ${project.year} ${project.user.name} <${project.user.email}>
+
+This file is part of ${project.name}. All rights reserved.
