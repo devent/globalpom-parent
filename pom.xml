@@ -522,6 +522,10 @@
 					<excludes>
 						<exclude>**/*.txt</exclude>
 					</excludes>
+					<mapping>
+						<java>SLASHSTAR_STYLE</java>
+						<groovy>SLASHSTAR_STYLE</groovy>
+					</mapping>
 				</configuration>
 				<executions>
 					<execution>
