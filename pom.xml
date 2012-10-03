@@ -50,7 +50,7 @@
 		<project.custom.globalpom.groovyizpack.version>1.8</project.custom.globalpom.groovyizpack.version>
 		<project.custom.globalpom.groovyizpacksinglejar.version>1.6</project.custom.globalpom.groovyizpacksinglejar.version>
 		<project.custom.globalpom.groovytestutils.version>1.9</project.custom.globalpom.groovytestutils.version>
-		<project.custom.globalpom.log.version>1.4</project.custom.globalpom.log.version>
+		<project.custom.globalpom.log.version>1.5</project.custom.globalpom.log.version>
 	</properties>
 
 	<scm>
