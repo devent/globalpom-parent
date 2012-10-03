@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.23</version>
+	<version>1.23.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -46,10 +46,10 @@
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 
 		<!-- globalpom modules latest release versions -->
-		<project.custom.globalpom.groovy.version>1.12-SNAPSHOT</project.custom.globalpom.groovy.version>
+		<project.custom.globalpom.groovy.version>1.12</project.custom.globalpom.groovy.version>
 		<project.custom.globalpom.groovyizpack.version>1.8</project.custom.globalpom.groovyizpack.version>
 		<project.custom.globalpom.groovyizpacksinglejar.version>1.6</project.custom.globalpom.groovyizpacksinglejar.version>
-		<project.custom.globalpom.groovytestutils.version>1.9-SNAPSHOT</project.custom.globalpom.groovytestutils.version>
+		<project.custom.globalpom.groovytestutils.version>1.9</project.custom.globalpom.groovytestutils.version>
 		<project.custom.globalpom.log.version>1.4</project.custom.globalpom.log.version>
 	</properties>
 
