@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.26-SNAPSHOT</version>
+	<version>1.26</version>
 	<packaging>pom</packaging>
 	<name>Global POM</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
