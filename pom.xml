@@ -259,12 +259,6 @@
 			<dependency>
 				<!-- Apache 2.0 -->
 				<groupId>org.codehaus.groovy</groupId>
-				<artifactId>groovy-sqing</artifactId>
-				<version>${project.custom.groovy.version}</version>
-			</dependency>
-			<dependency>
-				<!-- Apache 2.0 -->
-				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy-swing</artifactId>
 				<version>${project.custom.groovy.version}</version>
 			</dependency>
