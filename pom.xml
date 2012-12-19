@@ -108,7 +108,7 @@
 				<!-- Common Public License Version 1.0 -->
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.10</version>
+				<version>4.11</version>
 			</dependency>
 
 			<!-- perf4j -->
