@@ -434,6 +434,7 @@
 
 			<!-- javacsv -->
 			<dependency>
+				<!-- LGPL -->
 				<groupId>com.csvreader</groupId>
 				<artifactId>javacsv</artifactId>
 				<version>2.1</version>
