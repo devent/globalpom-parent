@@ -386,20 +386,24 @@
 				<version>1.0</version>
 			</dependency>
 
-			<!-- swing -->
+			<!-- Table Layout -->
 			<dependency>
 				<groupId>tablelayout</groupId>
 				<artifactId>TableLayout</artifactId>
 				<version>20050920</version>
 			</dependency>
+
+			<!-- MyDoggy -->
 			<dependency>
-				<groupId>org.noos.xing</groupId>
+				<!-- LGPL -->
+				<groupId>net.sourceforge.mydoggy</groupId>
 				<artifactId>mydoggy-plaf</artifactId>
-				<version>1.5.0</version>
+				<version>1.5.0-beta-r1389</version>
 			</dependency>
 
 			<!-- string template -->
 			<dependency>
+				<!-- LGPL -->
 				<groupId>org.antlr</groupId>
 				<artifactId>ST4</artifactId>
 				<version>4.0.4</version>
