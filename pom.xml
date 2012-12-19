@@ -403,7 +403,7 @@
 
 			<!-- string template -->
 			<dependency>
-				<!-- LGPL -->
+				<!-- BSD -->
 				<groupId>org.antlr</groupId>
 				<artifactId>ST4</artifactId>
 				<version>4.0.4</version>
