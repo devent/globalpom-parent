@@ -450,6 +450,7 @@
 
 			<!-- ostermiller utils -->
 			<dependency>
+				<!-- GPLv2 -->
 				<groupId>org.ostermiller</groupId>
 				<artifactId>utils</artifactId>
 				<version>1.07.00</version>
