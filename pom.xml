@@ -289,11 +289,13 @@
 
 			<!-- apache commons -->
 			<dependency>
+                <!-- Apache 2.0 -->
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
-				<version>3.1</version>
+				<version>3.2</version>
 			</dependency>
 			<dependency>
+                <!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
 				<version>1.4.1</version>
