@@ -36,7 +36,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<file.encoding>${project.build.sourceEncoding}</file.encoding>
 		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-		<project.custom.groovy.version>2.0.5</project.custom.groovy.version>
+		<project.custom.groovy.version>2.0.6</project.custom.groovy.version>
 		<project.custom.gmaven.version>1.3</project.custom.gmaven.version>
 		<project.custom.groovy-eclipse-compiler.version>2.7.0-01</project.custom.groovy-eclipse-compiler.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
