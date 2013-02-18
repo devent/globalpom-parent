@@ -347,18 +347,6 @@
 				<artifactId>guava</artifactId>
 				<version>13.0.1</version>
 			</dependency>
-			<dependency>
-				<!-- Apache 2.0 -->
-				<groupId>com.google.guava</groupId>
-				<artifactId>guava-gwt</artifactId>
-				<version>13.0.1</version>
-			</dependency>
-			<dependency>
-				<!-- Apache 2.0 -->
-				<groupId>com.google.guava</groupId>
-				<artifactId>guava-testlib</artifactId>
-				<version>13.0.1</version>
-			</dependency>
 
 			<!-- google guice -->
 			<dependency>
@@ -687,6 +675,11 @@
 					<version>2.1-SNAPSHOT</version>
 				</plugin>
 				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-report-plugin</artifactId>
+					<version>2.13</version>
+				</plugin>
+				<plugin>
 					<!--This plugin's configuration is used to store Eclipse m2e settings
 						only. It has no influence on the Maven build itself. -->
 					<groupId>org.eclipse.m2e</groupId>
@@ -731,5 +724,15 @@
 		</pluginManagement>
 
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.13</version>
+			</plugin>
+		</plugins>
+	</reporting>
 
 </project>
