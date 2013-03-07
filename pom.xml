@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.28</version>
+	<version>1.29-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -48,7 +48,7 @@
 		<project.custom.groovy-eclipse-compiler.version>2.7.0-01</project.custom.groovy-eclipse-compiler.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
 		<project.custom.source.target>1.6</project.custom.source.target>
-		<project.custom.current.year>2012</project.custom.current.year>
+		<project.custom.current.year>2013</project.custom.current.year>
 		<project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
 		<project.custom.user.name>Erwin Müller</project.custom.user.name>
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
@@ -58,7 +58,7 @@
 	<scm>
 		<connection>scm:git:${custom.gitpublic.url}globalpom-parent.git</connection>
 		<developerConnection>scm:git:${custom.gitpublic.url}globalpom-parent.git</developerConnection>
-		<url>scm:git:${custom.gitpublic.url}globalpom-parent.git</url>
+		<url>https://www.anr-institute.com/gitpublic/globalpom-parent.git/</url>
 	</scm>
 
 	<dependencies>
