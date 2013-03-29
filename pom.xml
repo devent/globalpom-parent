@@ -53,6 +53,8 @@
 		<project.custom.user.name>Erwin Müller</project.custom.user.name>
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 		<project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
+		<project.custom.slf4j.version>1.7.5</project.custom.slf4j.version>
+		<project.custom.logback.version>1.0.11</project.custom.logback.version>
 	</properties>
 
 	<scm>
@@ -96,18 +98,35 @@
 	<dependencyManagement>
 		<dependencies>
 
-			<!-- logging dependencies -->
+			<!-- slf4j -->
 			<dependency>
 				<!-- MIT License -->
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.6.6</version>
+				<version>${project.custom.slf4j.version}</version>
 			</dependency>
 			<dependency>
 				<!-- MIT License -->
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.6.6</version>
+				<version>${project.custom.slf4j.version}</version>
+			</dependency>
+
+			<!-- logback -->
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${project.custom.logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${project.custom.logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-access</artifactId>
+				<version>${project.custom.logback.version}</version>
 			</dependency>
 
 			<!-- junit -->
