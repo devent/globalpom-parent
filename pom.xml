@@ -42,6 +42,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<file.encoding>${project.build.sourceEncoding}</file.encoding>
+		<project.custom.resources.escapestring>\</project.custom.resources.escapestring>
 		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
 		<project.custom.groovy.version>2.1.2</project.custom.groovy.version>
 		<project.custom.gmaven.version>1.3</project.custom.gmaven.version>
@@ -578,6 +579,7 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<configuration>
 					<encoding>${project.build.sourceEncoding}</encoding>
+					<escapeString>${project.custom.resources.escapestring}</escapeString>
 				</configuration>
 			</plugin>
 
