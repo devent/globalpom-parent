@@ -26,20 +26,20 @@
 	<appender name="MVN_STYLE" class="ch.qos.logback.core.ConsoleAppender">
 		<target>System.err</target>
 		<encoder>
-			<pattern>[%-5level] %-4relative [%thread] %logger{15} - %msg %n</pattern>
+			<pattern>[%level] %-4relative [%thread] %logger{20} - %msg %n%rEx{short}</pattern>
 			<immediateFlush>false</immediateFlush>
 		</encoder>
 	</appender>
 
 	<appender name="FILE_DAILY"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${java.io.tmpdir}/${project.name}.log</file>
+		<file>${java.io.tmpdir}/${project.artifactId}.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
 		<encoder>
-			<pattern>[%-5level] %-4relative [%thread] %logger{15} - %msg %n</pattern>
+			<pattern>[%level] %date{ISO8601} [%thread] %logger - %msg %n%rEx</pattern>
 			<immediateFlush>false</immediateFlush>
 		</encoder>
 	</appender>

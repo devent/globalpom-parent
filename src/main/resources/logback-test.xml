@@ -3,20 +3,20 @@
 
     Copyright 2011-2013 Erwin Müller <erwin.mueller@deventm.org>
 
-    This file is part of globalpom-parent.
+    This file is part of globalpom-log.
 
-    globalpom-parent is free software: you can redistribute it and/or modify it
+    globalpom-log is free software: you can redistribute it and/or modify it
     under the terms of the GNU Lesser General Public License as published by the
     Free Software Foundation, either version 3 of the License, or (at your
     option) any later version.
 
-    globalpom-parent is distributed in the hope that it will be useful, but
+    globalpom-log is distributed in the hope that it will be useful, but
     WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
     FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
     details.
 
     You should have received a copy of the GNU Lesser General Public License
-    along with globalpom-parent. If not, see <http://www.gnu.org/licenses/>.
+    along with globalpom-log. If not, see <http://www.gnu.org/licenses/>.
 
 -->
 <configuration scan="true">
@@ -26,26 +26,27 @@
 	<appender name="MVN_STYLE" class="ch.qos.logback.core.ConsoleAppender">
 		<target>System.err</target>
 		<encoder>
-			<pattern>[%-5level] %-4relative [%thread] %logger{15} - %msg %n</pattern>
+			<pattern>[%level] %-4relative [%thread] %logger{20} - %msg %n%rEx{short}</pattern>
 			<immediateFlush>false</immediateFlush>
 		</encoder>
 	</appender>
 
 	<appender name="FILE_DAILY"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${java.io.tmpdir}/${project.name}.log</file>
+		<file>${java.io.tmpdir}/${project.artifactId}.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
 		<encoder>
-			<pattern>[%-5level] %-4relative [%thread] %logger{15} - %msg %n</pattern>
+			<pattern>[%level] %date{ISO8601} [%thread] %logger - %msg %n%rEx</pattern>
 			<immediateFlush>true</immediateFlush>
 		</encoder>
 	</appender>
 
 	<root level="ERROR">
 		<appender-ref ref="MVN_STYLE" />
+		<appender-ref ref="FILE_DAILY" />
 	</root>
 
 	<logger name="com.anrisoftware" level="TRACE" />
