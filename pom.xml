@@ -574,6 +574,14 @@
 				<version>7.2.1</version>
 			</dependency>
 
+			<!-- kryo serializer -->
+			<dependency>
+				<!-- New BSD License -->
+				<groupId>com.esotericsoftware.kryo</groupId>
+				<artifactId>kryo</artifactId>
+				<version>2.21</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
