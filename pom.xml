@@ -432,7 +432,7 @@
 				<!-- BSD -->
 				<groupId>org.antlr</groupId>
 				<artifactId>ST4</artifactId>
-				<version>4.0.4</version>
+				<version>4.0.7</version>
 			</dependency>
 
 			<!-- sqlite -->
