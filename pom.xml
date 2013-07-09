@@ -548,7 +548,7 @@
 				<!-- LGPL -->
 				<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 				<artifactId>ejml</artifactId>
-				<version>0.21</version>
+				<version>0.23</version>
 			</dependency>
 
 			<!-- mime-util -->
