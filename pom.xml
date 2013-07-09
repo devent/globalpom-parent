@@ -582,6 +582,14 @@
 				<version>2.21</version>
 			</dependency>
 
+			<!-- migkayout -->
+			<dependency>
+				<!-- BSD -->
+				<groupId>com.miglayout</groupId>
+				<artifactId>miglayout-swing</artifactId>
+				<version>4.2</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
