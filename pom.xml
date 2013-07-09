@@ -566,6 +566,14 @@
 				<version>3.5.1</version>
 			</dependency>
 
+			<!-- substance look&feel -->
+			<dependency>
+				<!-- BSD License -->
+				<groupId>com.github.insubstantial</groupId>
+				<artifactId>substance</artifactId>
+				<version>7.2.1</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
