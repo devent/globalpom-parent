@@ -55,7 +55,7 @@
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 		<project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
 		<project.custom.slf4j.version>1.7.5</project.custom.slf4j.version>
-		<project.custom.logback.version>1.0.11</project.custom.logback.version>
+		<project.custom.logback.version>1.0.13</project.custom.logback.version>
 	</properties>
 
 	<scm>
