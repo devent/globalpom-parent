@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.31</version>
+	<version>1.32-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM :: Parent</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -588,6 +588,36 @@
 				<groupId>com.miglayout</groupId>
 				<artifactId>miglayout-swing</artifactId>
 				<version>4.2</version>
+			</dependency>
+
+			<!-- jscience -->
+			<dependency>
+				<!-- Apache -->
+				<groupId>org.jscience</groupId>
+				<artifactId>jscience</artifactId>
+				<version>4.3.1</version>
+			</dependency>
+
+			<!-- swingx -->
+			<dependency>
+				<!-- LGPL -->
+				<groupId>org.swinglabs.swingx</groupId>
+				<artifactId>swingx-core</artifactId>
+				<version>1.6.5</version>
+			</dependency>
+
+			<!-- docking-frames -->
+			<dependency>
+				<!-- LGPL -->
+				<groupId>org.dockingframes</groupId>
+				<artifactId>docking-frames-core</artifactId>
+				<version>1.1.2-p8d</version>
+			</dependency>
+			<dependency>
+				<!-- LGPL -->
+				<groupId>org.dockingframes</groupId>
+				<artifactId>docking-frames-common</artifactId>
+				<version>1.1.2-p8d</version>
 			</dependency>
 
 		</dependencies>
