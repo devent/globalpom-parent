@@ -715,26 +715,6 @@
 				</executions>
 			</plugin>
 
-			<plugin>
-				<!-- Adds the properties 'timestamp' and 'buildNumber' that can be used
-					to identify the build. -->
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>initialize</phase>
-						<goals>
-							<goal>create</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<doCheck>true</doCheck>
-					<doUpdate>false</doUpdate>
-					<shortRevisionLength>5</shortRevisionLength>
-					<timestampFormat>{0,date,dd/MM/yy HH:mm:ss}</timestampFormat>
-				</configuration>
-			</plugin>
 		</plugins>
 
 		<pluginManagement>
