@@ -455,6 +455,12 @@
 				<artifactId>aopalliance</artifactId>
 				<version>1.0</version>
 			</dependency>
+			<dependency>
+				<!-- LGPL -->
+				<groupId>net.sourceforge.findbugs</groupId>
+				<artifactId>jsr305</artifactId>
+				<version>1.3.2</version>
+			</dependency>
 
 			<!-- Table Layout -->
 			<!-- TableLayout is a totally free layout manager designed to make creating
