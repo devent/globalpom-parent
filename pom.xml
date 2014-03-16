@@ -723,6 +723,14 @@
 				<version>1.2.1</version>
 			</dependency>
 
+			<!-- supercsv -->
+			<dependency>
+				<!-- Apache 2.0 -->
+				<groupId>net.sf.supercsv</groupId>
+				<artifactId>super-csv</artifactId>
+				<version>2.1.0</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
