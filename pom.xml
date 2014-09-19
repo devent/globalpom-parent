@@ -414,19 +414,19 @@
 				<artifactId>commons-io</artifactId>
 				<version>2.4</version>
 			</dependency>
-            <!-- Commons Transaction -->
-            <dependency>
-                <!-- Apache -->
-                <groupId>commons-transaction</groupId>
-                <artifactId>commons-transaction</artifactId>
-                <version>1.2</version>
-            </dependency>
-            <dependency>
-                <!-- CDDL + GPLv2 with classpath exception -->
-                <groupId>javax</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>6.0</version>
-            </dependency>
+			<!-- Commons Transaction -->
+			<dependency>
+				<!-- Apache -->
+				<groupId>commons-transaction</groupId>
+				<artifactId>commons-transaction</artifactId>
+				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<!-- CDDL + GPLv2 with classpath exception -->
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>6.0</version>
+			</dependency>
 
 			<!-- google guava -->
 			<dependency>
@@ -451,12 +451,12 @@
 				<artifactId>guice</artifactId>
 				<version>3.0</version>
 			</dependency>
-            <dependency>
-                <!-- Apache 2.0 -->
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-assistedinject</artifactId>
-                <version>3.0</version>
-            </dependency>
+			<dependency>
+				<!-- Apache 2.0 -->
+				<groupId>com.google.inject.extensions</groupId>
+				<artifactId>guice-assistedinject</artifactId>
+				<version>3.0</version>
+			</dependency>
 			<dependency>
 				<!-- Apache 2.0 -->
 				<groupId>com.google.inject.extensions</groupId>
@@ -683,23 +683,23 @@
 				<version>4.2</version>
 			</dependency>
 
-            <!-- jfreechart -->
-            <!-- JFreeChart is a class library, written in Java, for generating charts.
-                Utilising the Java2D APIs, it currently supports bar charts, pie charts,
-                line charts, XY-plots and time series plots. -->
-            <dependency>
-                <!-- LGPL -->
-                <groupId>org.jfree</groupId>
-                <artifactId>jfreechart</artifactId>
-                <version>1.0.19</version>
-            </dependency>
+			<!-- jfreechart -->
+			<!-- JFreeChart is a class library, written in Java, for generating charts.
+				Utilising the Java2D APIs, it currently supports bar charts, pie charts,
+				line charts, XY-plots and time series plots. -->
+			<dependency>
+				<!-- LGPL -->
+				<groupId>org.jfree</groupId>
+				<artifactId>jfreechart</artifactId>
+				<version>1.0.19</version>
+			</dependency>
 
-            <!-- jdesktop -->
-            <dependency>
-                <groupId>org.jdesktop</groupId>
-                <artifactId>beansbinding</artifactId>
-                <version>1.2.1</version>
-            </dependency>
+			<!-- jdesktop -->
+			<dependency>
+				<groupId>org.jdesktop</groupId>
+				<artifactId>beansbinding</artifactId>
+				<version>1.2.1</version>
+			</dependency>
 
 			<!-- jscience -->
 			<dependency>
@@ -740,6 +740,15 @@
 				<groupId>net.sf.supercsv</groupId>
 				<artifactId>super-csv</artifactId>
 				<version>2.2.0</version>
+			</dependency>
+
+			<!-- Small set of Java tools for dealing with streams (InputStreams and
+				OutputStreams). -->
+			<dependency>
+				<!-- BSD -->
+				<groupId>net.sf.jsignature.io-tools</groupId>
+				<artifactId>easystream</artifactId>
+				<version>1.2.14</version>
 			</dependency>
 
 		</dependencies>
