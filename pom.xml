@@ -865,13 +865,6 @@
 					<version>2.8</version>
 				</plugin>
 				<plugin>
-					<!-- This plugin contains various small independent goals to assist
-						with Maven build lifecycle -->
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.8</version>
-				</plugin>
-				<plugin>
 					<!-- The Resources Plugin handles the copying of project resources to
 						the output directory. There are two different kinds of resources: main resources
 						and test resources. The difference is that the main resources are the resources
@@ -887,20 +880,20 @@
 						and resources. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>2.4</version>
+					<version>2.5</version>
 				</plugin>
 				<plugin>
 					<!-- The Maven 2 Source Plugin creates a JAR archive of the source files
 						of the current project. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-source-plugin</artifactId>
-					<version>2.2.1</version>
+					<version>2.3</version>
 				</plugin>
 				<plugin>
 					<!-- Uploads the project artifacts to the internal remote repository. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.1</version>
+					<version>2.8.2</version>
 				</plugin>
 				<plugin>
 					<!-- The Apache Maven Javadoc Plugin is a plugin that uses the javadoc
@@ -908,25 +901,6 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>2.9.1</version>
-				</plugin>
-				<plugin>
-					<!-- Maven 2 plugin to check and update license headers in source files -->
-					<groupId>com.mycila.maven-license-plugin</groupId>
-					<artifactId>maven-license-plugin</artifactId>
-					<version>1.9.0</version>
-				</plugin>
-				<plugin>
-					<!-- Maven plugin for IzPack -->
-					<groupId>org.codehaus.izpack</groupId>
-					<artifactId>izpack-maven-plugin</artifactId>
-					<version>1.0-alpha-5</version>
-				</plugin>
-				<plugin>
-					<!-- This plugin creates Windows executables from Java jar files using
-						the Launch4j utility. -->
-					<groupId>com.akathist.maven.plugins.launch4j</groupId>
-					<artifactId>launch4j-maven-plugin</artifactId>
-					<version>1.5.2</version>
 				</plugin>
 				<plugin>
 					<!-- The Loving Iron Fist of Maven -->
@@ -939,11 +913,7 @@
 						dependencies etc. from flexible assembly descriptors. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-nar-plugin</artifactId>
-					<version>2.1-SNAPSHOT</version>
+					<version>2.4.1</version>
 				</plugin>
 				<plugin>
 					<!-- The Surefire Report Plugin parses the generated TEST-*.xml files
@@ -951,7 +921,7 @@
 						creates the web interface version of the test results. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-report-plugin</artifactId>
-					<version>2.16</version>
+					<version>2.17</version>
 				</plugin>
 				<plugin>
 					<!-- The JXR Plugin produces a cross-reference of the projectʼs sources.
@@ -974,7 +944,37 @@
 						able to fail the build based on these metrics. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-pmd-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.2</version>
+				</plugin>
+				<plugin>
+					<!-- This plugin contains various small independent goals to assist
+						with Maven build lifecycle -->
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>1.9.1</version>
+				</plugin>
+				<plugin>
+					<!-- Maven 2 plugin to check and update license headers in source files -->
+					<groupId>com.mycila.maven-license-plugin</groupId>
+					<artifactId>maven-license-plugin</artifactId>
+					<version>1.9.0</version>
+				</plugin>
+				<plugin>
+					<!-- Maven plugin for IzPack -->
+					<groupId>org.codehaus.izpack</groupId>
+					<artifactId>izpack-maven-plugin</artifactId>
+					<version>1.0-alpha-5</version>
+				</plugin>
+				<plugin>
+					<!-- This plugin creates Windows executables from Java jar files using
+						the Launch4j utility. -->
+					<groupId>com.akathist.maven.plugins.launch4j</groupId>
+					<artifactId>launch4j-maven-plugin</artifactId>
+					<version>1.5.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-nar-plugin</artifactId>
+					<version>2.1-SNAPSHOT</version>
 				</plugin>
 				<plugin>
 					<!-- This plugin is designed to give you a build number. So when you
@@ -1045,7 +1045,7 @@
 					creates the web interface version of the test results. -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>2.16</version>
+				<version>2.17</version>
 			</plugin>
 			<plugin>
 				<!-- The Apache Maven Javadoc Plugin is a plugin that uses the javadoc
@@ -1075,7 +1075,7 @@
 					able to fail the build based on these metrics. -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.0.1</version>
+				<version>3.2</version>
 				<configuration>
 					<linkXref>true</linkXref>
 					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
