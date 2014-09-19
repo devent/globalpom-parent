@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.34</version>
+	<version>1.35-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM :: Parent</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -44,7 +44,7 @@
 		<file.encoding>${project.build.sourceEncoding}</file.encoding>
 		<project.custom.resources.escapestring>\</project.custom.resources.escapestring>
 		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-		<project.custom.groovy.version>2.2.2</project.custom.groovy.version>
+		<project.custom.groovy.version>2.3.6</project.custom.groovy.version>
 		<project.custom.groovy-eclipse-compiler.version>2.8.0-01</project.custom.groovy-eclipse-compiler.version>
 		<project.custom.groovy-eclipse-batch.version>2.1.8-01</project.custom.groovy-eclipse-batch.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
@@ -54,8 +54,8 @@
 		<project.custom.user.name>Erwin Müller</project.custom.user.name>
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 		<project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
-		<project.custom.slf4j.version>1.7.6</project.custom.slf4j.version>
-		<project.custom.logback.version>1.1.1</project.custom.logback.version>
+		<project.custom.slf4j.version>1.7.7</project.custom.slf4j.version>
+		<project.custom.logback.version>1.1.2</project.custom.logback.version>
 	</properties>
 
 	<scm>
@@ -338,7 +338,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
-				<version>1.7</version>
+				<version>1.8.1</version>
 			</dependency>
 			<dependency>
 				<!-- Apache Commons Lang, a package of Java utility classes for the classes
@@ -347,7 +347,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
-				<version>3.2.1</version>
+				<version>3.3.2</version>
 			</dependency>
 			<dependency>
 				<!-- The Math project is a library of lightweight, self-contained mathematics
@@ -356,7 +356,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
-				<version>3.2</version>
+				<version>3.3</version>
 			</dependency>
 			<dependency>
 				<!-- Apache Commons Exec is a library to reliably execute external processes
@@ -365,6 +365,20 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-exec</artifactId>
 				<version>1.2</version>
+			</dependency>
+			<dependency>
+				<!-- VFS is a Virtual File System library. -->
+				<!-- Apache 2.0 -->
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-vfs2</artifactId>
+				<version>2.0</version>
+			</dependency>
+			<dependency>
+				<!-- Contains types that extend and augment the Java Collections Framework. -->
+				<!-- Apache 2.0 -->
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>4.0</version>
 			</dependency>
 			<dependency>
 				<!-- Apache Commons Net library contains a collection of network utilities
@@ -400,13 +414,19 @@
 				<artifactId>commons-io</artifactId>
 				<version>2.4</version>
 			</dependency>
-			<dependency>
-				<!-- VFS is a Virtual File System library. -->
-				<!-- Apache 2.0 -->
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-vfs2</artifactId>
-				<version>2.0</version>
-			</dependency>
+            <!-- Commons Transaction -->
+            <dependency>
+                <!-- Apache -->
+                <groupId>commons-transaction</groupId>
+                <artifactId>commons-transaction</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <!-- CDDL + GPLv2 with classpath exception -->
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>6.0</version>
+            </dependency>
 
 			<!-- google guava -->
 			<dependency>
@@ -419,7 +439,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>16.0.1</version>
+				<version>18.0</version>
 			</dependency>
 
 			<!-- google guice -->
@@ -427,16 +447,16 @@
 				and above. -->
 			<dependency>
 				<!-- Apache 2.0 -->
-				<groupId>com.google.inject.extensions</groupId>
-				<artifactId>guice-assistedinject</artifactId>
-				<version>3.0</version>
-			</dependency>
-			<dependency>
-				<!-- Apache 2.0 -->
 				<groupId>com.google.inject</groupId>
 				<artifactId>guice</artifactId>
 				<version>3.0</version>
 			</dependency>
+            <dependency>
+                <!-- Apache 2.0 -->
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-assistedinject</artifactId>
+                <version>3.0</version>
+            </dependency>
 			<dependency>
 				<!-- Apache 2.0 -->
 				<groupId>com.google.inject.extensions</groupId>
@@ -488,7 +508,7 @@
 				<!-- BSD -->
 				<groupId>org.antlr</groupId>
 				<artifactId>ST4</artifactId>
-				<version>4.0.7</version>
+				<version>4.0.8</version>
 			</dependency>
 
 			<!-- sqlite -->
@@ -504,7 +524,7 @@
 				<!-- MIT License -->
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
-				<version>2.0.26</version>
+				<version>2.0.29</version>
 			</dependency>
 
 			<!-- xstream -->
@@ -549,7 +569,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>com.hazelcast</groupId>
 				<artifactId>hazelcast-all</artifactId>
-				<version>3.1.6</version>
+				<version>3.2.5</version>
 			</dependency>
 
 			<!-- piccolo2d -->
@@ -598,7 +618,7 @@
 				<!-- Apache 2.0 -->
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
-				<version>2.3</version>
+				<version>2.4</version>
 			</dependency>
 
 			<!-- quartz-scheduler -->
@@ -617,7 +637,7 @@
 				<!-- LGPL -->
 				<groupId>com.googlecode.efficient-java-matrix-library</groupId>
 				<artifactId>ejml</artifactId>
-				<version>0.24</version>
+				<version>0.25</version>
 			</dependency>
 
 			<!-- mime-util -->
@@ -633,7 +653,7 @@
 			<dependency>
 				<groupId>net.java.dev.jna</groupId>
 				<artifactId>jna</artifactId>
-				<version>4.0.0</version>
+				<version>4.1.0</version>
 			</dependency>
 
 			<!-- substance look&feel -->
@@ -642,7 +662,7 @@
 				<!-- BSD License -->
 				<groupId>com.github.insubstantial</groupId>
 				<artifactId>substance</artifactId>
-				<version>7.2.1</version>
+				<version>7.3</version>
 			</dependency>
 
 			<!-- kryo serializer -->
@@ -651,7 +671,7 @@
 				<!-- New BSD License -->
 				<groupId>com.esotericsoftware.kryo</groupId>
 				<artifactId>kryo</artifactId>
-				<version>2.22</version>
+				<version>2.24.0</version>
 			</dependency>
 
 			<!-- migkayout -->
@@ -662,6 +682,24 @@
 				<artifactId>miglayout-swing</artifactId>
 				<version>4.2</version>
 			</dependency>
+
+            <!-- jfreechart -->
+            <!-- JFreeChart is a class library, written in Java, for generating charts.
+                Utilising the Java2D APIs, it currently supports bar charts, pie charts,
+                line charts, XY-plots and time series plots. -->
+            <dependency>
+                <!-- LGPL -->
+                <groupId>org.jfree</groupId>
+                <artifactId>jfreechart</artifactId>
+                <version>1.0.19</version>
+            </dependency>
+
+            <!-- jdesktop -->
+            <dependency>
+                <groupId>org.jdesktop</groupId>
+                <artifactId>beansbinding</artifactId>
+                <version>1.2.1</version>
+            </dependency>
 
 			<!-- jscience -->
 			<dependency>
@@ -678,7 +716,7 @@
 				<!-- LGPL -->
 				<groupId>org.swinglabs.swingx</groupId>
 				<artifactId>swingx-core</artifactId>
-				<version>1.6.5</version>
+				<version>1.6.5-1</version>
 			</dependency>
 
 			<!-- docking-frames -->
@@ -696,45 +734,12 @@
 				<version>1.1.2-p8d</version>
 			</dependency>
 
-			<!-- commons-transaction -->
-			<!-- Commons Transaction -->
-			<dependency>
-				<!-- Apache -->
-				<groupId>commons-transaction</groupId>
-				<artifactId>commons-transaction</artifactId>
-				<version>1.2</version>
-			</dependency>
-			<dependency>
-				<!-- CDDL + GPLv2 with classpath exception -->
-				<groupId>javax</groupId>
-				<artifactId>javaee-api</artifactId>
-				<version>6.0</version>
-			</dependency>
-
-			<!-- jfreechart -->
-			<!-- JFreeChart is a class library, written in Java, for generating charts.
-				Utilising the Java2D APIs, it currently supports bar charts, pie charts,
-				line charts, XY-plots and time series plots. -->
-			<dependency>
-				<!-- LGPL -->
-				<groupId>org.jfree</groupId>
-				<artifactId>jfreechart</artifactId>
-				<version>1.0.15</version>
-			</dependency>
-
-			<!-- jdesktop -->
-			<dependency>
-				<groupId>org.jdesktop</groupId>
-				<artifactId>beansbinding</artifactId>
-				<version>1.2.1</version>
-			</dependency>
-
 			<!-- supercsv -->
 			<dependency>
 				<!-- Apache 2.0 -->
 				<groupId>net.sf.supercsv</groupId>
 				<artifactId>super-csv</artifactId>
-				<version>2.1.0</version>
+				<version>2.2.0</version>
 			</dependency>
 
 		</dependencies>
@@ -824,7 +829,8 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-                    <!-- This plugin signs all of the project's attached artifacts with GnuPG. -->
+					<!-- This plugin signs all of the project's attached artifacts with
+						GnuPG. -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-gpg-plugin</artifactId>
 					<version>1.5</version>
@@ -1079,7 +1085,7 @@
 
 	<profiles>
 		<profile>
-            <!-- Activate profile with -Psign-artifact -->
+			<!-- Activate profile with -Psign-artifact -->
 			<id>sign-artifact</id>
 			<build>
 				<plugins>
