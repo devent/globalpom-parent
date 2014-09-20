@@ -751,6 +751,14 @@
 				<version>1.2.14</version>
 			</dependency>
 
+			<!-- JTattoo - Consists of several different Look and Feels for Swing
+				applications -->
+			<dependency>
+				<groupId>com.jtattoo</groupId>
+				<artifactId>JTattoo</artifactId>
+				<version>1.6.10</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
