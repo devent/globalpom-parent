@@ -30,7 +30,7 @@
  * &lt;dependency>
  * &lt;groupId>com.anrisoftware.globalpom&lt;/groupId>
  * &lt;artifactId>globalpom-parent&lt;/artifactId>
- * &lt;version>1.33&lt;/version>
+ * &lt;version>1.36&lt;/version>
  * &lt;/dependency>
  * </pre>
  *
@@ -42,7 +42,7 @@
  * <li><a href="https://github.com/devent/globalpom-parent.git">Repository HTTPS</a>
  * </ul>
  *
- * @version 1.33
+ * @version 1.36
  * @author Erwin Mueller, erwin.mueller@deventm.org
  */
 package com.anrisoftware.globalpom;
