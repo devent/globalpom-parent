@@ -61,7 +61,7 @@
 	<scm>
 		<connection>scm:git:${custom.gitpublic.url}globalpom-parent.git</connection>
 		<developerConnection>scm:git:${custom.gitpublic.url}globalpom-parent.git</developerConnection>
-		<url>https://www.anr-institute.com/gitpublic/globalpom-parent.git/</url>
+		<url>https://anrisoftware.com/projects/projects/globalpom</url>
 	</scm>
 
 	<dependencies>
@@ -92,12 +92,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>${custom.repository.anrispublic.id}</id>
-			<url>${custom.repository.root}${custom.repository.anrispublic.path}</url>
+			<id>osssonatype</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
 		<snapshotRepository>
-			<id>${custom.repository.anrispublicsnapshots.id}</id>
-			<url>${custom.repository.root}${custom.repository.anrispublicsnapshots.path}</url>
+			<id>osssonatype_snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
