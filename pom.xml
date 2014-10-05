@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.37</version>
+	<version>1.38-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM :: Parent</name>
 	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
@@ -784,7 +784,7 @@
 				</configuration>
 			</plugin>
 
-			<!-- deploy source and test sources -->
+			<!-- deploy sources -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -797,6 +797,8 @@
 					</execution>
 				</executions>
 			</plugin>
+
+            <!-- deploy test sources -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -804,6 +806,20 @@
 					<execution>
 						<goals>
 							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+            <!-- deploy javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -870,7 +886,7 @@
 						<configuration>
 							<rules>
 								<requireReleaseDeps>
-								    <onlyWhenRelease>true</onlyWhenRelease>
+									<onlyWhenRelease>true</onlyWhenRelease>
 									<message>No Snapshots Allowed!</message>
 								</requireReleaseDeps>
 							</rules>
