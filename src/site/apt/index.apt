@@ -1,0 +1,26 @@
+  Declares all dependencies and all maven plugins needed for a
+Advanced Natural Research Institute software
+project. It will declare the listed properties, add plugin to deploy
+source and test sources and deploy the project-tests with the project jar.
+
+Anrisoftware.com SCM
+
+  * {{{https://anrisoftware.com/projects/projects/globalpom/repository}Repository}}
+
+  * {{{git://git@anrisoftware.com:globalpom-parent.git}SSH Access}}
+
+GitHub SCM
+
+  * {{{https://github.com/devent/globalpom-parent.git}Repository}}
+
+  * {{{git://git@github.com:devent/globalpom-parent.git}SSH Access}}
+
+Maven Module
+
+---
+<dependency>
+    <groupId>com.anrisoftware.globalpom</groupId>
+    <artifactId>globalpom-parent</artifactId>
+    <version>1.39-SNAPSHOT</version>
+</dependency>
+---

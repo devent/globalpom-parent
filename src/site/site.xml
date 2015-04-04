@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="${project.name}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+    <bannerLeft>
+        <name>${project.name}</name>
+        <title>${project.name}</title>
+        <href>${project.url}</href>
+    </bannerLeft>
+    <bannerRight>
+        <name>Advanced Natural Research Institute Projects</name>
+        <title>Advanced Natural Research Institute Projects</title>
+        <src>images/anri_logo_48.png</src>
+        <href>https://anrisoftware.com/projects</href>
+    </bannerRight>
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.3.1</version>
+    </skin>
+    <body>
+        <links>
+            <item name="${project.name}" href="${project.url}"/>
+        </links>
+        <menu name="Released Versions">
+            <item name="1.38 Issues" href="https://anrisoftware.com/l/1" />
+        </menu>
+        <menu ref="parent" />
+        <menu ref="modules" />
+        <menu ref="reports" />
+    </body>
+</project>

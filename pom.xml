@@ -5,10 +5,13 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.38</version>
+	<version>1.39-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM :: Parent</name>
-	<description>Declares all dependencies and all maven plugins needed for a ANRI GmbH project. It will declare the listed properties, add plugin to deploy source and test sources and deploy the project-tests with the project jar.</description>
+	<description>Declares all dependencies and all Maven plug-ins needed for a
+Advanced Natural Research Institute software
+project. It will declare the listed properties, add plug-in to deploy
+source and test sources and deploy the project-tests with the project jar.</description>
 	<url>https://anrisoftware.com/projects/projects/globalpom</url>
 	<inceptionYear>2011</inceptionYear>
 
@@ -59,9 +62,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:${custom.gitpublic.url}globalpom-parent.git</connection>
-		<developerConnection>scm:git:${custom.gitpublic.url}globalpom-parent.git</developerConnection>
-		<url>https://anrisoftware.com/projects/projects/globalpom</url>
+		<connection>scm:git:git@anrisoftware.com:globalpom-parent.git</connection>
+		<developerConnection>scm:git:git@anrisoftware.com:globalpom-parent.git</developerConnection>
+		<url>https://anrisoftware.com/projects/projects/globalpom/repository</url>
 	</scm>
 
 	<dependencies>
@@ -91,7 +94,11 @@
 	</dependencies>
 
 	<distributionManagement>
-		<repository>
+	    <site>
+	      <id>anrisoftware</id>
+	      <url>dav:https://anrisoftware.com/javadoc/${project.groupId}/${project.artifactId}</url>
+	    </site>
+        <repository>
 			<id>osssonatype</id>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
@@ -763,6 +770,14 @@
 	</dependencyManagement>
 
 	<build>
+        <extensions>
+            <extension>
+	            <groupId>org.apache.maven.wagon</groupId>
+	            <artifactId>wagon-webdav-jackrabbit</artifactId>
+	            <version>2.8</version>
+            </extension>
+        </extensions>
+
 		<plugins>
 
 			<plugin>
@@ -996,12 +1011,6 @@
 					<version>2.4</version>
 				</plugin>
 				<plugin>
-					<!-- Maven plugin for Clover -->
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-clover-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
 					<!-- A Maven plugin for the PMD toolkit, that produces a report on both
 						code rule violations and detected copy and paste fragments, as well as being
 						able to fail the build based on these metrics. -->
@@ -1124,12 +1133,6 @@
 					errors found in the code. -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
-				<version>2.4</version>
-			</plugin>
-			<plugin>
-				<!-- Maven plugin for Clover -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-clover-plugin</artifactId>
 				<version>2.4</version>
 			</plugin>
 			<plugin>
