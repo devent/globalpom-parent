@@ -1,3 +1,22 @@
+~~
+~~ Copyright 2011-2015 Erwin Müller <erwin.mueller@deventm.org>
+~~
+~~ This file is part of globalpom-parent.
+~~
+~~ globalpom-parent is free software: you can redistribute it and/or modify it
+~~ under the terms of the GNU Lesser General Public License as published by the
+~~ Free Software Foundation, either version 3 of the License, or (at your
+~~ option) any later version.
+~~
+~~ globalpom-parent is distributed in the hope that it will be useful, but
+~~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+~~ FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+~~ details.
+~~
+~~ You should have received a copy of the GNU Lesser General Public License
+~~ along with globalpom-parent. If not, see <http://www.gnu.org/licenses/>.
+~~
+
   Declares all dependencies and all maven plugins needed for a
 Advanced Natural Research Institute software
 project. It will declare the listed properties, add plugin to deploy
@@ -21,7 +40,7 @@ Maven Module
 <dependency>
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>1.39-SNAPSHOT</version>
+    <version>1.39</version>
 </dependency>
 ---
 
@@ -38,7 +57,7 @@ Declared Properties
 *-----*------*------*
  project.custom.groovy.version | 2.4.3 | The version of the Groovy dependencies.
 *-----*------*------*
- project.custom.groovy-eclipse-compiler.version | 2.8.0-01 | The version of the Groovy Eclipse compiler.
+ project.custom.groovy-eclipse-compiler.version | 2.9.2-01 | The version of the Groovy Eclipse compiler.
 *-----*------*------*
  project.custom.groovy-eclipse-batch.version | 2.1.8-01 | The version of the Groovy batch Eclipse compiler.
 *-----*------*------*
