@@ -47,18 +47,18 @@ source and test sources and deploy the project-tests with the project jar.</desc
 		<file.encoding>${project.build.sourceEncoding}</file.encoding>
 		<project.custom.resources.escapestring>\</project.custom.resources.escapestring>
 		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-		<project.custom.groovy.version>2.3.6</project.custom.groovy.version>
+		<project.custom.groovy.version>2.4.3</project.custom.groovy.version>
 		<project.custom.groovy-eclipse-compiler.version>2.8.0-01</project.custom.groovy-eclipse-compiler.version>
 		<project.custom.groovy-eclipse-batch.version>2.1.8-01</project.custom.groovy-eclipse-batch.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
 		<project.custom.source.target>1.6</project.custom.source.target>
-		<project.custom.current.year>2014</project.custom.current.year>
+		<project.custom.current.year>2015</project.custom.current.year>
 		<project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
 		<project.custom.user.name>Erwin Müller</project.custom.user.name>
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
 		<project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
-		<project.custom.slf4j.version>1.7.7</project.custom.slf4j.version>
-		<project.custom.logback.version>1.1.2</project.custom.logback.version>
+		<project.custom.slf4j.version>1.7.12</project.custom.slf4j.version>
+		<project.custom.logback.version>1.1.3</project.custom.logback.version>
 	</properties>
 
 	<scm>
@@ -147,7 +147,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Common Public License Version 1.0 -->
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.11</version>
+				<version>4.12</version>
 			</dependency>
 
 			<!-- perf4j -->
@@ -217,7 +217,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- LGPLv3 -->
 				<groupId>com.mortennobel</groupId>
 				<artifactId>java-image-scaling</artifactId>
-				<version>0.8.5</version>
+				<version>0.8.6</version>
 			</dependency>
 
 			<!-- groovy -->
@@ -345,7 +345,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
-				<version>1.8.1</version>
+				<version>1.9</version>
 			</dependency>
 			<dependency>
 				<!-- Apache Commons Lang, a package of Java utility classes for the classes
@@ -363,7 +363,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
-				<version>3.3</version>
+				<version>3.4.1</version>
 			</dependency>
 			<dependency>
 				<!-- Apache Commons Exec is a library to reliably execute external processes
@@ -371,7 +371,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-exec</artifactId>
-				<version>1.2</version>
+				<version>1.3</version>
 			</dependency>
 			<dependency>
 				<!-- VFS is a Virtual File System library. -->
@@ -404,7 +404,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
-				<version>1.9</version>
+				<version>1.10</version>
 			</dependency>
 			<dependency>
 				<!-- Types that extend and augment the Java Collections Framework. -->
@@ -486,7 +486,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- LGPL -->
 				<groupId>net.sourceforge.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
-				<version>1.3.2</version>
+				<version>1.3.7</version>
 			</dependency>
 
 			<!-- Table Layout -->
@@ -523,7 +523,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- SQLite JDBC library -->
 				<groupId>org.xerial</groupId>
 				<artifactId>sqlite-jdbc</artifactId>
-				<version>3.7.2</version>
+				<version>3.8.7</version>
 			</dependency>
 
 			<!-- args4j -->
@@ -531,7 +531,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- MIT License -->
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
-				<version>2.0.29</version>
+				<version>2.0.32</version>
 			</dependency>
 
 			<!-- xstream -->
@@ -540,7 +540,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- BSD style -->
 				<groupId>com.thoughtworks.xstream</groupId>
 				<artifactId>xstream</artifactId>
-				<version>1.4.7</version>
+				<version>1.4.8</version>
 			</dependency>
 
 			<!-- javacsv -->
@@ -576,7 +576,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>com.hazelcast</groupId>
 				<artifactId>hazelcast-all</artifactId>
-				<version>3.2.5</version>
+				<version>3.4.2</version>
 			</dependency>
 
 			<!-- piccolo2d -->
@@ -625,7 +625,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
-				<version>2.4</version>
+				<version>2.7</version>
 			</dependency>
 
 			<!-- quartz-scheduler -->
@@ -687,7 +687,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- BSD -->
 				<groupId>com.miglayout</groupId>
 				<artifactId>miglayout-swing</artifactId>
-				<version>4.2</version>
+				<version>5.0</version>
 			</dependency>
 
 			<!-- jfreechart -->
@@ -732,13 +732,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- LGPL -->
 				<groupId>org.dockingframes</groupId>
 				<artifactId>docking-frames-core</artifactId>
-				<version>1.1.2-p8d</version>
+				<version>1.1.2-p14c</version>
 			</dependency>
 			<dependency>
 				<!-- LGPL -->
 				<groupId>org.dockingframes</groupId>
 				<artifactId>docking-frames-common</artifactId>
-				<version>1.1.2-p8d</version>
+				<version>1.1.2-p14c</version>
 			</dependency>
 
 			<!-- supercsv -->
@@ -746,7 +746,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- Apache 2.0 -->
 				<groupId>net.sf.supercsv</groupId>
 				<artifactId>super-csv</artifactId>
-				<version>2.2.0</version>
+				<version>2.3.1</version>
 			</dependency>
 
 			<!-- Small set of Java tools for dealing with streams (InputStreams and
@@ -763,7 +763,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 			<dependency>
 				<groupId>com.jtattoo</groupId>
 				<artifactId>JTattoo</artifactId>
-				<version>1.6.10</version>
+				<version>1.6.11</version>
 			</dependency>
 
 		</dependencies>

@@ -24,3 +24,39 @@ Maven Module
     <version>1.39-SNAPSHOT</version>
 </dependency>
 ---
+
+Declared Properties
+
+*-----*------*------*
+ project.build.sourceEncoding | UTF-8 | The source code encoding. Is used by the maven-compiler-plugin, the maven-resources-plugin and by the maven-pmd-plugin.
+*-----*------*------*
+ file.encoding | &#36;{project.build.sourceEncoding} | The file encoding.
+*-----*------*------*
+ project.custom.resources.escapestring | &#92; | The resources escape string. Is used by the maven-resources-plugin.
+*-----*------*------*
+ project.reporting.outputEncoding | &#36;{project.build.sourceEncoding} | Reporting output encoding.
+*-----*------*------*
+ project.custom.groovy.version | 2.4.3 | The version of the Groovy dependencies.
+*-----*------*------*
+ project.custom.groovy-eclipse-compiler.version | 2.8.0-01 | The version of the Groovy Eclipse compiler.
+*-----*------*------*
+ project.custom.groovy-eclipse-batch.version | 2.1.8-01 | The version of the Groovy batch Eclipse compiler.
+*-----*------*------*
+ project.custom.source.source | 1.6 | The Java source target. Is used by the maven-compiler-plugin.
+*-----*------*------*
+ project.custom.source.target | 1.6 | The Java runtime target. Is used by the maven-compiler-plugin and by the maven-pmd-plugin.
+*-----*------*------*
+ project.custom.current.year | 2015 | The current year. Is used by the automatic license generation.
+*-----*------*------*
+ project.custom.year | &#36;{project.inceptionYear}-&#36;{project.custom.current.year} | The copyright year of the project.
+*-----*------*------*
+ project.custom.user.name | Erwin Müller | The project copyright author name.
+*-----*------*------*
+ project.custom.user.email | erwin.mueller@deventm.org | The project copyright author email address.
+*-----*------*------*
+ project.custom.izpack.standalone.compiler.version | 4.3.5 | The version of the Izpack standalone compiler.
+*-----*------*------*
+ project.custom.slf4j.version | 1.7.12 | The version of the Slf4j dependency.
+*-----*------*------*
+ project.custom.logback.version | 1.1.3 | The version of the Logback dependency.
+*-----*------*------*
