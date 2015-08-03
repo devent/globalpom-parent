@@ -770,6 +770,30 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<version>1.6.11</version>
 			</dependency>
 
+            <!-- JDatePicker and JDatePanel is a Java Swing component. -->
+			<dependency>
+			    <!-- Simplified BSD License -->
+				<groupId>org.jdatepicker</groupId>
+				<artifactId>jdatepicker</artifactId>
+				<version>1.3.4</version>
+			</dependency>
+
+            <!-- Java Image Processing Pages. -->
+			<dependency>
+			    <!-- Apache License, Version 2.0 -->
+			    <groupId>com.jhlabs</groupId>
+			    <artifactId>filters</artifactId>
+			    <version>2.0.235-1</version>
+			</dependency>
+
+            <!-- Balloon Tip. -->
+			<dependency>
+			    <!-- 3-Clause BSD License -->
+				<groupId>net.java.balloontip</groupId>
+				<artifactId>balloontip</artifactId>
+				<version>1.2.4.1</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
