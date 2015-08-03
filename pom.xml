@@ -822,6 +822,15 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>1.8</version>
             </dependency>
 
+            <!-- Java Annotation and Processor to simplify the use of the
+             Service Provider Interface -->
+            <dependency>
+                <!-- Apache License Version 2.0 -->
+                <groupId>org.mangosdk.spi</groupId>
+                <artifactId>spi</artifactId>
+                <version>0.2.7.r52822d</version>
+            </dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
