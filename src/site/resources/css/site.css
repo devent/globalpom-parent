@@ -1,0 +1,110 @@
+/**
+ * Copyright 2011-2015 Erwin Müller <erwin.mueller@deventm.org>
+ *
+ * This file is part of globalpom-parent.
+ *
+ * globalpom-parent is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by the
+ * Free Software Foundation, either version 3 of the License, or (at your
+ * option) any later version.
+ *
+ * globalpom-parent is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with globalpom-parent. If not, see <http://www.gnu.org/licenses/>.
+ */
+h2, h3, h4, h5, h6 {
+    color: #4088b8;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+h2 {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #dadada;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+h5 {
+    font-size: 100%;
+    font-style: italic;
+}
+
+h6 {
+    font-size: 100%;
+    font-style: italic;
+}
+
+p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+}
+
+a {
+    color: #4088b8;
+    font-weight: 500;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+a.externalLink[href^="http"] {
+    background-color: transparent;
+    background-image: url("../images/external-link-blue-light05-Shapes4FREE.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding-right: 18px;
+}
+
+a.externalLink[href^="https"] {
+    background-color: transparent;
+    background-image: url("../images/external-link-blue-light05-Shapes4FREE.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    padding-right: 18px;
+}
+
+ul, ol, dl {
+    font-size: 100%;
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    margin-left: 35px;
+}
+
+div.section > img {
+    margin-bottom: 1em;
+}
