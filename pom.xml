@@ -5,7 +5,7 @@
 
 	<groupId>com.anrisoftware.globalpom</groupId>
 	<artifactId>globalpom-parent</artifactId>
-	<version>1.40</version>
+	<version>1.41-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Global POM :: Parent</name>
 	<description>Declares all dependencies and all Maven plug-ins needed for a
@@ -52,7 +52,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 		<project.custom.groovy-eclipse-batch.version>2.4.3-01</project.custom.groovy-eclipse-batch.version>
 		<project.custom.source.source>1.6</project.custom.source.source>
 		<project.custom.source.target>1.6</project.custom.source.target>
-		<project.custom.current.year>2015</project.custom.current.year>
+		<project.custom.current.year>2016</project.custom.current.year>
 		<project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
 		<project.custom.user.name>Erwin Müller</project.custom.user.name>
 		<project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
