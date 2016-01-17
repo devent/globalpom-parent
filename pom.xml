@@ -68,7 +68,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 	</scm>
 
 	<prerequisites>
-        <maven>2.2.1</maven>
+        <maven>3.0.5</maven>
     </prerequisites>
 
 	<dependencies>
