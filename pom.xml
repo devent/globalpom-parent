@@ -65,6 +65,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.hibernate.version>5.2.2.Final</project.custom.hibernate.version>
         <project.custom.hibernate-validator.version>5.2.4.Final</project.custom.hibernate-validator.version>
         <project.custom.spring-boot.version>1.4.1.RELEASE</project.custom.spring-boot.version>
+        <project.custom.flywaydb.version>4.0.3</project.custom.flywaydb.version>
     </properties>
 
     <scm>
@@ -1028,6 +1029,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${project.custom.spring-boot.version}</version>
+            </dependency>
+
+            <!-- flywaydb -->
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${project.custom.flywaydb.version}</version>
             </dependency>
 
         </dependencies>
