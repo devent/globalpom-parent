@@ -64,6 +64,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.cxf.version>3.1.7</project.custom.cxf.version>
         <project.custom.hibernate.version>5.2.2.Final</project.custom.hibernate.version>
         <project.custom.hibernate-validator.version>5.2.4.Final</project.custom.hibernate-validator.version>
+        <project.custom.spring-boot.version>1.4.1.RELEASE</project.custom.spring-boot.version>
     </properties>
 
     <scm>
@@ -1015,6 +1016,18 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
                 <version>2.5</version>
+            </dependency>
+
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${project.custom.spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${project.custom.spring-boot.version}</version>
             </dependency>
 
         </dependencies>
