@@ -66,6 +66,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.hibernate-validator.version>5.2.4.Final</project.custom.hibernate-validator.version>
         <project.custom.spring-boot.version>1.4.1.RELEASE</project.custom.spring-boot.version>
         <project.custom.flywaydb.version>4.0.3</project.custom.flywaydb.version>
+        <project.custom.flywaydb.flyway-test-extensions.version>4.0.1</project.custom.flywaydb.flyway-test-extensions.version>
     </properties>
 
     <scm>
@@ -1036,6 +1037,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
                 <version>${project.custom.flywaydb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb.flyway-test-extensions</groupId>
+                <artifactId>flyway-spring4-test</artifactId>
+                <version>${project.custom.flywaydb.flyway-test-extensions.version}</version>
             </dependency>
 
         </dependencies>
