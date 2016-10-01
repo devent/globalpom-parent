@@ -90,6 +90,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.flywaydb.version>4.0.3</project.custom.flywaydb.version>
         <project.custom.flywaydb.flyway-test-extensions.version>4.0.1</project.custom.flywaydb.flyway-test-extensions.version>
         <project.custom.fasterxml.version>2.8.3</project.custom.fasterxml.version>
+        <project.custom.httpcomponents.version>4.5.2</project.custom.httpcomponents.version>
     </properties>
 
     <scm>
@@ -1646,6 +1647,18 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-joda</artifactId>
                 <version>${project.custom.fasterxml.version}</version>
+            </dependency>
+
+            <!-- REST Request -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${project.custom.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>fluent-hc</artifactId>
+                <version>${project.custom.httpcomponents.version}</version>
             </dependency>
 
         </dependencies>
