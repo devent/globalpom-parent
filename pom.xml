@@ -89,6 +89,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-ws.version>2.3.0.RELEASE</spring-ws.version>
         <project.custom.flywaydb.version>4.0.3</project.custom.flywaydb.version>
         <project.custom.flywaydb.flyway-test-extensions.version>4.0.1</project.custom.flywaydb.flyway-test-extensions.version>
+        <project.custom.fasterxml.version>2.8.3</project.custom.fasterxml.version>
     </properties>
 
     <scm>
@@ -1623,6 +1624,28 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>org.flywaydb.flyway-test-extensions</groupId>
                 <artifactId>flyway-spring4-test</artifactId>
                 <version>${project.custom.flywaydb.flyway-test-extensions.version}</version>
+            </dependency>
+
+            <!-- fasterxml -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${project.custom.fasterxml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${project.custom.fasterxml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${project.custom.fasterxml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-joda</artifactId>
+                <version>${project.custom.fasterxml.version}</version>
             </dependency>
 
         </dependencies>
