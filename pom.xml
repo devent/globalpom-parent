@@ -1661,6 +1661,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>${project.custom.httpcomponents.version}</version>
             </dependency>
 
+            <!-- jopendocument -->
+            <dependency>
+                <groupId>org.jopendocument</groupId>
+                <artifactId>jOpenDocument</artifactId>
+                <version>1.3</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
