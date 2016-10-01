@@ -4,8 +4,8 @@
 
 Declares all dependencies and all maven plugins needed for a
 Advanced Natural Research Institute software
-project. It will declare the listed properties, add plugin to deploy
-source and test sources and deploy the project-tests with the project jar.
+project. It declares the properties, adds plugin to deploy
+source and test sources and deploys the project-tests with the project jar.
 
 ## SCM
 
@@ -17,11 +17,12 @@ source and test sources and deploy the project-tests with the project jar.
 ## Maven
 
 ```
-<dependency>
+<parent>
     <groupId>com.anrisoftware.globalpom</groupId>
-    <artifactId>globalpom-log</artifactId>
+    <artifactId>globalpom-parent</artifactId>
     <version>2.2</version>
-</dependency>
+    <relativePath />
+</parent>
 ```
 
 # License
