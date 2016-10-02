@@ -959,11 +959,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-entitymanager</artifactId>
-                <version>${project.custom.hibernate.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${project.custom.hibernate.version}</version>
             </dependency>
@@ -1359,17 +1354,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>${project.custom.spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${project.custom.spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
                 <version>${project.custom.spring-boot.version}</version>
             </dependency>
 
