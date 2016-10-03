@@ -19,7 +19,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <developer>
             <id>EM</id>
             <name>Erwin Müller</name>
-            <organization>Advanced Natural Research Insitute</organization>
+            <organization>Advanced Natural Research Institute</organization>
             <email>erwin.mueller@deventm.org</email>
             <roles>
                 <role>Owner</role>
