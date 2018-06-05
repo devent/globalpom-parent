@@ -36,7 +36,9 @@ spec:
 
         stage("checkout") {
             steps {
-                checkout scm
+                container('maven') {
+                    checkout scm
+                }
             }
         }
 
@@ -44,7 +46,7 @@ spec:
             steps {
                 container('maven') {
                     sh 'mvn -version'
-                    sh 'mount'
+                    sh 'ls -al'
                 }
                 container('busybox') {
                     sh '/bin/busybox'
