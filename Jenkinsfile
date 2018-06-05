@@ -23,11 +23,14 @@ spec:
     command:
     - cat
     tty: true
-  - name: busybox
-    image: busybox
-    command:
-    - cat
-    tty: true
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: muellerpublic.de/anrisoftware-com
+          operator: In
+          values:
+          - required
 """
         }
     }
@@ -42,14 +45,18 @@ spec:
             }
         }
 
-        stage('Run maven') {
+        stage('Compile Code') {
             steps {
                 container('maven') {
-                    sh 'mvn -version'
-                    sh 'ls -al'
+                    sh 'mvn compile'
                 }
-                container('busybox') {
-                    sh '/bin/busybox'
+            }
+        }
+
+        stage('Test Code') {
+            steps {
+                container('maven') {
+                    sh 'mvn test'
                 }
             }
         }
