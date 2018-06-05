@@ -33,9 +33,13 @@ spec:
     }
 
     stages {
+
         stage("checkout") {
-            checkout scm
+            steps {
+                checkout scm
+            }
         }
+
         stage('Run maven') {
             steps {
                 container('maven') {
@@ -47,5 +51,6 @@ spec:
                 }
             }
         }
+
     }
 }
