@@ -43,6 +43,7 @@ spec:
                     checkout scm
                     sh "pwd"
                     sh "ls -al"
+                    sh "find /home/jenkins -name '.m2' -type d"
                 }
             }
         }
