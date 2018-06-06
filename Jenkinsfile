@@ -50,9 +50,10 @@ spec:
         stage("checkout") {
             steps {
                 container('maven') {
-                    checkout scm
                     sh "pwd"
                     sh "ls -al"
+                    sh "echo \$HOME"
+                    checkout scm
                 }
             }
         }
