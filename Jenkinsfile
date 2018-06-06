@@ -23,12 +23,10 @@ spec:
     command:
     - cat
     env:
-    - name: HOME
-      value: /tmp/jenkins
     - name: MAVEN_OPTS
       value: "-Xms450m -Xmx450G"
     volumeMounts:
-    - mountPath: /tmp/jenkins/.m2/repository
+    - mountPath: /root/.m2/repository
       name: jenkins
       subPath: m2-repository
     resources:
@@ -36,9 +34,6 @@ spec:
         cpu: 0.5
         memory: 500Mi
     tty: true
-    securityContext:
-      runAsUser: 10000
-      fsGroup: 10000
   volumes:
   - name: jenkins
     persistentVolumeClaim:
@@ -64,7 +59,7 @@ spec:
                     sh "ls -al"
                     sh "echo \$HOME"
                     checkout scm
-                    sh "ls -l /home/jenkins/workspace"
+                    sh "ls -l /root/.m2/repository"
                 }
             }
         }
@@ -73,8 +68,8 @@ spec:
             steps {
                 container('maven') {
                     sh 'mvn compile'
-                    sh "ls -l /home/jenkins/workspace/globalpom-parent_develop-57Y33K7ONP6L4UZ4UOI2IT2V2KTL4C6JOJPZ5PEYHKZPQ6OSZFVA/?/.m2"
-                    sh "ls -l /tmp/jenkins/.m2"
+                    sh "ls -l /home/jenkins/workspace/globalpom-parent_develop-57Y33K7ONP6L4UZ4UOI2IT2V2KTL4C6JOJPZ5PEYHKZPQ6OSZFVA/?/.m2/*"
+                    sh "ls -l /root/.m2/repository/*"
                 }
             }
         }
