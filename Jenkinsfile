@@ -41,6 +41,8 @@ spec:
             steps {
                 container('maven') {
                     checkout scm
+                    sh "pwd"
+                    sh "ls -al"
                 }
             }
         }
