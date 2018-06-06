@@ -35,8 +35,8 @@ spec:
       fsGroup: 10000
     volumeMounts:
     - mountPath: /home/jenkins/workspace
-        name: jenkins
-        subPath: workspace
+      name: jenkins
+      subPath: workspace
   volumes:
   - name: jenkins
     persistentVolumeClaim:
