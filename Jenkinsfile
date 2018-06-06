@@ -23,6 +23,8 @@ spec:
     command:
     - cat
     env:
+    - name: HOME
+      value: "/home/jenkins"
     - name: MAVEN_OPTS
       value: "-Xms450m -Xmx450G"
     resources:
@@ -33,14 +35,6 @@ spec:
     securityContext:
       runAsUser: 10000
       fsGroup: 10000
-    volumeMounts:
-    - mountPath: /home/jenkins/workspace
-      name: jenkins
-      subPath: workspace
-  volumes:
-  - name: jenkins
-    persistentVolumeClaim:
-      claimName: jenkins
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
