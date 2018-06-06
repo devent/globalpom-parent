@@ -27,7 +27,11 @@ spec:
       value: "/home/jenkins"
     - name: MAVEN_OPTS
       value: "-Xms450m -Xmx450G"
-    resources:
+    volumeMounts:
+    - mountPath: /root/.m2/repository
+      name: jenkins
+      subPath: m2-repository
+   resources:
       limits:
         cpu: 0.5
         memory: 500Mi
@@ -35,6 +39,10 @@ spec:
     securityContext:
       runAsUser: 10000
       fsGroup: 10000
+  volumes:
+  - name: jenkins
+    persistentVolumeClaim:
+      claimName: jenkins
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
