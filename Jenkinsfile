@@ -22,6 +22,13 @@ spec:
     image: maven:alpine
     command:
     - cat
+    env:
+    - name: MAVEN_OPTS
+      value: "-Xms450m -Xmx450G"
+    resources:
+      limits:
+        cpu: 0.5
+        memory: 500Mi
     tty: true
     securityContext:
       runAsUser: 1000
