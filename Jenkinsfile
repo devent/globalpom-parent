@@ -23,6 +23,9 @@ spec:
     command:
     - cat
     tty: true
+    securityContext:
+      runAsUser: 1000
+      fsGroup: 1000
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
@@ -43,7 +46,6 @@ spec:
                     checkout scm
                     sh "pwd"
                     sh "ls -al"
-                    sh "find /home/jenkins -name '.m2' -type d"
                 }
             }
         }
@@ -52,6 +54,7 @@ spec:
             steps {
                 container('maven') {
                     sh 'mvn compile'
+                    sh "find / -name '.m2' -type d"
                 }
             }
         }
