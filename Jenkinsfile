@@ -23,8 +23,6 @@ spec:
     command:
     - cat
     env:
-    - name: HOME
-      value: "/home/jenkins"
     - name: MAVEN_OPTS
       value: "-Xms450m -Xmx450G"
     volumeMounts:
