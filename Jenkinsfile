@@ -23,10 +23,12 @@ spec:
     command:
     - cat
     env:
+    - name: HOME
+      value: /tmp/jenkins
     - name: MAVEN_OPTS
       value: "-Xms450m -Xmx450G"
     volumeMounts:
-    - mountPath: /root/.m2/repository
+    - mountPath: /tmp/jenkins/.m2/repository
       name: jenkins
       subPath: m2-repository
     resources:
