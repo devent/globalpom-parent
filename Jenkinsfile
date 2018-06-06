@@ -31,10 +31,10 @@ spec:
     - mountPath: /root/.m2/repository
       name: jenkins
       subPath: m2-repository
-   resources:
-     limits:
-       cpu: 0.5
-       memory: 500Mi
+    resources:
+      limits:
+        cpu: 0.5
+        memory: 500Mi
     tty: true
     securityContext:
       runAsUser: 10000
