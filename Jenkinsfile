@@ -31,8 +31,16 @@ spec:
         memory: 500Mi
     tty: true
     securityContext:
-      runAsUser: 1000
-      fsGroup: 1000
+      runAsUser: 10000
+      fsGroup: 10000
+    volumeMounts:
+    - mountPath: /home/jenkins/workspace
+        name: jenkins
+        subPath: workspace
+  volumes:
+  - name: jenkins
+    persistentVolumeClaim:
+      claimName: jenkins
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
@@ -54,6 +62,7 @@ spec:
                     sh "ls -al"
                     sh "echo \$HOME"
                     checkout scm
+                    sh "ls -l /home/jenkins/workspace"
                 }
             }
         }
