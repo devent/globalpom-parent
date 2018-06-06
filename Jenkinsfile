@@ -73,7 +73,8 @@ spec:
             steps {
                 container('maven') {
                     sh 'mvn compile'
-                    sh "find / -name '.m2' -type d"
+                    sh "ls -l /home/jenkins/workspace/globalpom-parent_develop-57Y33K7ONP6L4UZ4UOI2IT2V2KTL4C6JOJPZ5PEYHKZPQ6OSZFVA/?/.m2"
+                    sh "ls -l /tmp/jenkins/.m2"
                 }
             }
         }
