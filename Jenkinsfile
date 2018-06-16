@@ -23,7 +23,9 @@ pipeline {
         stage('Compile Code') {
             steps {
                 container('maven') {
-                    sh 'mvn compile'
+                    withMaven() {
+                        sh 'mvn compile'
+                    }
                 }
             }
         }
