@@ -30,11 +30,11 @@ pipeline {
             }
         }
 
-        stage('Test Code') {
+        stage('Deploy') {
             steps {
                 container('maven') {
                     withMaven() {
-                        sh '$MVN_CMD test'
+                        sh '$MVN_CMD deploy'
                     }
                 }
             }
