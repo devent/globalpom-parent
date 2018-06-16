@@ -24,7 +24,7 @@ pipeline {
             steps {
                 container('maven') {
                     withMaven() {
-                        sh 'mvn compile'
+                        sh '$MVN_CMD compile'
                     }
                 }
             }
@@ -33,7 +33,7 @@ pipeline {
         stage('Test Code') {
             steps {
                 container('maven') {
-                    sh 'mvn test'
+                    sh '$MVN_CMD test'
                 }
             }
         }
