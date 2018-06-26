@@ -27,6 +27,7 @@ pipeline {
                     configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY')]) {
                         sh '''
                             mkdir ~/.gnupg
+                            chmod 700 ~/.gnupg
                             echo "use-agent" >> ~/.gnupg/gpg.conf
                             echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
                             echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
@@ -54,8 +55,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 container('maven') {
-                    withMaven() {
-                        sh '$MVN_CMD deploy'
+                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                        withMaven() {
+                            sh '$MVN_CMD deploy'
+                        }
                     }
                 }
             }
