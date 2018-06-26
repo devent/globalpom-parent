@@ -26,7 +26,7 @@ pipeline {
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'PASSPHRASE')]) {
                     configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY')]) {
                         sh '''
-                            mkdir .gnupg
+                            mkdir ~/.gnupg
                             echo "use-agent" >> ~/.gnupg/gpg.conf
                             echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
                             echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
