@@ -33,6 +33,8 @@ pipeline {
                             echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
                             echo RELOADAGENT | gpg-connect-agent
                             echo "$PASSPHRASE" | base64 -d | gpg --passphrase-fd 0 --allow-secret-key-import --import $GPG_KEY
+                            echo "document" > doc
+                            echo "$PASSPHRASE" | base64 -d | gpg --no-tty --batch --passphrase-fd 0 --output doc.sig --sign doc
                         '''
                     }
                     }
