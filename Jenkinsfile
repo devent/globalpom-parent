@@ -12,7 +12,7 @@ pipeline {
 
     stages {
 
-        stage("checkout") {
+        stage("Checkout") {
             steps {
                 container('maven') {
                     checkout scm
@@ -20,11 +20,23 @@ pipeline {
             }
         }
 
+        stage('Setup') {
+            steps {
+                container('maven') {
+                    configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY')]) {
+                        sh 'cat $GPG_KEY'
+                    }
+                }
+            }
+        }
+
         stage('Compile Code') {
             steps {
                 container('maven') {
-                    withMaven() {
-                        sh '$MVN_CMD compile'
+                    configFileProvider([configFile(fileId: 'maven-settings', variable: 'MAVEN_SETTINGS')]) {
+                        withMaven() {
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS clean package'
+                        }
                     }
                 }
             }
