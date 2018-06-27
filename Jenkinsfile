@@ -23,20 +23,9 @@ pipeline {
         stage('Setup') {
             steps {
                 container('maven') {
-                    withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'PASSPHRASE')]) {
-                    configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY')]) {
-                        sh '''
-                            mkdir ~/.gnupg
-                            chmod 700 ~/.gnupg
-                            echo "use-agent" >> ~/.gnupg/gpg.conf
-                            echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-                            echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-                            echo "allow-preset-passphrase" >> ~/.gnupg/gpg-agent.conf
-                            echo RELOADAGENT | gpg-connect-agent
-                            echo "$PASSPHRASE" | base64 -d | gpg --passphrase-fd 0 --allow-secret-key-import --import $GPG_KEY
-                            echo "document" > doc
-                            echo "$PASSPHRASE" | base64 -d | gpg --no-tty --batch --passphrase-fd 0 --output doc.sig --sign doc
-                        '''
+                    withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
+                    configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
+                        sh '/setup-gpg.sh'
                     }
                     }
                 }
