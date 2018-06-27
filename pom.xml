@@ -1794,7 +1794,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1804,7 +1804,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.5.1</version>
+                    <version>3.7.1</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin signs all of the project's attached 
@@ -1818,21 +1818,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         that generates standard reports for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>2.8</version>
+                    <version>2.9</version>
                 </plugin>
                 <plugin>
                     <!-- The Compiler Plugin is used to compile the sources 
                         of your project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3</version>
+                    <version>3.7.0</version>
                 </plugin>
                 <plugin>
                     <!-- Provides utility goals to work with dependencies 
                         like copying, unpacking, analyzing, resolving and many more. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.10</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <!-- The Resources Plugin handles the copying of project 
@@ -1843,21 +1843,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         of resources for the main source code and its unit tests. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>2.7</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- Builds a Java Archive (JAR) file from the compiled 
                         project classes and resources. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Maven 2 Source Plugin creates a JAR archive 
                         of the source files of the current project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.0.1</version>
                 </plugin>
                 <plugin>
                     <!-- Uploads the project artifacts to the internal remote 
@@ -1871,20 +1871,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         uses the javadoc tool for generating javadocs for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.2</version>
+                    <version>3.0.1</version>
                 </plugin>
                 <plugin>
                     <!-- The Loving Iron Fist of Maven -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.4</version>
+                    <version>1.4.1</version>
                 </plugin>
                 <plugin>
                     <!-- A Maven plugin to create archives of your project's 
                         sources, classes, dependencies etc. from flexible assembly descriptors. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Surefire Report Plugin parses the generated 
@@ -1892,7 +1892,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         to DOXIA which creates the web interface version of the test results. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>2.18.1</version>
+                    <version>2.22.0</version>
                 </plugin>
                 <plugin>
                     <!-- The JXR Plugin produces a cross-reference of the 
@@ -1909,14 +1909,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         as well as being able to fail the build based on these metrics. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.4</version>
+                    <version>3.10.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin contains various small independent goals 
                         to assist with Maven build lifecycle -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>1.10</version>
+                    <version>3.0.0</version>
                 </plugin>
                 <plugin>
                     <!-- Maven 2 plugin to check and update license headers 
@@ -1929,14 +1929,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <!-- Maven plugin for IzPack -->
                     <groupId>org.codehaus.izpack</groupId>
                     <artifactId>izpack-maven-plugin</artifactId>
-                    <version>5.0.5</version>
+                    <version>5.1.2</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin creates Windows executables from Java 
                         jar files using the Launch4j utility. -->
                     <groupId>com.akathist.maven.plugins.launch4j</groupId>
                     <artifactId>launch4j-maven-plugin</artifactId>
-                    <version>1.7.8</version>
+                    <version>1.7.22</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin is designed to give you a build number. 
@@ -1944,7 +1944,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         between them all. -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
-                    <version>1.3</version>
+                    <version>1.4</version>
                 </plugin>
                 <!-- As all Groovy artifacts and mixed Groovy/Java artifacts 
                     must generate javadoc to release to central, this provides a nice mechanism 
@@ -1954,27 +1954,27 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <!-- MIT License -->
                     <groupId>com.bluetrainsoftware.maven</groupId>
                     <artifactId>groovydoc-maven-plugin</artifactId>
-                    <version>1.3</version>
+                    <version>2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.5.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.aries.blueprint</groupId>
                     <artifactId>blueprint-maven-plugin</artifactId>
-                    <version>1.3.0</version>
+                    <version>1.10.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.servicemix.tooling</groupId>
                     <artifactId>depends-maven-plugin</artifactId>
-                    <version>1.3.1</version>
+                    <version>1.4.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.21.0</version>
+                    <version>1.26.0</version>
                 </plugin>
                 <plugin>
                     <!--This plugin's configuration is used to store Eclipse 
@@ -2058,7 +2058,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     generates standard reports for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.8</version>
+                <version>2.9</version>
             </plugin>
             <plugin>
                 <!-- The Surefire Report Plugin parses the generated TEST-*.xml 
@@ -2066,14 +2066,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     which creates the web interface version of the test results. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.17</version>
+                <version>2.22.0</version>
             </plugin>
             <plugin>
                 <!-- The Apache Maven Javadoc Plugin is a plugin that uses 
                     the javadoc tool for generating javadocs for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+                <version>3.0.1</version>
             </plugin>
             <plugin>
                 <!-- The JXR Plugin produces a cross-reference of the projectʼs 
@@ -2082,7 +2082,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     for referencing errors found in the code. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.5</version>
             </plugin>
             <plugin>
                 <!-- A Maven plugin for the PMD toolkit, that produces a 
@@ -2090,7 +2090,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     as well as being able to fail the build based on these metrics. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.2</version>
+                <version>3.10.0</version>
                 <configuration>
                     <linkXref>true</linkXref>
                     <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
@@ -2103,7 +2103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     Library -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>3.5.0</version>
             </plugin>
         </plugins>
     </reporting>
