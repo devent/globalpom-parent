@@ -39,7 +39,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <issueManagement>
         <system>Redmine</system>
-        <url>https://anrisoftware.com/projects/projects/globalpom</url>
+        <url>https://project.anrisoftware.com/projects/projects/globalpom</url>
     </issueManagement>
 
     <properties>
