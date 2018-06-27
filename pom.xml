@@ -20,7 +20,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <id>EM</id>
             <name>Erwin Müller</name>
             <organization>Advanced Natural Research Institute</organization>
-            <email>erwin.mueller@deventm.org</email>
+            <email>erwin.mueller@anrisoftware.com</email>
             <roles>
                 <role>Owner</role>
                 <role>Developer</role>
@@ -55,7 +55,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.current.year>2018</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
         <project.custom.user.name>Erwin Müller</project.custom.user.name>
-        <project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
+        <project.custom.user.email>erwin.mueller@anrisoftware.com</project.custom.user.email>
         <project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
         <project.custom.slf4j.version>1.7.25</project.custom.slf4j.version>
         <project.custom.logback.version>1.2.3</project.custom.logback.version>
