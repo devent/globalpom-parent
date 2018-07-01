@@ -5,7 +5,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>2.3</version>
+    <version>4.0</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -20,7 +20,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <id>EM</id>
             <name>Erwin Müller</name>
             <organization>Advanced Natural Research Institute</organization>
-            <email>erwin.mueller@deventm.org</email>
+            <email>erwin.mueller@anrisoftware.com</email>
             <roles>
                 <role>Owner</role>
                 <role>Developer</role>
@@ -39,7 +39,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <issueManagement>
         <system>Redmine</system>
-        <url>https://anrisoftware.com/projects/projects/globalpom</url>
+        <url>https://project.anrisoftware.com/projects/projects/globalpom</url>
     </issueManagement>
 
     <properties>
@@ -47,23 +47,23 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
         <project.custom.resources.escapestring>\</project.custom.resources.escapestring>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-        <project.custom.groovy.version>2.4.7</project.custom.groovy.version>
+        <project.custom.groovy.version>2.5.0</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>2.9.2-01</project.custom.groovy-eclipse-compiler.version>
         <project.custom.groovy-eclipse-batch.version>2.4.3-01</project.custom.groovy-eclipse-batch.version>
-        <project.custom.source.source>1.6</project.custom.source.source>
-        <project.custom.source.target>1.6</project.custom.source.target>
-        <project.custom.current.year>2016</project.custom.current.year>
+        <project.custom.source.source>1.8</project.custom.source.source>
+        <project.custom.source.target>1.8</project.custom.source.target>
+        <project.custom.current.year>2018</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
         <project.custom.user.name>Erwin Müller</project.custom.user.name>
-        <project.custom.user.email>erwin.mueller@deventm.org</project.custom.user.email>
+        <project.custom.user.email>erwin.mueller@anrisoftware.com</project.custom.user.email>
         <project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
-        <project.custom.slf4j.version>1.7.21</project.custom.slf4j.version>
-        <project.custom.logback.version>1.1.7</project.custom.logback.version>
-        <project.custom.pax.exam.version>4.9.1</project.custom.pax.exam.version>
-        <project.custom.pax.url.version>2.4.7</project.custom.pax.url.version>
-        <project.custom.cxf.version>3.1.7</project.custom.cxf.version>
-        <project.custom.hibernate.version>5.2.2.Final</project.custom.hibernate.version>
-        <project.custom.hibernate-validator.version>5.2.4.Final</project.custom.hibernate-validator.version>
+        <project.custom.slf4j.version>1.7.25</project.custom.slf4j.version>
+        <project.custom.logback.version>1.2.3</project.custom.logback.version>
+        <project.custom.pax.exam.version>4.11.0</project.custom.pax.exam.version>
+        <project.custom.pax.url.version>2.5.1</project.custom.pax.url.version>
+        <project.custom.cxf.version>3.2.5</project.custom.cxf.version>
+        <project.custom.hibernate.version>5.3.1.Final</project.custom.hibernate.version>
+        <project.custom.hibernate-validator.version>6.0.10.Final</project.custom.hibernate-validator.version>
         <project.custom.spring.version>4.3.3.RELEASE</project.custom.spring.version>
         <project.custom.spring-boot.version>1.4.1.RELEASE</project.custom.spring-boot.version>
         <spring-amqp.version>1.6.2.RELEASE</spring-amqp.version>
@@ -87,10 +87,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-social-linkedin.version>1.0.2.RELEASE</spring-social-linkedin.version>
         <spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
         <spring-ws.version>2.3.0.RELEASE</spring-ws.version>
-        <project.custom.flywaydb.version>4.0.3</project.custom.flywaydb.version>
-        <project.custom.flywaydb.flyway-test-extensions.version>4.0.1</project.custom.flywaydb.flyway-test-extensions.version>
-        <project.custom.fasterxml.version>2.8.3</project.custom.fasterxml.version>
-        <project.custom.httpcomponents.version>4.5.2</project.custom.httpcomponents.version>
+        <project.custom.flywaydb.version>5.1.3</project.custom.flywaydb.version>
+        <project.custom.flywaydb.flyway-test-extensions.version>5.0.0</project.custom.flywaydb.flyway-test-extensions.version>
+        <project.custom.fasterxml.version>2.9.6</project.custom.fasterxml.version>
+        <project.custom.httpcomponents.version>4.5.5</project.custom.httpcomponents.version>
     </properties>
 
     <scm>
@@ -100,7 +100,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
     </scm>
 
     <prerequisites>
-        <maven>3.0.5</maven>
+        <maven>3.3</maven>
     </prerequisites>
 
     <distributionManagement>
@@ -362,7 +362,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
-                <version>1.12</version>
+                <version>1.17</version>
             </dependency>
             <dependency>
                 <!-- Apache Commons Lang, a package of Java utility classes 
@@ -371,7 +371,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.4</version>
+                <version>3.7</version>
             </dependency>
             <dependency>
                 <!-- The Math project is a library of lightweight, self-contained 
@@ -395,7 +395,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-vfs2</artifactId>
-                <version>2.1</version>
+                <version>2.2</version>
             </dependency>
             <dependency>
                 <!-- Contains types that extend and augment the Java Collections 
@@ -412,7 +412,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
-                <version>3.5</version>
+                <version>3.6</version>
             </dependency>
             <dependency>
                 <!-- The codec package contains simple encoder and decoders 
@@ -422,7 +422,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.10</version>
+                <version>1.11</version>
             </dependency>
             <dependency>
                 <!-- Types that extend and augment the Java Collections Framework. -->
@@ -438,7 +438,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.5</version>
+                <version>2.6</version>
             </dependency>
             <!-- Commons Transaction -->
             <dependency>
@@ -451,21 +451,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- CDDL + GPLv2 with classpath exception -->
                 <groupId>javax</groupId>
                 <artifactId>javaee-api</artifactId>
-                <version>7.0</version>
-            </dependency>
-
-            <!-- google guava -->
-            <dependency>
-                <!-- Guava is a suite of core and expanded libraries that 
-                    include utility classes, googleʼs collections, io classes, and much much 
-                    more. This project is a complete packaging of all the Guava libraries into 
-                    a single jar. Individual portions of Guava can be used by downloading the 
-                    appropriate module and its dependencies. Guava (complete) has only one code 
-                    dependency - javax. annotation, per the JSR-305 spec. -->
-                <!-- Apache 2.0 -->
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>19.0</version>
+                <version>8.0</version>
             </dependency>
 
             <!-- google guice -->
@@ -475,19 +461,19 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
-                <version>4.0</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-assistedinject</artifactId>
-                <version>4.0</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-multibindings</artifactId>
-                <version>4.0</version>
+                <version>4.2.0</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
@@ -510,7 +496,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
-                <version>3.0.1</version>
+                <version>3.0.2</version>
             </dependency>
 
             <!-- Table Layout -->
@@ -547,7 +533,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- SQLite JDBC library -->
                 <groupId>org.xerial</groupId>
                 <artifactId>sqlite-jdbc</artifactId>
-                <version>3.8.11.2</version>
+                <version>3.23.1</version>
             </dependency>
 
             <!-- args4j -->
@@ -564,7 +550,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- BSD style -->
                 <groupId>com.thoughtworks.xstream</groupId>
                 <artifactId>xstream</artifactId>
-                <version>1.4.9</version>
+                <version>1.4.10</version>
             </dependency>
 
             <!-- javacsv -->
@@ -601,7 +587,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>com.hazelcast</groupId>
                 <artifactId>hazelcast-all</artifactId>
-                <version>3.7.1</version>
+                <version>3.10.2</version>
             </dependency>
 
             <!-- piccolo2d -->
@@ -650,7 +636,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
-                <version>2.9.4</version>
+                <version>2.10</version>
             </dependency>
 
             <!-- quartz-scheduler -->
@@ -659,7 +645,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.quartz-scheduler</groupId>
                 <artifactId>quartz</artifactId>
-                <version>2.2.3</version>
+                <version>2.3.0</version>
             </dependency>
 
             <!-- EJML -->
@@ -685,7 +671,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna</artifactId>
-                <version>4.2.2</version>
+                <version>4.5.1</version>
             </dependency>
 
             <!-- substance look&feel -->
@@ -712,7 +698,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- BSD -->
                 <groupId>com.miglayout</groupId>
                 <artifactId>miglayout-swing</artifactId>
-                <version>5.0</version>
+                <version>5.1</version>
             </dependency>
 
             <!-- jfreechart -->
@@ -723,7 +709,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- LGPL -->
                 <groupId>org.jfree</groupId>
                 <artifactId>jfreechart</artifactId>
-                <version>1.0.19</version>
+                <version>1.5.0</version>
             </dependency>
 
             <!-- jdesktop -->
@@ -823,25 +809,25 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- The Apache Software License, Version 2.0 -->
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-svg-dom</artifactId>
-                <version>1.8</version>
+                <version>1.10</version>
             </dependency>
             <dependency>
                 <!-- The Apache Software License, Version 2.0 -->
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-svggen</artifactId>
-                <version>1.8</version>
+                <version>1.10</version>
             </dependency>
             <dependency>
                 <!-- The Apache Software License, Version 2.0 -->
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-awt-util</artifactId>
-                <version>1.8</version>
+                <version>1.10</version>
             </dependency>
             <dependency>
                 <!-- The Apache Software License, Version 2.0 -->
                 <groupId>org.apache.xmlgraphics</groupId>
                 <artifactId>batik-codec</artifactId>
-                <version>1.8</version>
+                <version>1.10</version>
             </dependency>
 
             <!-- Java Annotation and Processor to simplify the use of the 
@@ -857,12 +843,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr</artifactId>
-                <version>2.0.6</version>
+                <version>2.1.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr.annotations</artifactId>
-                <version>1.11.0</version>
+                <version>1.12.0</version>
             </dependency>
 
             <!-- pax exam dependencies -->
@@ -904,19 +890,19 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.framework</artifactId>
-                <version>5.4.0</version>
+                <version>5.6.10</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.cdi</groupId>
                 <artifactId>pax-cdi-api</artifactId>
-                <version>0.12.0</version>
+                <version>1.0.0</version>
             </dependency>
 
             <!-- karaf dependencies -->
             <dependency>
                 <groupId>org.apache.karaf.shell</groupId>
                 <artifactId>org.apache.karaf.shell.core</artifactId>
-                <version>4.0.6</version>
+                <version>4.2.0</version>
             </dependency>
 
             <!-- osgi dependencies -->
@@ -933,7 +919,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.servicemix.bundles</groupId>
                 <artifactId>org.apache.servicemix.bundles.javax-inject</artifactId>
-                <version>1_2</version>
+                <version>1_3</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.servicemix.bundles</groupId>
@@ -950,12 +936,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>javax.transaction</groupId>
                 <artifactId>javax.transaction-api</artifactId>
-                <version>1.2</version>
+                <version>1.3</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
                 <artifactId>hibernate-jpa-2.1-api</artifactId>
-                <version>1.0.0.Final</version>
+                <version>1.0.2.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -1002,13 +988,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <version>1.4.192</version>
+                <version>1.4.197</version>
             </dependency>
 
             <dependency>
                 <groupId>javax.enterprise</groupId>
                 <artifactId>cdi-api</artifactId>
-                <version>1.2</version>
+                <version>2.0</version>
             </dependency>
 
             <dependency>
@@ -1030,13 +1016,15 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.testing.osgi-mock</artifactId>
-                <version>2.1.0</version>
+                <version>2.3.8</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
             <dependency>
                 <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
-                <version>2.5</version>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
             </dependency>
 
             <!-- spring -->
@@ -1806,7 +1794,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1816,7 +1804,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.5.1</version>
+                    <version>3.7.1</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin signs all of the project's attached 
@@ -1830,21 +1818,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         that generates standard reports for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>2.8</version>
+                    <version>2.9</version>
                 </plugin>
                 <plugin>
                     <!-- The Compiler Plugin is used to compile the sources 
                         of your project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3</version>
+                    <version>3.7.0</version>
                 </plugin>
                 <plugin>
                     <!-- Provides utility goals to work with dependencies 
                         like copying, unpacking, analyzing, resolving and many more. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.10</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <!-- The Resources Plugin handles the copying of project 
@@ -1855,21 +1843,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         of resources for the main source code and its unit tests. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>2.7</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- Builds a Java Archive (JAR) file from the compiled 
                         project classes and resources. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.6</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Maven 2 Source Plugin creates a JAR archive 
                         of the source files of the current project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>3.0.1</version>
                 </plugin>
                 <plugin>
                     <!-- Uploads the project artifacts to the internal remote 
@@ -1883,20 +1871,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         uses the javadoc tool for generating javadocs for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.2</version>
+                    <version>3.0.1</version>
                 </plugin>
                 <plugin>
                     <!-- The Loving Iron Fist of Maven -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.4</version>
+                    <version>1.4.1</version>
                 </plugin>
                 <plugin>
                     <!-- A Maven plugin to create archives of your project's 
                         sources, classes, dependencies etc. from flexible assembly descriptors. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Surefire Report Plugin parses the generated 
@@ -1904,7 +1892,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         to DOXIA which creates the web interface version of the test results. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>2.18.1</version>
+                    <version>2.22.0</version>
                 </plugin>
                 <plugin>
                     <!-- The JXR Plugin produces a cross-reference of the 
@@ -1921,14 +1909,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         as well as being able to fail the build based on these metrics. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.4</version>
+                    <version>3.10.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin contains various small independent goals 
                         to assist with Maven build lifecycle -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>1.10</version>
+                    <version>3.0.0</version>
                 </plugin>
                 <plugin>
                     <!-- Maven 2 plugin to check and update license headers 
@@ -1941,14 +1929,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <!-- Maven plugin for IzPack -->
                     <groupId>org.codehaus.izpack</groupId>
                     <artifactId>izpack-maven-plugin</artifactId>
-                    <version>5.0.5</version>
+                    <version>5.1.2</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin creates Windows executables from Java 
                         jar files using the Launch4j utility. -->
                     <groupId>com.akathist.maven.plugins.launch4j</groupId>
                     <artifactId>launch4j-maven-plugin</artifactId>
-                    <version>1.7.8</version>
+                    <version>1.7.22</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin is designed to give you a build number. 
@@ -1956,7 +1944,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         between them all. -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
-                    <version>1.3</version>
+                    <version>1.4</version>
                 </plugin>
                 <!-- As all Groovy artifacts and mixed Groovy/Java artifacts 
                     must generate javadoc to release to central, this provides a nice mechanism 
@@ -1966,27 +1954,27 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <!-- MIT License -->
                     <groupId>com.bluetrainsoftware.maven</groupId>
                     <artifactId>groovydoc-maven-plugin</artifactId>
-                    <version>1.3</version>
+                    <version>2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.5.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.aries.blueprint</groupId>
                     <artifactId>blueprint-maven-plugin</artifactId>
-                    <version>1.3.0</version>
+                    <version>1.10.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.servicemix.tooling</groupId>
                     <artifactId>depends-maven-plugin</artifactId>
-                    <version>1.3.1</version>
+                    <version>1.4.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.21.0</version>
+                    <version>1.26.0</version>
                 </plugin>
                 <plugin>
                     <!--This plugin's configuration is used to store Eclipse 
@@ -2070,7 +2058,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     generates standard reports for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.8</version>
+                <version>2.9</version>
             </plugin>
             <plugin>
                 <!-- The Surefire Report Plugin parses the generated TEST-*.xml 
@@ -2078,14 +2066,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     which creates the web interface version of the test results. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.17</version>
+                <version>2.22.0</version>
             </plugin>
             <plugin>
                 <!-- The Apache Maven Javadoc Plugin is a plugin that uses 
                     the javadoc tool for generating javadocs for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+                <version>3.0.1</version>
             </plugin>
             <plugin>
                 <!-- The JXR Plugin produces a cross-reference of the projectʼs 
@@ -2094,7 +2082,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     for referencing errors found in the code. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.5</version>
             </plugin>
             <plugin>
                 <!-- A Maven plugin for the PMD toolkit, that produces a 
@@ -2102,7 +2090,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     as well as being able to fail the build based on these metrics. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.2</version>
+                <version>3.10.0</version>
                 <configuration>
                     <linkXref>true</linkXref>
                     <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
@@ -2115,7 +2103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     Library -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>3.5.0</version>
             </plugin>
         </plugins>
     </reporting>
