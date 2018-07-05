@@ -116,6 +116,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <id>osssonatype_snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>anrisoftware</id>
+            <url>https://maven.anrisoftware.com/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>anrisoftware_snapshots</id>
+            <url>https://maven.anrisoftware.com/repository/snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencyManagement>
