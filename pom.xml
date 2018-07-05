@@ -2110,6 +2110,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <profiles>
         <profile>
+            <id>private-repository</id>
+            <distributionManagement>
+                <repository>
+                    <id>anrisoftware</id>
+                    <url>https://maven.anrisoftware.com/repository/internal/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>anrisoftware_snapshots</id>
+                    <url>https://maven.anrisoftware.com/repository/snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
             <!-- Activate profile with -Psign-artifact -->
             <id>sign-artifact</id>
             <build>
