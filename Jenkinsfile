@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy Public') {
             steps {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
@@ -56,5 +56,16 @@ pipeline {
             }
         }
 
+        stage('Deploy Private') {
+            steps {
+                container('maven') {
+                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                        withMaven() {
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS deploy -P private-repository'
+                        }
+                    }
+                }
+            }
+        }
     }
 }
