@@ -25,7 +25,7 @@ pipeline {
                 container('maven') {
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
                         configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
-                            sleep time: "1", unit: "HOURS"
+                            sleep time: 1, unit: "HOURS"
                             sh '/setup-gpg.sh'
                         }
                     }
