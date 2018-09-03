@@ -45,7 +45,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
 	<issueManagement>
 		<system>Redmine</system>
-		<url>https://project.anrisoftware.com/projects/projects/globalpom</url>
+		<url>https://project.anrisoftware.com/projects/globalpom</url>
 	</issueManagement>
 
 	<properties>
@@ -113,8 +113,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
 	<distributionManagement>
 		<site>
-			<id>anrisoftware</id>
-			<url>dav:https://anrisoftware.com/javadoc/${project.groupId}/${project.artifactId}</url>
+			<id>site-dav</id>
+			<url>${site.dav.url}</url>
 		</site>
 		<repository>
 			<id>osssonatype</id>
