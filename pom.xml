@@ -104,7 +104,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 	<scm>
 		<connection>scm:git:git@anrisoftware.com:globalpom-parent.git</connection>
 		<developerConnection>scm:git:git@anrisoftware.com:globalpom-parent.git</developerConnection>
-		<url>https://anrisoftware.com/projects/projects/globalpom/repository</url>
+		<url>https://anrisoftware.com/projects/globalpom/repository</url>
 	</scm>
 
 	<prerequisites>
