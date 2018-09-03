@@ -25,8 +25,6 @@ pipeline {
                 container('maven') {
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
                         configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
-                            sh "echo $GPG_PASSPHRASE > /tmp/gpg-passphrase"
-                            sh "sed -i -e 's/set -e/set -ex/' /setup-gpg.sh"
                             sh '/setup-gpg.sh'
                         }
                     }
