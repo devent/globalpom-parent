@@ -117,12 +117,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
 			<url>${site.dav.url}</url>
 		</site>
 		<repository>
-			<id>osssonatype</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+			<id>public_releases</id>
+			<url>https://maven.anrisoftware.com/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>osssonatype_snapshots</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>public_snapshots</id>
+			<url>https://maven.anrisoftware.com/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -2136,6 +2136,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
+
+        <profile>
+            <id>osssonatype</id>
+            <distributionManagement>
+                <repository>
+                    <id>osssonatype_releases</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+                </repository>
+                <snapshotRepository>
+                    <id>osssonatype_snapshots</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
 
 		<profile>
 			<!-- Activate profile with -Psign-artifact -->
