@@ -2073,7 +2073,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 					standard reports for the specified project. -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>2.9</version>
+				<version>3.0.0</version>
 			</plugin>
 			<plugin>
 				<!-- The Surefire Report Plugin parses the generated TEST-*.xml files
@@ -2117,7 +2117,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 				<!-- This Plug-In generates reports based on the FindBugs Library -->
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.5.0</version>
+				<version>3.0.5</version>
 			</plugin>
 		</plugins>
 	</reporting>
