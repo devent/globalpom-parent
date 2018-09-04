@@ -113,8 +113,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
 	<distributionManagement>
 		<site>
-			<id>site-dav</id>
-			<url>${site.dav.url}</url>
+			<id>site-ssh</id>
+			<url>${site.ssh.url}</url>
 		</site>
 		<repository>
 			<id>public_releases</id>
