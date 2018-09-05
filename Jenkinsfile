@@ -53,8 +53,8 @@ pipeline {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         withMaven() {
                         	sleep time: 2, unit: "HOURS"
-                            //sh '$MVN_CMD -s $MAVEN_SETTINGS release:prepare'
-                            //sh '$MVN_CMD -s $MAVEN_SETTINGS release:perform'
+                            //sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
+                            //sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
                         }
                     }
                 }
