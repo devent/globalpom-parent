@@ -3,7 +3,7 @@ pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: "3"))
         disableConcurrentBuilds()
-        timeout(time: 10, unit: "MINUTES")
+        timeout(time: 10, unit: "HOURS")
     }
 
     agent {
@@ -44,28 +44,22 @@ pipeline {
             }
         }
 
-        stage('Deploy Public') {
+        stage('Release') {
+    		when {
+		        branch "develop"
+			}
             steps {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS deploy'
+                        	sleep time: 2, unit: "HOURS"
+                            //sh '$MVN_CMD -s $MAVEN_SETTINGS release:prepare'
+                            //sh '$MVN_CMD -s $MAVEN_SETTINGS release:perform'
                         }
                     }
                 }
             }
         }
 
-        stage('Deploy Private') {
-            steps {
-                container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS deploy -P private-repository'
-                        }
-                    }
-                }
-            }
-        }
     }
 }
