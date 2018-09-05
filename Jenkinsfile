@@ -50,7 +50,7 @@ pipeline {
 			}
             steps {
                 container('maven') {
-					withCredentials([sshUserPrivateKey(credentialsId: 'jenkins', keyFileVariable: 'jenkins-id', passphraseVariable: 'jenkins-pass', usernameVariable: 'jenkins-user')]) {
+					withCredentials([sshUserPrivateKey(credentialsId: 'jenkins', keyFileVariable: 'jenkins_id', passphraseVariable: 'jenkins_pass', usernameVariable: 'jenkins_user')]) {
                     	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         	withMaven() {
                         		sh 'ssh-keyscan anrisoftware.com > /etc/ssh/ssh_known_hosts'
