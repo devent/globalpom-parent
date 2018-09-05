@@ -47,12 +47,12 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
     <bannerRight>
         <name>Advanced Natural Research Institute Projects</name>
         <src>images/anri_logo_48.png</src>
-        <href>https://anrisoftware.com/projects</href>
+        <href>https://project.anrisoftware.com/</href>
     </bannerRight>
     <skin>
         <groupId>org.apache.maven.skins</groupId>
         <artifactId>maven-fluido-skin</artifactId>
-        <version>1.5</version>
+        <version>1.7</version>
     </skin>
     <body>
         <links>
@@ -60,11 +60,12 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
         </links>
         <menu name="Overview">
             <item name="Home" href="/index.html" />
-            <item name="Download" href="https://anrisoftware.com/l/48" />
-            <item name="Source code" href="https://anrisoftware.com/l/49" />
-            <item name="Source code (Github)" href="https://github.com/devent/globalpom-parent" />
-            <item name="Roadmap" href="https://anrisoftware.com/l/4a" />
-            <item name="Issues" href="https://anrisoftware.com/l/4b" />
+            <item name="Download (Central)" href="https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom" />
+            <item name="Source code" href="https://gitea.anrisoftware.com/anrisoftware.com/${project.artifactId}" />
+            <item name="Source code (Github)" href="https://github.com/devent/${project.artifactId}" />
+            <item name="Project Home" href="${project.issueManagement.url}" />
+            <item name="Project Roadmap" href="${project.issueManagement.url}/roadmap" />
+            <item name="Project Issues" href="${project.issueManagement.url}/issues" />
         </menu>
         <menu ref="parent" />
         <menu ref="modules" />
