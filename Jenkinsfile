@@ -51,7 +51,7 @@ pipeline {
 			}
             steps {
                 container('maven') {
-                	sshagent (credentials: ['jenkins']) {
+					withCredentials([sshUserPrivateKey(credentialsId: 'jenkins', keyFileVariable: 'jenkins-id', passphraseVariable: 'jenkins-pass', usernameVariable: 'jenkins-user')]) {
                     	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         	withMaven() {
                         		sh 'ssh-keygen anrisoftware.com > /etc/ssh/ssh_known_hosts'
@@ -59,11 +59,11 @@ pipeline {
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
                         	}
-                    	}
+                        }
                     }
                 }
             }
-        }
+        } // stage
 
     }
 }
