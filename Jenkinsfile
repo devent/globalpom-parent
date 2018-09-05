@@ -53,7 +53,7 @@ pipeline {
 					withCredentials([sshUserPrivateKey(credentialsId: 'jenkins', keyFileVariable: 'jenkins-id', passphraseVariable: 'jenkins-pass', usernameVariable: 'jenkins-user')]) {
                     	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         	withMaven() {
-                        		sh 'ssh-keygen anrisoftware.com > /etc/ssh/ssh_known_hosts'
+                        		sh 'ssh-keyscan anrisoftware.com > /etc/ssh/ssh_known_hosts'
                         		sleep time: 1, unit: "HOURS"
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
