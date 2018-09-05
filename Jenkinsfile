@@ -54,7 +54,7 @@ pipeline {
                 	sshagent (credentials: ['jenkins']) {
                     	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         	withMaven() {
-                        		sh 'ssh-keygen > /etc/ssh/ssh_known_hosts'
+                        		sh 'ssh-keygen anrisoftware.com > /etc/ssh/ssh_known_hosts'
                         		sleep time: 1, unit: "HOURS"
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
