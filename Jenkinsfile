@@ -51,11 +51,15 @@ pipeline {
 			}
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
-                        }
+                	sshagent (credentials: ['jenkins']) {
+                    	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                        	withMaven() {
+                        		sh 'ssh-keygen > /etc/ssh/ssh_known_hosts'
+                        		sleep time: 1, unit: "HOURS"
+                            	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
+                            	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
+                        	}
+                    	}
                     }
                 }
             }
