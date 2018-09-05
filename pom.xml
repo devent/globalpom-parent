@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.0.4-SNAPSHOT</version>
+    <version>4.0.4</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -104,7 +103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <connection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</connection>
         <developerConnection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</developerConnection>
         <url>https://anrisoftware.com/projects/globalpom/repository</url>
-        <tag>HEAD</tag>
+        <tag>globalpom-parent-4.0.4</tag>
     </scm>
 
     <prerequisites>
