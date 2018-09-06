@@ -52,8 +52,9 @@ pipeline {
                 container('maven') {
 					withCredentials([sshUserPrivateKey(credentialsId: 'jenkins', keyFileVariable: 'PROJECT_SSH_FILE', passphraseVariable: 'PROJECT_SSH_USER', usernameVariable: 'PROJECT_SSH_PASS')]) {
                     	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                            sh '/setup-ssh.sh || true'
+                            sleep 60000
                         	withMaven() {
-                        	    sh '/setup-ssh.sh'
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
                             	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
                         	}
