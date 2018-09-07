@@ -53,6 +53,7 @@ pipeline {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         sh '/setup-ssh.sh'
                     	withMaven() {
+                    	    sh 'git checkout develop'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
                     	}
