@@ -49,9 +49,7 @@ pipeline {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         withMaven() {
-                            withSonarQubeEnv('sonarqube') {
-                                sh 'mvn clean package sonar:sonar'
-                            }
+                            sh 'mvn sonar:sonar'
                         }
                     }
                 }
