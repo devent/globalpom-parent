@@ -45,8 +45,16 @@ pipeline {
         }
 
         stage('SonarQube Analysis') {
-            withSonarQubeEnv('sonarqube') {
-                sh 'mvn clean package sonar:sonar'
+            steps {
+                container('maven') {
+                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                        withMaven() {
+                            withSonarQubeEnv('sonarqube') {
+                                sh 'mvn clean package sonar:sonar'
+                            }
+                        }
+                    }
+                }
             }
         }
 
