@@ -44,9 +44,15 @@ pipeline {
             }
         }
 
+        stage('SonarQube Analysis') {
+            withSonarQubeEnv('sonarqube') {
+                sh 'mvn clean package sonar:sonar'
+            }
+        }
+
         stage('Release') {
     		when {
-		        branch "develop"
+		        branch "master"
 			}
             steps {
                 container('maven') {
