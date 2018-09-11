@@ -49,7 +49,7 @@ pipeline {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         withMaven() {
-                            sh 'mvn sonar:sonar'
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
                         }
                     }
                 }
