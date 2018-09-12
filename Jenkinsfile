@@ -60,7 +60,7 @@ pipeline {
 
         stage('Release') {
     		when {
-		        branch "develop"
+		        branch 'develop'
 			}
             steps {
                 container('maven') {
@@ -70,6 +70,21 @@ pipeline {
                     	    sh 'git checkout develop'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
+                    	}
+                    }
+                }
+            }
+        } // stage
+
+        stage('Publish') {
+    		when {
+		        branch 'master'
+			}
+            steps {
+                container('maven') {
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
+                    	    sh 'git checkout master'
                     	}
                     }
                 }
