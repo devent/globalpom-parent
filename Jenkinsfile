@@ -68,6 +68,7 @@ pipeline {
                     	withMaven() {
 	                        sh '/setup-ssh.sh'
                     	    sh 'git checkout develop'
+                    	    sh 'git pull origin develop'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
                     	}
