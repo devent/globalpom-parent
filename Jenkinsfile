@@ -86,6 +86,7 @@ pipeline {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
                     	    sh 'git checkout master'
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS -Posssonatype -B deploy'
                     	}
                     }
                 }
