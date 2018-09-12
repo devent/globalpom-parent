@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.0.6</version>
+    <version>4.0.11-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -103,7 +103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <connection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</connection>
         <developerConnection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</developerConnection>
         <url>https://anrisoftware.com/projects/globalpom/repository</url>
-        <tag>globalpom-parent-4.0.6</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <prerequisites>
@@ -2179,6 +2179,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <profile>
             <id>osssonatype</id>
             <distributionManagement>
+                <site>
+                    <id>site-ssh</id>
+                    <url>${site.ssh.url}</url>
+                </site>
                 <repository>
                     <id>osssonatype_releases</id>
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
@@ -2188,6 +2192,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <url>https://oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
             </distributionManagement>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.8</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>osssonatype_releases</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
 
         <profile>

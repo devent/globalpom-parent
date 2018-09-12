@@ -3,7 +3,7 @@ pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: "3"))
         disableConcurrentBuilds()
-        timeout(time: 10, unit: "MINUTES")
+        timeout(time: 10, unit: "HOURS")
     }
 
     agent {
@@ -44,28 +44,53 @@ pipeline {
             }
         }
 
-        stage('Deploy Public') {
+        stage('SonarQube Analysis') {
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS deploy'
-                        }
-                    }
+					withSonarQubeEnv('sonarqube') {
+	                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+	                        withMaven() {
+	                            sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
+	                        }
+	                    }
+	            	}
                 }
             }
         }
 
-        stage('Deploy Private') {
+        stage('Release') {
+    		when {
+		        branch 'develop'
+			}
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS deploy -P private-repository'
-                        }
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
+	                        sh '/setup-ssh.sh'
+                    	    sh 'git checkout develop'
+                    	    sh 'git pull origin develop'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
+                    	}
                     }
                 }
             }
-        }
+        } // stage
+
+        stage('Publish') {
+    		when {
+		        branch 'master'
+			}
+            steps {
+                container('maven') {
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
+                    	    sh 'git checkout master'
+                    	}
+                    }
+                }
+            }
+        } // stage
+
     }
 }
