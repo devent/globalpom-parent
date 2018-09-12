@@ -47,11 +47,13 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
-                        }
-                    }
+					withSonarQubeEnv('sonarqube') {
+	                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+	                        withMaven() {
+	                            sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
+	                        }
+	                    }
+	            	}
                 }
             }
         }
