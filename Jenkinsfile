@@ -69,8 +69,8 @@ pipeline {
 	                        sh '/setup-ssh.sh'
                     	    sh 'git checkout develop'
                     	    sh 'git pull origin develop'
-                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:prepare'
-                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B -X release:perform'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
                     	}
                     }
                 }
@@ -86,6 +86,7 @@ pipeline {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
                     	    sh 'git checkout master'
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS -Posssonatype -B deploy'
                     	}
                     }
                 }
