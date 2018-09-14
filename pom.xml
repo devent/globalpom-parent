@@ -2030,7 +2030,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>1.26.0</version>
                 </plugin>
                 <plugin>
-                    <!--This plugin's configuration is used to store Eclipse 
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.8</version>
+                </plugin>
+                <plugin>
+                    <!--This plugin's configuration is used to store Eclipse
                         m2e settings only. It has no influence on the Maven build itself. -->
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
