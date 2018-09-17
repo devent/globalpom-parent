@@ -4,7 +4,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.2.1-SNAPSHOT</version>
+    <version>4.2.1</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -103,7 +103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <connection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</connection>
         <developerConnection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</developerConnection>
         <url>https://anrisoftware.com/projects/globalpom/repository</url>
-        <tag>HEAD</tag>
+        <tag>globalpom-parent-4.2.1</tag>
     </scm>
 
     <prerequisites>
@@ -231,7 +231,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- trove -->
-            <!-- The Trove library provides high speed regular and primitive
+            <!-- The Trove library provides high speed regular and primitive 
                 collections for Java. -->
             <dependency>
                 <!-- LGPLv2 -->
@@ -255,7 +255,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- java-image-scaling -->
-            <!-- The purpose of the library is to provide better image scaling
+            <!-- The purpose of the library is to provide better image scaling 
                 options than the Java runtime provides. -->
             <dependency>
                 <!-- LGPLv3 -->
@@ -382,9 +382,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
             <!-- apache commons -->
             <dependency>
-                <!-- Apache Commons Compress software defines an API for
-                    working with compression and archive formats. These include: bzip2, gzip,
-                    pack200, lzma, xz, Snappy, traditional Unix Compress and ar, cpio, jar, tar,
+                <!-- Apache Commons Compress software defines an API for 
+                    working with compression and archive formats. These include: bzip2, gzip, 
+                    pack200, lzma, xz, Snappy, traditional Unix Compress and ar, cpio, jar, tar, 
                     zip, dump, 7z, arj. -->
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
@@ -392,8 +392,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>1.17</version>
             </dependency>
             <dependency>
-                <!-- Apache Commons Lang, a package of Java utility classes
-                    for the classes that are in java. langʼs hierarchy, or are considered to
+                <!-- Apache Commons Lang, a package of Java utility classes 
+                    for the classes that are in java. langʼs hierarchy, or are considered to 
                     be so standard as to justify existence in java. lang. -->
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
@@ -401,8 +401,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>3.7</version>
             </dependency>
             <dependency>
-                <!-- The Math project is a library of lightweight, self-contained
-                    mathematics and statistics components addressing the most common practical
+                <!-- The Math project is a library of lightweight, self-contained 
+                    mathematics and statistics components addressing the most common practical 
                     problems not immediately available in the Java programming language or commons-lang. -->
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
@@ -410,7 +410,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>3.6.1</version>
             </dependency>
             <dependency>
-                <!-- Apache Commons Exec is a library to reliably execute
+                <!-- Apache Commons Exec is a library to reliably execute 
                     external processes from within the JVM. -->
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
@@ -425,7 +425,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>2.2</version>
             </dependency>
             <dependency>
-                <!-- Contains types that extend and augment the Java Collections
+                <!-- Contains types that extend and augment the Java Collections 
                     Framework. -->
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
@@ -433,8 +433,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>4.1</version>
             </dependency>
             <dependency>
-                <!-- Apache Commons Net library contains a collection of
-                    network utilities and protocol implementations. Supported protocols include:
+                <!-- Apache Commons Net library contains a collection of 
+                    network utilities and protocol implementations. Supported protocols include: 
                     Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Telnet, Whois -->
                 <!-- Apache 2.0 -->
                 <groupId>commons-net</groupId>
@@ -442,9 +442,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>3.6</version>
             </dependency>
             <dependency>
-                <!-- The codec package contains simple encoder and decoders
-                    for various formats such as Base64 and Hexadecimal. In addition to these
-                    widely used encoders and decoders, the codec package also maintains a collection
+                <!-- The codec package contains simple encoder and decoders 
+                    for various formats such as Base64 and Hexadecimal. In addition to these 
+                    widely used encoders and decoders, the codec package also maintains a collection 
                     of phonetic encoding utilities. -->
                 <!-- Apache 2.0 -->
                 <groupId>commons-codec</groupId>
@@ -459,8 +459,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>3.2.2</version>
             </dependency>
             <dependency>
-                <!-- The Commons IO library contains utility classes, stream
-                    implementations, file filters, file comparators, endian transformation classes,
+                <!-- The Commons IO library contains utility classes, stream 
+                    implementations, file filters, file comparators, endian transformation classes, 
                     and much more. -->
                 <!-- Apache 2.0 -->
                 <groupId>commons-io</groupId>
@@ -482,7 +482,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- google guice -->
-            <!-- Guice is a lightweight dependency injection framework for
+            <!-- Guice is a lightweight dependency injection framework for 
                 Java 5 and above. -->
             <dependency>
                 <!-- Apache 2.0 -->
@@ -527,8 +527,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- Table Layout -->
-            <!-- TableLayout is a totally free layout manager designed to
-                make creating user interfaces fast and easy. It can do anything GridBagLayout
+            <!-- TableLayout is a totally free layout manager designed to 
+                make creating user interfaces fast and easy. It can do anything GridBagLayout 
                 can do and much, much more. Yet it is remarkably simple and easy to use. -->
             <dependency>
                 <groupId>tablelayout</groupId>
@@ -546,7 +546,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- string template -->
-            <!-- StringTemplate is a java template engine for generating
+            <!-- StringTemplate is a java template engine for generating 
                 source code, web pages, emails, or any other formatted text output. -->
             <dependency>
                 <!-- BSD -->
@@ -589,7 +589,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- jasypt -->
-            <!-- Java library which enables encryption in java apps with
+            <!-- Java library which enables encryption in java apps with 
                 minimum effort. -->
             <dependency>
                 <!-- Apache 2.0 -->
@@ -599,7 +599,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- ostermiller utils -->
-            <!-- Open source (GPL) Java utilities maintained by Stephen Ostermiller
+            <!-- Open source (GPL) Java utilities maintained by Stephen Ostermiller 
                 with help from many contributors. -->
             <dependency>
                 <!-- GPLv2 -->
@@ -618,8 +618,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- piccolo2d -->
-            <!-- A revolutionary way to create robust, full-featured graphical
-                applications in Java and C#, with striking visual effects such as zooming,
+            <!-- A revolutionary way to create robust, full-featured graphical 
+                applications in Java and C#, with striking visual effects such as zooming, 
                 animation and multiple representations. -->
             <dependency>
                 <!-- BSD -->
@@ -676,7 +676,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- EJML -->
-            <!-- A fast and easy to use dense matrix linear algebra library
+            <!-- A fast and easy to use dense matrix linear algebra library 
                 written in Java. -->
             <dependency>
                 <!-- LGPL -->
@@ -729,8 +729,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- jfreechart -->
-            <!-- JFreeChart is a class library, written in Java, for generating
-                charts. Utilising the Java2D APIs, it currently supports bar charts, pie
+            <!-- JFreeChart is a class library, written in Java, for generating 
+                charts. Utilising the Java2D APIs, it currently supports bar charts, pie 
                 charts, line charts, XY-plots and time series plots. -->
             <dependency>
                 <!-- LGPL -->
@@ -755,8 +755,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <!-- swingx -->
-            <!-- Contains extensions to the Swing GUI toolkit, including
-                new and enhanced components that provide functionality commonly required
+            <!-- Contains extensions to the Swing GUI toolkit, including 
+                new and enhanced components that provide functionality commonly required 
                 by rich client applications. -->
             <dependency>
                 <!-- LGPL -->
@@ -788,7 +788,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>2.4.0</version>
             </dependency>
 
-            <!-- Small set of Java tools for dealing with streams (InputStreams
+            <!-- Small set of Java tools for dealing with streams (InputStreams 
                 and OutputStreams). -->
             <dependency>
                 <!-- BSD -->
@@ -797,7 +797,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>1.2.15</version>
             </dependency>
 
-            <!-- JTattoo - Consists of several different Look and Feels for
+            <!-- JTattoo - Consists of several different Look and Feels for 
                 Swing applications -->
             <dependency>
                 <groupId>com.jtattoo</groupId>
@@ -829,8 +829,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>1.2.4.1</version>
             </dependency>
 
-            <!-- Batik is a Java-based toolkit for applications or applets
-                that want to use images in the Scalable Vector Graphics (SVG) format for
+            <!-- Batik is a Java-based toolkit for applications or applets 
+                that want to use images in the Scalable Vector Graphics (SVG) format for 
                 various purposes, such as display, generation or manipulation. -->
             <dependency>
                 <!-- The Apache Software License, Version 2.0 -->
@@ -857,7 +857,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>1.10</version>
             </dependency>
 
-            <!-- Java Annotation and Processor to simplify the use of the
+            <!-- Java Annotation and Processor to simplify the use of the 
                 Service Provider Interface -->
             <dependency>
                 <!-- Apache License Version 2.0 -->
@@ -1711,12 +1711,28 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <!-- deploy test sources -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-tests</id>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <!-- deploy javadoc -->
@@ -1832,67 +1848,67 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>3.7.1</version>
                 </plugin>
                 <plugin>
-                    <!-- This plugin signs all of the project's attached
+                    <!-- This plugin signs all of the project's attached 
                         artifacts with GnuPG. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.6</version>
                 </plugin>
                 <plugin>
-                    <!-- The Maven Project Info Reports Plugin is a plugin
+                    <!-- The Maven Project Info Reports Plugin is a plugin 
                         that generates standard reports for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>2.9</version>
                 </plugin>
                 <plugin>
-                    <!-- The Compiler Plugin is used to compile the sources
+                    <!-- The Compiler Plugin is used to compile the sources 
                         of your project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.7.0</version>
                 </plugin>
                 <plugin>
-                    <!-- Provides utility goals to work with dependencies
+                    <!-- Provides utility goals to work with dependencies 
                         like copying, unpacking, analyzing, resolving and many more. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>3.1.1</version>
                 </plugin>
                 <plugin>
-                    <!-- The Resources Plugin handles the copying of project
-                        resources to the output directory. There are two different kinds of resources:
-                        main resources and test resources. The difference is that the main resources
-                        are the resources associated to the main source code while the test resources
-                        are associated to the test source code. Thus, this allows the separation
+                    <!-- The Resources Plugin handles the copying of project 
+                        resources to the output directory. There are two different kinds of resources: 
+                        main resources and test resources. The difference is that the main resources 
+                        are the resources associated to the main source code while the test resources 
+                        are associated to the test source code. Thus, this allows the separation 
                         of resources for the main source code and its unit tests. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
                 <plugin>
-                    <!-- Builds a Java Archive (JAR) file from the compiled
+                    <!-- Builds a Java Archive (JAR) file from the compiled 
                         project classes and resources. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
                 <plugin>
-                    <!-- The Maven 2 Source Plugin creates a JAR archive
+                    <!-- The Maven 2 Source Plugin creates a JAR archive 
                         of the source files of the current project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
                     <version>3.0.1</version>
                 </plugin>
                 <plugin>
-                    <!-- Uploads the project artifacts to the internal remote
+                    <!-- Uploads the project artifacts to the internal remote 
                         repository. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
                 </plugin>
                 <plugin>
-                    <!-- The Apache Maven Javadoc Plugin is a plugin that
+                    <!-- The Apache Maven Javadoc Plugin is a plugin that 
                         uses the javadoc tool for generating javadocs for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
@@ -1905,46 +1921,46 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>1.4.1</version>
                 </plugin>
                 <plugin>
-                    <!-- A Maven plugin to create archives of your project's
+                    <!-- A Maven plugin to create archives of your project's 
                         sources, classes, dependencies etc. from flexible assembly descriptors. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
                 <plugin>
-                    <!-- The Surefire Report Plugin parses the generated
-                        TEST-*.xml files under ${basedir}/target/surefire-reports and renders them
+                    <!-- The Surefire Report Plugin parses the generated 
+                        TEST-*.xml files under ${basedir}/target/surefire-reports and renders them 
                         to DOXIA which creates the web interface version of the test results. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
                     <version>2.22.0</version>
                 </plugin>
                 <plugin>
-                    <!-- The JXR Plugin produces a cross-reference of the
-                        projectʼs sources. The generated reports make it easier for the user to reference
-                        or find specific lines of code. It is also handy when used with the PMD Plugin
+                    <!-- The JXR Plugin produces a cross-reference of the 
+                        projectʼs sources. The generated reports make it easier for the user to reference 
+                        or find specific lines of code. It is also handy when used with the PMD Plugin 
                         for referencing errors found in the code. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>2.5</version>
                 </plugin>
                 <plugin>
-                    <!-- A Maven plugin for the PMD toolkit, that produces
-                        a report on both code rule violations and detected copy and paste fragments,
+                    <!-- A Maven plugin for the PMD toolkit, that produces 
+                        a report on both code rule violations and detected copy and paste fragments, 
                         as well as being able to fail the build based on these metrics. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>3.10.0</version>
                 </plugin>
                 <plugin>
-                    <!-- This plugin contains various small independent goals
+                    <!-- This plugin contains various small independent goals 
                         to assist with Maven build lifecycle -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
                 <plugin>
-                    <!-- Maven 2 plugin to check and update license headers
+                    <!-- Maven 2 plugin to check and update license headers 
                         in source files -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>license-maven-plugin</artifactId>
@@ -1957,23 +1973,23 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>5.1.2</version>
                 </plugin>
                 <plugin>
-                    <!-- This plugin creates Windows executables from Java
+                    <!-- This plugin creates Windows executables from Java 
                         jar files using the Launch4j utility. -->
                     <groupId>com.akathist.maven.plugins.launch4j</groupId>
                     <artifactId>launch4j-maven-plugin</artifactId>
                     <version>1.7.22</version>
                 </plugin>
                 <plugin>
-                    <!-- This plugin is designed to give you a build number.
-                        So when you might make 100 builds of version 1.0-SNAPSHOT, you can differentiate
+                    <!-- This plugin is designed to give you a build number. 
+                        So when you might make 100 builds of version 1.0-SNAPSHOT, you can differentiate 
                         between them all. -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>1.4</version>
                 </plugin>
-                <!-- As all Groovy artifacts and mixed Groovy/Java artifacts
-                    must generate javadoc to release to central, this provides a nice mechanism
-                    for this to occur. It is intended to be used with the Eclipse Maven plugin
+                <!-- As all Groovy artifacts and mixed Groovy/Java artifacts 
+                    must generate javadoc to release to central, this provides a nice mechanism 
+                    for this to occur. It is intended to be used with the Eclipse Maven plugin 
                     and asks Maven for all source directories. -->
                 <plugin>
                     <!-- MIT License -->
@@ -2007,7 +2023,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>1.6.8</version>
                 </plugin>
                 <plugin>
-                    <!--This plugin's configuration is used to store Eclipse
+                    <!--This plugin's configuration is used to store Eclipse 
                         m2e settings only. It has no influence on the Maven build itself. -->
                     <groupId>org.eclipse.m2e</groupId>
                     <artifactId>lifecycle-mapping</artifactId>
@@ -2084,39 +2100,39 @@ source and test sources and deploy the project-tests with the project jar.</desc
     <reporting>
         <plugins>
             <plugin>
-                <!-- The Maven Project Info Reports Plugin is a plugin that
+                <!-- The Maven Project Info Reports Plugin is a plugin that 
                     generates standard reports for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
             <plugin>
-                <!-- The Surefire Report Plugin parses the generated TEST-*.xml
-                    files under ${basedir}/target/surefire-reports and renders them to DOXIA
+                <!-- The Surefire Report Plugin parses the generated TEST-*.xml 
+                    files under ${basedir}/target/surefire-reports and renders them to DOXIA 
                     which creates the web interface version of the test results. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
             <plugin>
-                <!-- The Apache Maven Javadoc Plugin is a plugin that uses
+                <!-- The Apache Maven Javadoc Plugin is a plugin that uses 
                     the javadoc tool for generating javadocs for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.0.1</version>
             </plugin>
             <plugin>
-                <!-- The JXR Plugin produces a cross-reference of the projectʼs
-                    sources. The generated reports make it easier for the user to reference or
-                    find specific lines of code. It is also handy when used with the PMD Plugin
+                <!-- The JXR Plugin produces a cross-reference of the projectʼs 
+                    sources. The generated reports make it easier for the user to reference or 
+                    find specific lines of code. It is also handy when used with the PMD Plugin 
                     for referencing errors found in the code. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>2.5</version>
             </plugin>
             <plugin>
-                <!-- A Maven plugin for the PMD toolkit, that produces a
-                    report on both code rule violations and detected copy and paste fragments,
+                <!-- A Maven plugin for the PMD toolkit, that produces a 
+                    report on both code rule violations and detected copy and paste fragments, 
                     as well as being able to fail the build based on these metrics. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
@@ -2129,7 +2145,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 </configuration>
             </plugin>
             <plugin>
-                <!-- This Plug-In generates reports based on the FindBugs
+                <!-- This Plug-In generates reports based on the FindBugs 
                     Library -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
