@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -11,8 +13,8 @@
 Advanced Natural Research Institute software
 project. It will declare the listed properties, add plug-in to deploy
 source and test sources and deploy the project-tests with the project jar.</description>
-    <url>https://javadoc.anrisoftware.com/${project.groupId}/${project.artifactId}/${project.version}/</url>
     <inceptionYear>2011</inceptionYear>
+    <url>https://javadoc.anrisoftware.com/${project.groupId}/${project.artifactId}/${project.version}/</url>
 
     <developers>
         <developer>
@@ -47,6 +49,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
     </issueManagement>
 
     <properties>
+        <project.custom.home>https://project.anrisoftware.com/projects/globalpom</project.custom.home>
+        <project.custom.scm.pub>https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.pub>
+        <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
+        <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
         <license.licenseName>apache_v2</license.licenseName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
@@ -100,9 +106,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
     </properties>
 
     <scm>
-        <connection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</connection>
-        <developerConnection>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</developerConnection>
-        <url>https://anrisoftware.com/projects/globalpom/repository</url>
+        <connection>${project.custom.scm.pub}</connection>
+        <developerConnection>${project.custom.scm.dev}</developerConnection>
+        <url>${project.custom.scm.url}</url>
         <tag>HEAD</tag>
     </scm>
 
