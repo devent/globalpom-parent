@@ -58,7 +58,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
         <project.custom.resources.escapestring>\</project.custom.resources.escapestring>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-        <project.custom.groovy.version>2.5.0</project.custom.groovy.version>
+        <project.custom.groovy.version>2.5.2</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>2.9.2-01</project.custom.groovy-eclipse-compiler.version>
         <project.custom.groovy-eclipse-batch.version>2.4.3-01</project.custom.groovy-eclipse-batch.version>
         <project.custom.source.source>1.8</project.custom.source.source>
