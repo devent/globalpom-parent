@@ -2024,11 +2024,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <version>1.4.0</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.26.0</version>
-                </plugin>
-                <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>1.6.8</version>
