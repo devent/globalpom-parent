@@ -2126,7 +2126,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.8</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>osssonatype_releases</serverId>
