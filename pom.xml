@@ -4,7 +4,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.3.1-SNAPSHOT</version>
+    <version>4.3.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -48,7 +48,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <properties>
         <project.custom.home>https://project.anrisoftware.com/projects/globalpom</project.custom.home>
-        <project.custom.scm.pub>https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.pub>
+        <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.pub>
         <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
         <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
         <license.licenseName>apache_v2</license.licenseName>
