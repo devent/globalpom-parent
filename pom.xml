@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -101,6 +103,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.fasterxml.version>2.9.6</project.custom.fasterxml.version>
         <project.custom.httpcomponents.version>4.5.5</project.custom.httpcomponents.version>
         <project.custom.junit.jupiter.version>5.2.0</project.custom.junit.jupiter.version>
+        <project.custom.junit.platform.version>1.3.1</project.custom.junit.platform.version>
     </properties>
 
     <scm>
@@ -189,7 +192,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-launcher</artifactId>
-                <version>1.2.0</version>
+                <version>${project.custom.junit.platform.version}</version>
             </dependency>
 
             <!-- perf4j -->
@@ -1827,6 +1830,78 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 </dependencies>
             </plugin>
 
+            <!-- The JaCoCo Maven plug-in provides the JaCoCo runtime agent 
+                to your tests and allows basic report creation. -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <!-- set arg line property for surefire -->
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <propertyName>surefireArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <!-- set arg line property for failsafe -->
+                    <execution>
+                        <id>prepare-agent-integration</id>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                        <configuration>
+                            <propertyName>failsafeArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- Sets the VM argument line used when unit tests are 
+                        run. -->
+                    <argLine>${surefireArgLine}</argLine>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${project.custom.junit.platform.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the VM argument line used when integration 
+                                tests are run. -->
+                            <argLine>${failsafeArgLine}</argLine>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${project.custom.junit.platform.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
         </plugins>
 
         <pluginManagement>
@@ -2026,6 +2101,16 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>1.6.8</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.22.0</version>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -2084,6 +2169,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
                 <version>3.0.5</version>
+            </plugin>
+            <plugin>
+                <!-- The JaCoCo Maven plug-in provides the JaCoCo runtime 
+                    agent to your tests and allows basic report creation. -->
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <!-- select non-aggregate reports -->
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
             </plugin>
         </plugins>
     </reporting>
