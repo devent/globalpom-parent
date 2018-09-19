@@ -16,7 +16,7 @@ pipeline {
             steps {
                 container('maven') {
                     checkout([ $class: 'GitSCM', branches: [[name: '**']], extensions: [[
-    					$class: 'MessageExclusion', excludedMessage: '\\[maven-release-plugin\\].*'
+    					$class: 'MessageExclusion', excludedMessage: '.*\\[maven-release-plugin\\].*'
   					]],])
                 }
             }
