@@ -15,9 +15,7 @@ pipeline {
         stage("Checkout") {
             steps {
                 container('maven') {
-                    checkout([ $class: 'GitSCM', branches: [[name: '**']], extensions: [[
-    					$class: 'MessageExclusion', excludedMessage: '.*\\[maven-release-plugin\\].*'
-  					]],])
+                    checkout scm
                 }
             }
         }
@@ -63,14 +61,16 @@ pipeline {
         stage('Release') {
     		when {
 		        branch 'develop'
+		        expression {
+					return sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).toString().contains('[maven-release-plugin]')
+				}
 			}
             steps {
                 container('maven') {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
 	                        sh '/setup-ssh.sh'
-                    	    sh 'git checkout develop'
-                    	    sh 'git pull origin develop'
+                    	    sh 'git checkout develop && git pull origin develop'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
                         	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
                     	}
