@@ -15,15 +15,12 @@ pipeline {
         stage("Checkout") {
             steps {
                 container('maven') {
-                    checkout scm
+                    checkout([ $class: 'GitSCM', branches: [[name: '**']], extensions: [[
+    					$class: 'MessageExclusion', excludedMessage: '\\[maven-release-plugin\\].*'
+  					]],])
                 }
             }
         }
-
-if( true == true ) {
-   currentBuild.result = 'SUCCESS'
-   return
-}
 
         stage('Setup') {
             steps {
