@@ -62,7 +62,7 @@ pipeline {
     		when {
 		        branch 'develop'
 		        expression {
-					return sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).toString().contains('[maven-release-plugin]')
+					return !sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).contains('[maven-release-plugin]')
 				}
 			}
             steps {
