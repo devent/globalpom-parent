@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.4.1-SNAPSHOT</version>
+    <version>4.5.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -48,9 +50,19 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <properties>
         <project.custom.home>https://project.anrisoftware.com/projects/globalpom</project.custom.home>
+        <project.custom.license.image.url>https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif</project.custom.license.image.url>
+        <project.custom.central.url>https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom</project.custom.central.url>
+        <project.custom.scm.repo>https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.repo>
+        <project.custom.scm.github>https://github.com/devent/globalpom-parent</project.custom.scm.github>
         <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.pub>
         <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
         <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
+        <project.custom.jenkins.url>https://jenkins.anrisoftware.com/job/globalpom-parent</project.custom.jenkins.url>
+        <project.custom.jenkins.build.badge.master>${project.custom.jenkins.url}/job/master/badge/icon</project.custom.jenkins.build.badge.master>
+        <project.custom.jenkins.build.link.master>${project.custom.jenkins.url}/job/master</project.custom.jenkins.build.link.master>
+        <project.custom.sonarqube.url>https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.url>
+        <project.custom.sonarqube.qualitygate.badge>https://sonarqube.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.qualitygate.badge>
+        <project.custom.sonarqube.qualitygate.link>${project.custom.sonarqube.url}</project.custom.sonarqube.qualitygate.link>
         <license.licenseName>apache_v2</license.licenseName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
