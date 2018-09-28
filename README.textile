@@ -6,14 +6,19 @@ Declares all dependencies and all Maven plug&#45;ins needed for a Advanced Natur
 
 h1(#links). Links
 
-* "Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/
-* "Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/pom
-* "Source code":https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git
-* "Source code (Github)":https://github.com/devent/globalpom-parent
-* "Project Home":https://project.anrisoftware.com/projects/globalpom
-* "Project Roadmap":https://project.anrisoftware.com/projects/globalpom/roadmap
-* "Project Issues":https://project.anrisoftware.com/projects/globalpom/issues
-* "Jenkins":https://jenkins.anrisoftware.com/job/globalpom-parent
-* "SonarQube":https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent
+* "(externalLink)Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/
+* "(externalLink)Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/pom
+* "(externalLink)Source code":https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git
+* "(externalLink)Source code (Github)":https://github.com/devent/globalpom-parent
+* "(externalLink)Project Home":https://project.anrisoftware.com/projects/globalpom
+* "(externalLink)Project Roadmap":https://project.anrisoftware.com/projects/globalpom/roadmap
+* "(externalLink)Project Issues":https://project.anrisoftware.com/projects/globalpom/issues
+* "(externalLink)Jenkins":https://jenkins.anrisoftware.com/job/globalpom-parent
+* "(externalLink)SonarQube":https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent
+
+h1(#packages-overview). Packages Overview
+
+!https://project.anrisoftware.com/attachments/download/443/packages.svg(Packages Overview)!
+
 
 Copyright ©2011 - 2018 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.

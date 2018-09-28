@@ -17,3 +17,7 @@ ${project.description}
 * [Project Issues]($context.get("project.custom.home")/issues)
 * [Jenkins]($context.get("project.custom.jenkins.url"))
 * [SonarQube]($context.get("project.custom.sonarqube.url"))
+
+#[[#]]# Packages Overview
+
+![Packages Overview](images/packages.svg)
