@@ -1,0 +1,23 @@
+[![Build Status]($context.get("project.custom.jenkins.build.badge.master"))]($context.get("project.custom.jenkins.build.link.master"))
+[![Quality Gate]($context.get("project.custom.sonarqube.qualitygate.badge"))]($context.get("project.custom.sonarqube.qualitygate.link"))
+[![Apache License, Version 2.0]($context.get("project.custom.license.image.url"))](http://www.apache.org/licenses/LICENSE-2.0) © $context.get("project.custom.year") $context.get("project.custom.user.name")
+
+#[[#]]# Description
+
+${project.description}
+
+#[[#]]# Links
+
+* [Generated Site](${project.url})
+* [Download (Central)]($context.get("project.custom.central.url"))
+* [Source code]($context.get("project.custom.scm.repo"))
+* [Source code (Github)]($context.get("project.custom.scm.github"))
+* [Project Home]($context.get("project.custom.home"))
+* [Project Roadmap]($context.get("project.custom.home")/roadmap)
+* [Project Issues]($context.get("project.custom.home")/issues)
+* [Jenkins]($context.get("project.custom.jenkins.url"))
+* [SonarQube]($context.get("project.custom.sonarqube.url"))
+
+#[[#]]# Packages Overview
+
+![Packages Overview](images/packages.svg)
