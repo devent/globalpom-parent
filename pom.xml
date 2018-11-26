@@ -1,4 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<!--
+
+    Copyright © 2011 Erwin Müller (erwin.mueller@anrisoftware.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!-- Copyright © 2011 Erwin Müller (erwin.mueller@anrisoftware.com) Licensed
+    under the Apache License, Version 2.0 (the "License"); you may not use this
+    file except in compliance with the License. You may obtain a copy of the
+    License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+    applicable law or agreed to in writing, software distributed under the License
+    is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied. See the License for the specific language
+    governing permissions and limitations under the License. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -61,6 +88,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.sonarqube.url>https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.url>
         <project.custom.sonarqube.qualitygate.badge>https://sonarqube.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.qualitygate.badge>
         <project.custom.sonarqube.qualitygate.link>${project.custom.sonarqube.url}</project.custom.sonarqube.qualitygate.link>
+        <license.custom.license.template>com/mycila/maven/plugin/license/templates/APACHE-2.txt</license.custom.license.template>
+        <license.custom.license.owner>Erwin Müller</license.custom.license.owner>
+        <license.custom.license.email>erwin.mueller@anrisoftware.com</license.custom.license.email>
         <license.licenseName>apache_v2</license.licenseName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
@@ -1773,26 +1803,25 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <header>${license.custom.license.template}</header>
+                    <properties>
+                        <owner>${license.custom.license.owner}</owner>
+                        <email>${license.custom.license.email}</email>
+                    </properties>
+                    <excludes>
+                        <exclude>**/README</exclude>
+                        <exclude>**/LICENSE.txt</exclude>
+                        <exclude>src/test/resources/**</exclude>
+                        <exclude>src/main/resources/**</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
-                        <id>generate-license-headers</id>
                         <goals>
-                            <goal>update-file-header</goal>
-                        </goals>
-                        <phase>process-sources</phase>
-                        <configuration>
-                            <licenseName>apache_v2</licenseName>
-                            <roots>
-                                <root>src</root>
-                            </roots>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>download-licenses</id>
-                        <goals>
-                            <goal>download-licenses</goal>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -2065,9 +2094,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <!-- Maven 2 plugin to check and update license headers
                         in source files -->
-                    <groupId>org.codehaus.mojo</groupId>
+                    <groupId>com.mycila</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>1.16</version>
+                    <version>3.0</version>
                 </plugin>
                 <plugin>
                     <!-- Maven plugin for IzPack -->
