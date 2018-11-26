@@ -93,6 +93,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.groovy-eclipse-batch.version>2.4.3-01</project.custom.groovy-eclipse-batch.version>
         <project.custom.source.source>1.8</project.custom.source.source>
         <project.custom.source.target>1.8</project.custom.source.target>
+        <project.custom.requireMavenVersion>3.5.0</project.custom.requireMavenVersion>
         <project.custom.current.year>2018</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
         <project.custom.user.name>Erwin Müller</project.custom.user.name>
@@ -137,10 +138,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <url>${project.custom.scm.url}</url>
         <tag>globalpom-parent-4.3.0</tag>
     </scm>
-
-    <prerequisites>
-        <maven>3.5.0</maven>
-    </prerequisites>
 
     <distributionManagement>
         <site>
@@ -1771,6 +1768,19 @@ source and test sources and deploy the project-tests with the project jar.</desc
                                 </requireReleaseDeps>
                             </rules>
                             <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>${project.custom.requireMavenVersion}</version>
+                                </requireMavenVersion>
+                            </rules>
                         </configuration>
                     </execution>
                 </executions>
