@@ -1835,13 +1835,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         run. -->
                     <argLine>${surefireArgLine}</argLine>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${project.custom.junit.platform.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
 
             <plugin>
@@ -1861,13 +1854,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         </configuration>
                     </execution>
                 </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${project.custom.junit.platform.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
 
         </plugins>
