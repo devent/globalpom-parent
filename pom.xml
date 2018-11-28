@@ -88,6 +88,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
         <project.custom.resources.escapestring>\</project.custom.resources.escapestring>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+        <!-- Sonar -->
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <!-- Versions -->
         <project.custom.groovy.version>2.5.4</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>2.9.2-01</project.custom.groovy-eclipse-compiler.version>
         <project.custom.groovy-eclipse-batch.version>2.4.3-01</project.custom.groovy-eclipse-batch.version>
@@ -1803,6 +1808,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
+                <configuration>
+                    <destFile>${sonar.jacoco.reportPath}</destFile>
+                    <append>true</append>
+                </configuration>
                 <executions>
                     <!-- set arg line property for surefire -->
                     <execution>
