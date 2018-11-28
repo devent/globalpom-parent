@@ -217,13 +217,18 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>${project.custom.junit.jupiter.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-migrationsupport</artifactId>
+                <version>${project.custom.junit.jupiter.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-launcher</artifactId>
                 <version>${project.custom.junit.platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-migrationsupport</artifactId>
+                <artifactId>junit-jupiter-params</artifactId>
                 <version>${project.custom.junit.platform.version}</version>
             </dependency>
 
