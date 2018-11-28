@@ -221,6 +221,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <artifactId>junit-platform-launcher</artifactId>
                 <version>${project.custom.junit.platform.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-migrationsupport</artifactId>
+                <version>${project.custom.junit.platform.version}</version>
+            </dependency>
 
             <!-- perf4j -->
             <dependency>
@@ -545,6 +550,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>3.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>annotations</artifactId>
+                <version>3.0.1</version>
             </dependency>
 
             <!-- Table Layout -->
