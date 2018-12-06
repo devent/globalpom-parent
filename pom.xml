@@ -202,6 +202,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
             <!-- junit -->
             <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+            <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>${project.custom.junit.jupiter.version}</version>
