@@ -111,8 +111,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.cxf.version>3.2.7</project.custom.cxf.version>
         <project.custom.hibernate.version>5.3.7.Final</project.custom.hibernate.version>
         <project.custom.hibernate-validator.version>6.0.10.Final</project.custom.hibernate-validator.version>
-        <project.custom.spring.version>5.1.2.RELEASE</project.custom.spring.version>
-        <project.custom.spring-boot.version>2.1.0.RELEASE</project.custom.spring-boot.version>
+        <project.custom.spring.version>5.1.3.RELEASE</project.custom.spring.version>
+        <project.custom.spring-boot.version>2.1.1.RELEASE</project.custom.spring-boot.version>
         <spring-amqp.version>2.1.0.RELEASE</spring-amqp.version>
         <spring-batch.version>4.1.0.RELEASE</spring-batch.version>
         <spring-cloud-connectors.version>2.0.3.RELEASE</spring-cloud-connectors.version>
