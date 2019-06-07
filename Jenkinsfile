@@ -43,8 +43,10 @@ pipeline {
                     checkout scm
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
                         configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
-                            def code = sh(script: '/setup-gpg.sh', returnStatus: true)
-                            print code
+                            script {
+                                def code = sh(script: '/setup-gpg.sh', returnStatus: true)
+                                print code
+                            }
                         }
                     }
                 }
