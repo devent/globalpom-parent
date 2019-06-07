@@ -59,5 +59,22 @@ pipeline {
                 }
             }
         }
+
+        /**
+        * The stage will compile and test on all branches.
+        */
+        stage('Compile and Test') {
+            steps {
+                container('maven') {
+                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                        withMaven() {
+                            sh 'echo $MVN_CMD'
+                            sh 'echo $MAVEN_SETTINGS'
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS clean install'
+                        }
+                    }
+                }
+            }
+        }
     }
 }
