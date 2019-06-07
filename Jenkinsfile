@@ -53,7 +53,7 @@ pipeline {
                 container('maven') {
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
                         configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
-                            sh 'bash -x /setup-gpg.sh; echo $?'
+                            sh 'echo "aaa"'
                         }
                     }
                 }
