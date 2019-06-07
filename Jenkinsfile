@@ -29,7 +29,7 @@ pipeline {
     }
 
     agent {
-        label 'maven-3-jdk-8'
+        label 'maven-3-jdk-12'
     }
 
     stages {
