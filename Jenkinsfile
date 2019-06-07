@@ -41,12 +41,22 @@ pipeline {
             steps {
                 container('maven') {
                     checkout scm
+                }
+            }
+        }
+
+        /**
+        * The stage will setup the container for the build.
+        */
+        stage('Setup Build') {
+            steps {
+                container('maven') {
                     withCredentials([string(credentialsId: 'gpg-key-passphrase', variable: 'GPG_PASSPHRASE')]) {
                         configFileProvider([configFile(fileId: 'gpg-key', variable: 'GPG_KEY_FILE')]) {
-                            step {
-                                def code = sh(script: '/setup-gpg.sh', returnStatus: true)
-                                print code
-                            }
+                          script{
+                            def code = sh(script: '/setup-gpg.sh', returnStatus: true)
+                            print code
+                          }
                         }
                     }
                 }
