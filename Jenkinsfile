@@ -154,4 +154,13 @@ pipeline {
         } // stage
         
     } // stages
+
+    post {
+        success {
+            timeout(time: 15, unit: 'MINUTES') {
+                waitForQualityGate abortPipeline: true
+            }
+        }
+
+    } // post
 }
