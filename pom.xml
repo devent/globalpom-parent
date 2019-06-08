@@ -96,8 +96,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.groovy.version>2.5.7</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>3.3.0-01</project.custom.groovy-eclipse-compiler.version>
         <project.custom.groovy-eclipse-batch.version>2.5.7-01</project.custom.groovy-eclipse-batch.version>
-        <project.custom.source.source>1.11</project.custom.source.source>
-        <project.custom.source.target>1.11</project.custom.source.target>
+        <project.custom.source.source>11</project.custom.source.source>
+        <project.custom.source.target>11</project.custom.source.target>
         <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
         <project.custom.current.year>2019</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
