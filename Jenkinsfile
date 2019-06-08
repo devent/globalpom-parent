@@ -76,5 +76,22 @@ pipeline {
                 }
             }
         }
+
+        /**
+        * The stage will perform the SonarQube analysis on all branches.
+        */
+        stage('SonarQube Analysis') {
+            steps {
+                container('maven') {
+                    withSonarQubeEnv('sonarqube') {
+                        configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                            withMaven() {
+                                sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
