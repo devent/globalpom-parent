@@ -110,6 +110,28 @@ pipeline {
             }
         } // stage
 
+		/**
+		* The stage will deploy the generated site for feature branches.
+		*/
+        stage('Deploy Site') {
+    		when {
+    			allOf {
+					not { branch 'master' }
+					not { branch 'develop' }
+				}
+			}
+            steps {
+                container('maven') {
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
+	                        sh '/setup-ssh.sh'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B site:site site:deploy'
+                    	}
+                    }
+                }
+            }
+        } // stage
+
         /**
         * The stage will perform a release from the develop branch.
         */
