@@ -181,6 +181,10 @@ pipeline {
         success {
             timeout(time: 15, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
+                script {
+                	pom = readMavenPom file: 'pom.xml'
+                   	manager.createSummary("document.png").appendText("<a href='${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/'>View Maven Site</a>", false)
+                }
             }
         }
 
