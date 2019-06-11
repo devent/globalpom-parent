@@ -91,7 +91,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <!-- Sonar -->
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <!-- Versions -->
         <project.custom.groovy.version>2.5.7</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>3.3.0-01</project.custom.groovy-eclipse-compiler.version>
@@ -114,6 +113,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.spring.version>5.1.3.RELEASE</project.custom.spring.version>
         <project.custom.spring-boot.version>2.1.1.RELEASE</project.custom.spring-boot.version>
         <project.custom.querydsl.version>4.2.1</project.custom.querydsl.version>
+        <project.custom.jacoco.version>0.8.4</project.custom.jacoco.version>
         <spring-amqp.version>2.1.0.RELEASE</spring-amqp.version>
         <spring-batch.version>4.1.0.RELEASE</spring-batch.version>
         <spring-cloud-connectors.version>2.0.3.RELEASE</spring-cloud-connectors.version>
@@ -1366,10 +1366,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <configuration>
-                    <destFile>${sonar.jacoco.reportPath}</destFile>
-                    <append>true</append>
-                </configuration>
                 <executions>
                     <!-- set arg line property for surefire -->
                     <execution>
@@ -1625,7 +1621,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.4</version>
+                    <version>${project.custom.jacoco.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
