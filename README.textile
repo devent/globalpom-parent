@@ -1,4 +1,4 @@
-!https://jenkins.anrisoftware.com/job/globalpom-parent/job/master/badge/icon(Build Status)!:https://jenkins.anrisoftware.com/job/globalpom-parent/job/master !https://sonarqube.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent(Quality Gate)!:https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent !https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif(Apache License, Version 2.0)!:http://www.apache.org/licenses/LICENSE-2.0 © 2011&#45;2018 Erwin Müller
+!https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master/badge/icon(Build Status)!:https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master  !https://sonarqube.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent(Quality Gate)!:https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent !https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif(Apache License, Version 2.0)!:http://www.apache.org/licenses/LICENSE-2.0 © 2011&#45;2018 Erwin Müller
 
 h1(#description). Description
 
@@ -6,8 +6,8 @@ Declares all dependencies and all Maven plug&#45;ins needed for a Advanced Natur
 
 h1(#links). Links
 
-* "(externalLink)Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/
-* "(externalLink)Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.5.0-SNAPSHOT/pom
+* "(externalLink)Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.5.1/
+* "(externalLink)Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.5.1/pom
 * "(externalLink)Source code":https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git
 * "(externalLink)Source code (Github)":https://github.com/devent/globalpom-parent
 * "(externalLink)Project Home":https://project.anrisoftware.com/projects/globalpom
@@ -18,7 +18,7 @@ h1(#links). Links
 
 h1(#packages-overview). Packages Overview
 
-!https://project.anrisoftware.com/attachments/download/443/packages.svg(Packages Overview)!
+!https://project.anrisoftware.com/attachments/download/447/packages.svg(Packages Overview)!
 
 
 Copyright ©2011 - 2018 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.
