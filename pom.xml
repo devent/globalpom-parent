@@ -671,13 +671,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <version>3.0</version>
             </dependency>
 
-            <!-- jfontchooser -->
-            <dependency>
-                <groupId>say.swing</groupId>
-                <artifactId>jfontchooser</artifactId>
-                <version>1.0.5</version>
-            </dependency>
-
             <!-- tweenengine -->
             <dependency>
                 <!-- Apache 2.0 -->
