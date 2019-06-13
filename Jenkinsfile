@@ -146,9 +146,6 @@ pipeline {
 		        branch 'master'
 			}
             steps {
-	            timeout(time: 15, unit: 'MINUTES') {
-	                waitForQualityGate abortPipeline: true
-	            }
                 container('maven') {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
