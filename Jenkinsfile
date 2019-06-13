@@ -64,6 +64,11 @@ pipeline {
 		* The stage will compile, test and deploy on all branches.
 		*/
         stage('Compile, Test and Deploy') {
+    		when {
+    			allOf {
+					not { branch 'master' }
+				}
+			}
             steps {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
