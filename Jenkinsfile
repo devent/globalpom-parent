@@ -72,16 +72,6 @@ pipeline {
                             sh '$MVN_CMD -s $MAVEN_SETTINGS -B clean install site:site deploy'
                         }
                     }
-                }
-            }
-        }
-
-		/**
-		* The stage will perform the SonarQube analysis on all branches.
-		*/
-        stage('SonarQube Analysis') {
-            steps {
-                container('maven') {
 					withSonarQubeEnv('sonarqube') {
 	                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
 	                        withMaven() {
@@ -112,6 +102,10 @@ pipeline {
                     	}
                     }
                 }
+	            script {
+	            	pom = readMavenPom file: 'pom.xml'
+	               	manager.createSummary("document.png").appendText("<a href='${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/'>View Maven Site</a>", false)
+	            }
             }
         } // stage
 
@@ -127,6 +121,9 @@ pipeline {
 				}
 			}
             steps {
+	            timeout(time: 15, unit: 'MINUTES') {
+	                waitForQualityGate abortPipeline: true
+	            }
                 container('maven') {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
@@ -148,6 +145,9 @@ pipeline {
 		        branch 'master'
 			}
             steps {
+	            timeout(time: 15, unit: 'MINUTES') {
+	                waitForQualityGate abortPipeline: true
+	            }
                 container('maven') {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
@@ -159,16 +159,4 @@ pipeline {
         } // stage
         
     } // stages
-
-    post {
-        success {
-            script {
-            	pom = readMavenPom file: 'pom.xml'
-               	manager.createSummary("document.png").appendText("<a href='${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/'>View Maven Site</a>", false)
-            }
-            timeout(time: 15, unit: 'MINUTES') {
-                waitForQualityGate abortPipeline: true
-            }
-        }
-    } // post
 }
