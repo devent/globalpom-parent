@@ -34,20 +34,20 @@ pipeline {
 
     stages {
 
-        /**
-        * The stage will checkout the current branch.
-        */
+		/**
+		* The stage will checkout the current branch.
+		*/
         stage("Checkout Build") {
             steps {
                 container('maven') {
                     checkout scm
                 }
             }
-        } // stage
+        }
 
-        /**
-        * The stage will setup the container for the build.
-        */
+		/**
+		* The stage will setup the container for the build.
+		*/
         stage('Setup Build') {
             steps {
                 container('maven') {
@@ -58,57 +58,40 @@ pipeline {
                     }
                 }
             }
-        } // stage
+        }
 
-        /**
-        * The stage will compile and test on all branches.
-        */
-        stage('Compile and Test') {
+		/**
+		* The stage will compile, test and deploy on all branches.
+		*/
+        stage('Compile, Test and Deploy') {
             steps {
                 container('maven') {
                     configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                         withMaven() {
-                            sh 'echo $MVN_CMD'
-                            sh 'echo $MAVEN_SETTINGS'
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS clean install'
+	                        sh '/setup-ssh.sh'
+                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B clean install site:site deploy'
                         }
                     }
                 }
             }
-        } // stage
+        }
 
-        /**
-        * The stage will perform the SonarQube analysis on all branches.
-        */
+		/**
+		* The stage will perform the SonarQube analysis on all branches.
+		*/
         stage('SonarQube Analysis') {
             steps {
                 container('maven') {
-                    withSonarQubeEnv('sonarqube') {
-                        configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                            withMaven() {
-                                sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
-                            }
-                        }
-                    }
+					withSonarQubeEnv('sonarqube') {
+	                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+	                        withMaven() {
+	                            sh '$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar'
+	                        }
+	                    }
+	            	}
                 }
             }
-        } // stage
-
-        /**
-        * The stage will deploy the artifacts to the private repository.
-        */
-        stage('Deploy to Private') {
-            steps {
-                container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '/setup-ssh.sh'
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B deploy'
-                        }
-                    }
-                }
-            }
-        } // stage
+        }
 
 		/**
 		* The stage will deploy the generated site for feature branches.
@@ -125,51 +108,51 @@ pipeline {
                 	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
                     	withMaven() {
 	                        sh '/setup-ssh.sh'
-                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B site:site site:deploy'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B site:deploy'
                     	}
                     }
                 }
             }
         } // stage
 
-        /**
-        * The stage will perform a release from the develop branch.
-        */
+		/**
+		* The stage will perform a release from the develop branch.
+		*/
         stage('Release to Private') {
-            when {
-                branch 'develop'
-                expression {
-                    // skip stage if it is triggered by maven release.
-                    return !sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).contains('[maven-release-plugin]')
-                }
-            }
+    		when {
+		        branch 'develop'
+		        expression {
+		        	// skip stage if it is triggered by maven release.
+					return !sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).contains('[maven-release-plugin]')
+				}
+			}
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
-                            sh '/setup-ssh.sh'
-                            sh 'git checkout develop && git pull origin develop'
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
-                            sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
-                        }
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
+	                        sh '/setup-ssh.sh'
+                    	    sh 'git checkout develop && git pull origin develop'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare'
+                        	sh '$MVN_CMD -s $MAVEN_SETTINGS -B release:perform'
+                    	}
                     }
                 }
             }
         } // stage
 
-        /**
-        * The stage will deploy the artifacts and the generated site to the public repository from the master branch.
-        */
+		/**
+		* The stage will deploy the artifacts and the generated site to the public repository from the master branch.
+		*/
         stage('Publish to Public') {
-            when {
-                branch 'master'
-            }
+    		when {
+		        branch 'master'
+			}
             steps {
                 container('maven') {
-                    configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
-                        withMaven() {
+                	configFileProvider([configFile(fileId: 'maven-settings-global', variable: 'MAVEN_SETTINGS')]) {
+                    	withMaven() {
                             sh '$MVN_CMD -s $MAVEN_SETTINGS -Posssonatype -B deploy'
-                        }
+                    	}
                     }
                 }
             }
@@ -179,14 +162,13 @@ pipeline {
 
     post {
         success {
+            script {
+            	pom = readMavenPom file: 'pom.xml'
+               	manager.createSummary("document.png").appendText("<a href='${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/'>View Maven Site</a>", false)
+            }
             timeout(time: 15, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
-                script {
-                	pom = readMavenPom file: 'pom.xml'
-                   	manager.createSummary("document.png").appendText("<a href='${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/'>View Maven Site</a>", false)
-                }
             }
         }
-
     } // post
 }
