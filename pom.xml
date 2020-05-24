@@ -90,9 +90,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
-        <project.custom.groovy.version>2.5.7</project.custom.groovy.version>
-        <project.custom.groovy-eclipse-compiler.version>3.3.0-01</project.custom.groovy-eclipse-compiler.version>
-        <project.custom.groovy-eclipse-batch.version>2.5.7-01</project.custom.groovy-eclipse-batch.version>
+        <project.custom.groovy.version>3.0.4</project.custom.groovy.version>
+        <project.custom.groovy-eclipse-compiler.version>3.6.0-03</project.custom.groovy-eclipse-compiler.version>
+        <project.custom.groovy-eclipse-batch.version>3.0.3-01</project.custom.groovy-eclipse-batch.version>
         <project.custom.source.source>11</project.custom.source.source>
         <project.custom.source.target>11</project.custom.source.target>
         <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
@@ -111,7 +111,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.spring.version>5.2.6.RELEASE</project.custom.spring.version>
         <project.custom.spring-boot.version>2.1.1.RELEASE</project.custom.spring-boot.version>
         <project.custom.querydsl.version>4.3.1</project.custom.querydsl.version>
-        <project.custom.jacoco.version>0.8.4</project.custom.jacoco.version>
+        <project.custom.jacoco.version>0.8.5</project.custom.jacoco.version>
         <spring-amqp.version>2.1.0.RELEASE</spring-amqp.version>
         <spring-batch.version>4.1.0.RELEASE</spring-batch.version>
         <spring-cloud-connectors.version>2.0.3.RELEASE</spring-cloud-connectors.version>
@@ -1428,7 +1428,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.7.1</version>
+                    <version>3.9.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin signs all of the project's attached
@@ -1456,7 +1456,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         like copying, unpacking, analyzing, resolving and many more. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.1.2</version>
                 </plugin>
                 <plugin>
                     <!-- The Resources Plugin handles the copying of project
@@ -1474,14 +1474,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         project classes and resources. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.1.2</version>
+                    <version>3.2.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Maven 2 Source Plugin creates a JAR archive
                         of the source files of the current project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.1</version>
                 </plugin>
                 <plugin>
                     <!-- Uploads the project artifacts to the internal remote
@@ -1495,7 +1495,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         uses the javadoc tool for generating javadocs for the specified project. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Loving Iron Fist of Maven -->
@@ -1508,7 +1508,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         sources, classes, dependencies etc. from flexible assembly descriptors. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <!-- The Surefire Report Plugin parses the generated
@@ -1533,14 +1533,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         as well as being able to fail the build based on these metrics. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.12.0</version>
+                    <version>3.13.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin contains various small independent goals
                         to assist with Maven build lifecycle -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- Maven 2 plugin to check and update license headers
@@ -1583,7 +1583,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>4.2.0</version>
+                    <version>4.2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.aries.blueprint</groupId>
