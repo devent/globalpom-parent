@@ -15,7 +15,9 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -1569,16 +1571,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>1.4</version>
-                </plugin>
-                <!-- As all Groovy artifacts and mixed Groovy/Java artifacts
-                    must generate javadoc to release to central, this provides a nice mechanism
-                    for this to occur. It is intended to be used with the Eclipse Maven plugin
-                    and asks Maven for all source directories. -->
-                <plugin>
-                    <!-- MIT License -->
-                    <groupId>com.bluetrainsoftware.maven</groupId>
-                    <artifactId>groovydoc-maven-plugin</artifactId>
-                    <version>2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
