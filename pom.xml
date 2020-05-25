@@ -21,7 +21,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.5.2</version>
+    <version>4.5.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -140,7 +140,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <connection>${project.custom.scm.pub}</connection>
         <developerConnection>${project.custom.scm.dev}</developerConnection>
         <url>${project.custom.scm.url}</url>
-        <tag>globalpom-parent-4.5.2</tag>
+        <tag>globalpom-parent-4.3.0</tag>
     </scm>
 
     <distributionManagement>
