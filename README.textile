@@ -21,4 +21,4 @@ h1(#packages-overview). Packages Overview
 !https://project.anrisoftware.com/attachments/download/447/packages.svg(Packages Overview)!
 
 
-Copyright ©2011 - 2018 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.
+Copyright ©2011 - 2020 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.
