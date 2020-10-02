@@ -1383,10 +1383,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
             <!-- deploy javadoc -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <doclint>none</doclint>
+                        </configuration>
+                    </execution>
+                </executions>
                 <configuration>
                     <doclint>none</doclint>
+                    <failOnError>false</failOnError>
                 </configuration>
             </plugin>
 
