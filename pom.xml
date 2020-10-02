@@ -517,6 +517,11 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <artifactId>javaee-api</artifactId>
                 <version>8.0.1</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>1.9</version>
+            </dependency>
 
             <!-- google guice -->
             <!-- Guice is a lightweight dependency injection framework for
