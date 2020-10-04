@@ -237,6 +237,22 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <artifactId>junit-platform-launcher</artifactId>
                 <version>${project.custom.junit.platform.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-commons</artifactId>
+                <version>1.7.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>3.5.13</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-junit-jupiter</artifactId>
+                <version>3.5.13</version>
+            </dependency>
 
             <!-- perf4j -->
             <dependency>
