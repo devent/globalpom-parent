@@ -141,6 +141,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.akka.version>2.6.9</project.custom.akka.version>
         <project.custom.eclipse-collections.version>10.4.0</project.custom.eclipse-collections.version>
         <scala.binary.version>2.13</scala.binary.version>
+        <project.custom.auto-service.version>1.0-rc7</project.custom.auto-service.version>
     </properties>
 
     <scm>
@@ -1333,7 +1334,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service</artifactId>
-                <version>1.0-rc7</version>
+                <version>${project.custom.auto-service.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
