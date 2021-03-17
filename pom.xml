@@ -93,8 +93,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
         <project.custom.groovy.version>3.0.7</project.custom.groovy.version>
-        <project.custom.groovy-eclipse-compiler.version>3.6.0-03</project.custom.groovy-eclipse-compiler.version>
-        <project.custom.groovy-eclipse-batch.version>3.0.6-01</project.custom.groovy-eclipse-batch.version>
+        <project.custom.groovy-eclipse-compiler.version>3.7.0</project.custom.groovy-eclipse-compiler.version>
+        <project.custom.groovy-eclipse-batch.version>3.0.7-02</project.custom.groovy-eclipse-batch.version>
         <project.custom.source.source>11</project.custom.source.source>
         <project.custom.source.target>11</project.custom.source.target>
         <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
