@@ -1233,7 +1233,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             </dependency>
 
             <dependency>
-                <!-- Caffeine is a high performance, near optimal caching library. -->
+                <!-- Caffeine is a high performance, near optimal caching
+                    library. -->
                 <groupId>com.github.ben-manes.caffeine</groupId>
                 <artifactId>caffeine</artifactId>
                 <version>3.0.0</version>
@@ -1339,6 +1340,20 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service</artifactId>
                 <version>${project.custom.auto-service.version}</version>
+            </dependency>
+
+            <!-- Java SSH Client -->
+            <dependency>
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-ssh</artifactId>
+                <version>1.6.1</version>
+            </dependency>
+
+            <!-- Zip4j - A Java library for zip files / streams -->
+            <dependency>
+                <groupId>net.lingala.zip4j</groupId>
+                <artifactId>zip4j</artifactId>
+                <version>2.7.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
