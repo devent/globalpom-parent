@@ -497,7 +497,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.6</version>
+                <version>2.7</version>
             </dependency>
             <!-- Commons Transaction -->
             <dependency>
