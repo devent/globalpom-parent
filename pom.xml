@@ -428,7 +428,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
-                <version>1.20</version>
+                <version>1.21</version>
             </dependency>
             <dependency>
                 <!-- Apache Commons Lang, a package of Java utility classes
