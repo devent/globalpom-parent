@@ -1,4 +1,4 @@
-Copyright ${project.year} ${project.user.name} <${project.user.email}>
+Copyright ${project.custom.year} ${owner} <${email}>
 
 This file is part of ${project.name}.
 
