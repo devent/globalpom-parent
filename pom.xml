@@ -635,7 +635,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- BSD style -->
                 <groupId>com.thoughtworks.xstream</groupId>
                 <artifactId>xstream</artifactId>
-                <version>1.4.18</version>
+                <version>1.4.19</version>
             </dependency>
 
             <!-- javacsv -->
