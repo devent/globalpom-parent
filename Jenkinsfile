@@ -18,7 +18,7 @@
  *
  * @author Erwin Mueller, erwin.mueller@deventm.org
  * @since 4.5.1
- * @version 1.2.0
+ * @version 1.3.0
  */
 pipeline {
 
@@ -158,7 +158,7 @@ pipeline {
         success {
            script {
                pom = readMavenPom file: "pom.xml"
-               manager.createSummary("document.png").appendText("<a href="${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/">View Maven Site</a>", false)
+               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/\">View Maven Site</a>", false)
             }
         }
     } // post
