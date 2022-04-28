@@ -46,40 +46,17 @@ pipeline {
         }
 
         /**
-        * The stage will setup the container for the build.
-        */
-        stage("Setup Build") {
-            steps {
-                container("maven") {
-                    sh "/setup-gpg.sh"
-                }
-            }
-        }
-
-        /**
         * The stage will compile, test and deploy on all branches.
         */
         stage("Compile, Test and Deploy") {
             when {
                 allOf {
-                    not { branch "main" }
+                    not { branch "mainx" }
                 }
             }
             steps {
                 container("maven") {
-                    configFileProvider([configFile(fileId: "MAVEN_SETTINGS", variable: "MAVEN_SETTINGS")]) {
-                        withMaven() {
-                            sh "/setup-ssh.sh"
-                            sh "$MVN_CMD -s $MAVEN_SETTINGS -B clean install site:site deploy"
-                        }
-                    }
-                    withSonarQubeEnv("sonarqube") {
-                        configFileProvider([configFile(fileId: "MAVEN_SETTINGS", variable: "MAVEN_SETTINGS")]) {
-                            withMaven() {
-                                sh "$MVN_CMD -s $MAVEN_SETTINGS sonar:sonar"
-                            }
-                        }
-                    }
+                    sh "/setup-gpg.sh; /setup-ssh.sh; mvn -s /m2/settings.xml -B clean install site:site deploy"
                 }
             }
         }
