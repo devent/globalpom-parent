@@ -56,7 +56,7 @@ pipeline {
             }
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; /setup-ssh.sh; mvn -s /m2/settings.xml -B clean install site:site deploy"
+                    sh "/setup-gpg.sh; /setup-ssh.sh; mvn -s /m2/settings.xml -X -B clean install site:site deploy"
                 }
             }
         }
