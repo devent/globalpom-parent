@@ -23,7 +23,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.6.0</version>
+    <version>4.6.1</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -74,9 +74,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.home>https://project.anrisoftware.com/projects/globalpom</project.custom.home>
         <project.custom.license.image.url>https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif</project.custom.license.image.url>
         <project.custom.central.url>https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom</project.custom.central.url>
-        <project.custom.scm.repo>https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.repo>
+        <project.custom.scm.repo>https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</project.custom.scm.repo>
         <project.custom.scm.github>https://github.com/devent/globalpom-parent</project.custom.scm.github>
-        <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git</project.custom.scm.pub>
+        <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</project.custom.scm.pub>
         <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
         <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
         <project.custom.jenkins.url>https://jenkins.anrisoftware.com/job/globalpom-parent-public</project.custom.jenkins.url>
@@ -153,8 +153,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <distributionManagement>
         <site>
-            <id>site-ssh</id>
-            <url>${site.ssh.url}</url>
+            <id>site-dav</id>
+            <url>${site.dav.url}</url>
         </site>
         <repository>
             <id>public_releases</id>
@@ -1549,7 +1549,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <dependency>
                         <groupId>org.apache.maven.doxia</groupId>
                         <artifactId>doxia-module-markdown</artifactId>
-                        <version>1.10</version>
+                        <version>2.0.0-M2</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -1639,7 +1639,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.9.1</version>
+                    <version>3.12.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin signs all of the project's attached
@@ -1891,6 +1891,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <profile>
             <id>private-repository</id>
             <distributionManagement>
+                <site>
+                    <id>site-dav</id>
+                    <url>${site.dav.url}</url>
+                </site>
                 <repository>
                     <id>private_repo_releases</id>
                     <url>https://maven.anrisoftware.com/repository/internal/</url>
@@ -1906,8 +1910,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <id>osssonatype</id>
             <distributionManagement>
                 <site>
-                    <id>site-ssh</id>
-                    <url>${site.ssh.url}</url>
+                    <id>site-dav</id>
+                    <url>${site.dav.url}</url>
                 </site>
                 <repository>
                     <id>osssonatype_releases</id>

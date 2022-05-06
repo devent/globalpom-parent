@@ -49,82 +49,23 @@ pipeline {
         * The stage will compile, test and deploy on all branches.
         */
         stage("Compile, Test and Deploy") {
-            when {
-                allOf {
-                    not { branch "mainx" }
-                }
-            }
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; /setup-ssh.sh; mvn -s /m2/settings.xml -B clean install site:site deploy"
+                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
                 }
             }
         }
 
-		/**
-		* The stage will deploy the generated site for feature branches.
-		*/
-        stage("Deploy Site") {
-    		when {
-    			allOf {
-					not { branch "master" }
-					not { branch "develop" }
-				}
-			}
-            steps {
-                container("maven") {
-                	configFileProvider([configFile(fileId: "MAVEN_SETTINGS", variable: "MAVEN_SETTINGS")]) {
-                    	withMaven() {
-	                        sh "/setup-ssh.sh"
-                        	sh "$MVN_CMD -s $MAVEN_SETTINGS -B site:deploy"
-                    	}
-                    }
-                }
-            }
-        } // stage
-
-		/**
-		* The stage will perform a release from the develop branch.
-		*/
-        stage("Release to Private") {
-    		when {
-		        branch "develop"
-		        expression {
-		        	// skip stage if it is triggered by maven release.
-					return !sh(script: "git --no-pager log -1 --pretty=%B", returnStdout: true).contains("[maven-release-plugin]")
-				}
-			}
-            steps {
-	            timeout(time: 15, unit: "MINUTES") {
-	                waitForQualityGate abortPipeline: true
-	            }
-                container("maven") {
-                	configFileProvider([configFile(fileId: "MAVEN_SETTINGS", variable: "MAVEN_SETTINGS")]) {
-                    	withMaven() {
-	                        sh "/setup-ssh.sh"
-                    	    sh "git checkout develop && git pull origin develop"
-                        	sh "$MVN_CMD -s $MAVEN_SETTINGS -B release:prepare"
-                        	sh "$MVN_CMD -s $MAVEN_SETTINGS -B release:perform"
-                    	}
-                    }
-                }
-            }
-        } // stage
-
-		/**
-		* The stage will deploy the artifacts and the generated site to the public repository from the master branch.
-		*/
+        /**
+        * The stage will deploy the artifacts and the generated site to the public repository from the main branch.
+        */
         stage("Publish to Public") {
-    		when {
-		        branch "master"
-			}
+            when {
+                branch "main"
+            }
             steps {
                 container("maven") {
-                	configFileProvider([configFile(fileId: "MAVEN_SETTINGS", variable: "MAVEN_SETTINGS")]) {
-                    	withMaven() {
-                            sh "$MVN_CMD -s $MAVEN_SETTINGS -Posssonatype -B deploy"
-                    	}
-                    }
+                    sh "/setup-gpg.sh; maven -s /m2/settings.xml -Posssonatype -B deploy"
                 }
             }
         } // stage
@@ -135,7 +76,7 @@ pipeline {
         success {
            script {
                pom = readMavenPom file: "pom.xml"
-               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/\">View Maven Site</a>", false)
+               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/index.html\">View Maven Site</a>", false)
             }
         }
     } // post
