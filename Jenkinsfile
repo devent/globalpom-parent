@@ -51,11 +51,13 @@ pipeline {
         stage("Compile, Test and Deploy") {
             steps {
                 container("maven") {
-                    def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
-                    if (version =~ /.*-snapshot$/) {
-                        sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
-                    } else {
-                        sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site"
+                    script {
+                        def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
+                        if (version =~ /.*-snapshot$/) {
+                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                        } else {
+                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site"
+                        }
                     }
                 }
             }
