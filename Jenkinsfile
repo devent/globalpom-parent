@@ -72,7 +72,7 @@ pipeline {
             }
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; maven -s /m2/settings.xml -B deploy"
+                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B deploy"
                 }
             }
         } // stage
@@ -86,7 +86,7 @@ pipeline {
             }
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; maven -s /m2/settings.xml -Posssonatype -B deploy"
+                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -Posssonatype -B deploy"
                 }
             }
         } // stage
