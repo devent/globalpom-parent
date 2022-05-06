@@ -43,7 +43,7 @@ pipeline {
                     checkout scm
                 }
             }
-        }
+        } // stage
 
         /**
         * The stage will compile, test and deploy on all branches.
@@ -51,10 +51,29 @@ pipeline {
         stage("Compile, Test and Deploy") {
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                    def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
+                    if (version =~ /.*-snapshot$/) {
+                        sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                    } else {
+                        sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site"
+                    }
                 }
             }
-        }
+        } // stage
+
+        /**
+        * The stage will deploy the artifacts and the generated site to the public repository from the main branch.
+        */
+        stage("Publish to Private") {
+            when {
+                branch "main"
+            }
+            steps {
+                container("maven") {
+                    sh "/setup-gpg.sh; maven -s /m2/settings.xml -B deploy"
+                }
+            }
+        } // stage
 
         /**
         * The stage will deploy the artifacts and the generated site to the public repository from the main branch.
