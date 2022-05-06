@@ -95,9 +95,10 @@ pipeline {
 
     post {
         success {
-           script {
-               pom = readMavenPom file: "pom.xml"
-               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/index.html\">View Maven Site</a>", false)
+            script {
+                def groupId = sh script: 'mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
+                def artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
+                manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${groupId}/${artifactId}/index.html\">View Maven Site</a>", false)
             }
         }
     } // post
