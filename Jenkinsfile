@@ -43,7 +43,7 @@ pipeline {
                     checkout scm
                 }
             }
-        }
+        } // stage
 
         /**
         * The stage will compile, test and deploy on all branches.
@@ -51,10 +51,31 @@ pipeline {
         stage("Compile, Test and Deploy") {
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                    script {
+                        def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
+                        if (version =~ /.*-snapshot$/) {
+                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                        } else {
+                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site site:deploy"
+                        }
+                    }
                 }
             }
-        }
+        } // stage
+
+        /**
+        * The stage will deploy the artifacts and the generated site to the public repository from the main branch.
+        */
+        stage("Publish to Private") {
+            when {
+                branch "main"
+            }
+            steps {
+                container("maven") {
+                    sh "/setup-gpg.sh; maven -s /m2/settings.xml -B deploy"
+                }
+            }
+        } // stage
 
         /**
         * The stage will deploy the artifacts and the generated site to the public repository from the main branch.
@@ -74,9 +95,12 @@ pipeline {
 
     post {
         success {
-           script {
-               pom = readMavenPom file: "pom.xml"
-               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/index.html\">View Maven Site</a>", false)
+            container("maven") {
+                script {
+                    def groupId = sh script: 'mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
+                    def artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
+                    manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${groupId}/${artifactId}/index.html\">View Maven Site</a>", false)
+                }
             }
         }
     } // post
