@@ -56,7 +56,7 @@ pipeline {
                         if (version =~ /.*-snapshot$/) {
                             sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
                         } else {
-                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site"
+                            sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site site:deploy"
                         }
                     }
                 }
