@@ -51,7 +51,7 @@ pipeline {
         stage("Compile, Test and Deploy") {
             steps {
                 container("maven") {
-                    sh "/setup-gpg.sh; /setup-ssh.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
+                    sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
                 }
             }
         }
@@ -76,7 +76,7 @@ pipeline {
         success {
            script {
                pom = readMavenPom file: "pom.xml"
-               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/${pom.version}/\">View Maven Site</a>", false)
+               manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${pom.groupId}/${pom.artifactId}/index.html\">View Maven Site</a>", false)
             }
         }
     } // post
