@@ -1906,8 +1906,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <id>osssonatype</id>
             <distributionManagement>
                 <site>
-                    <id>site-ssh</id>
-                    <url>${site.ssh.url}</url>
+                    <id>site-dav</id>
+                    <url>${site.dav.url}</url>
                 </site>
                 <repository>
                     <id>osssonatype_releases</id>
