@@ -153,8 +153,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <distributionManagement>
         <site>
-            <id>site-ssh</id>
-            <url>${site.ssh.url}</url>
+            <id>site-dav</id>
+            <url>${site.dav.url}</url>
         </site>
         <repository>
             <id>public_releases</id>
@@ -1891,6 +1891,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <profile>
             <id>private-repository</id>
             <distributionManagement>
+                <site>
+                    <id>site-dav</id>
+                    <url>${site.dav.url}</url>
+                </site>
                 <repository>
                     <id>private_repo_releases</id>
                     <url>https://maven.anrisoftware.com/repository/internal/</url>
