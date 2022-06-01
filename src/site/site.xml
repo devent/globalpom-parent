@@ -27,12 +27,12 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
     <bannerRight>
         <name>Advanced Natural Research Institute Projects</name>
         <src>images/anri_logo_48.png</src>
-        <href>https://project.anrisoftware.com/</href>
+        <href>${project.custom.homepage}</href>
     </bannerRight>
     <skin>
         <groupId>org.apache.maven.skins</groupId>
         <artifactId>maven-fluido-skin</artifactId>
-        <version>1.7</version>
+        <version>1.11</version>
     </skin>
     <body>
         <links>
@@ -41,11 +41,13 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
         <menu name="Overview">
             <item name="Home" href="/index.html" />
             <item name="Download (Central)" href="https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom" />
-            <item name="Source code" href="https://gitea.anrisoftware.com/anrisoftware.com/${project.artifactId}" />
+            <item name="Source code" href="${project.custom.scm.repo}" />
             <item name="Source code (Github)" href="https://github.com/devent/${project.artifactId}" />
             <item name="Project Home" href="${project.issueManagement.url}" />
             <item name="Project Roadmap" href="${project.issueManagement.url}/roadmap" />
             <item name="Project Issues" href="${project.issueManagement.url}/issues" />
+            <item name="Version 4.6.2" href="${project.custom.homepage}/versions/1700" />
+            <item name="Version 4.6.1" href="${project.custom.homepage}/versions/1688" />
         </menu>
         <menu ref="parent" />
         <menu ref="modules" />

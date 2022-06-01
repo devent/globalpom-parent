@@ -66,6 +66,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
     </issueManagement>
 
     <properties>
+        <project.custom.homepage>https://project.anrisoftware.com</project.custom.homepage>
         <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
         <project.custom.current.year>2022</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
@@ -1874,7 +1875,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
-                    <linkXref>true</linkXref>
                     <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
                     <minimumTokens>100</minimumTokens>
                     <targetJdk>${project.custom.source.target}</targetJdk>
