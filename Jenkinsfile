@@ -17,9 +17,14 @@
  * Builds and deploys the project.
  *
  * @author Erwin Mueller, erwin.mueller@deventm.org
- * @since 4.5.1
- * @version 1.3.0
+ * @since 4.6.2
+ * @version 1.4.0
  */
+def groupId
+def artifactId
+def version
+def isSnapshot
+
 pipeline {
 
     options {
@@ -46,14 +51,30 @@ pipeline {
         } // stage
 
         /**
+        * Setups the pipeline.
+        */
+        stage("Setup") {
+            steps {
+                container("maven") {
+                    script {
+                        groupId = sh script: 'mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
+                        artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
+                        version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
+                        isSnapshot = (version =~ /(?i).*-snapshot$/).matches()
+                        echo "${groupId}/${artifactId}:${version} snapshot: ${isSnapshot}"
+                    }
+                }
+            }
+        } // stage
+
+        /**
         * The stage will compile, test and deploy on all branches.
         */
         stage("Compile, Test and Deploy") {
             steps {
                 container("maven") {
                     script {
-                        def version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
-                        if (version =~ /.*-snapshot$/) {
+                        if (isSnapshot) {
                             sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site deploy site:deploy"
                         } else {
                             sh "/setup-gpg.sh; mvn -s /m2/settings.xml -B clean install site:site site:deploy"
@@ -68,7 +89,10 @@ pipeline {
         */
         stage("Publish to Private") {
             when {
-                branch "main"
+                allOf {
+                    expression { !isSnapshot }
+                    branch "main"
+                }
             }
             steps {
                 container("maven") {
@@ -82,7 +106,10 @@ pipeline {
         */
         stage("Publish to Public") {
             when {
-                branch "main"
+                allOf {
+                    expression { !isSnapshot }
+                    branch "main"
+                }
             }
             steps {
                 container("maven") {
@@ -97,9 +124,7 @@ pipeline {
         success {
             container("maven") {
                 script {
-                    def groupId = sh script: 'mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
-                    def artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
-                    manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${groupId}/${artifactId}/index.html\">View Maven Site</a>", false)
+                    manager.createSummary("document.png").appendText("<a href=\"${env.JAVADOC_URL}/${groupId}/${artifactId}/${version}/index.html\">View Maven Site</a>", false)
                 }
             }
         }
