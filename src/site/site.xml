@@ -46,7 +46,7 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
             <item name="Project Home" href="${project.issueManagement.url}" />
             <item name="Project Roadmap" href="${project.issueManagement.url}/roadmap" />
             <item name="Project Issues" href="${project.issueManagement.url}/issues" />
-            <item name="Version 4.6.2" href="${project.custom.homepage}/versions/1700" />
+            <item name="Version 4.6.2" href="${project.custom.homepage}/versions/1699" />
             <item name="Version 4.6.1" href="${project.custom.homepage}/versions/1688" />
         </menu>
         <menu ref="parent" />
