@@ -1,6 +1,6 @@
 <!--
 
-    Copyright 2011-2021 Erwin Müller <erwin.mueller@anrisoftware.com>
+    Copyright 2011-2022 Erwin Müller <erwin.mueller@anrisoftware.com>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -1467,18 +1467,29 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
                 <configuration>
-                    <header>${license.custom.license.template}</header>
                     <properties>
                         <owner>${license.custom.license.owner}</owner>
                         <email>${license.custom.license.email}</email>
-                        <project.custom.year>${project.custom.year}</project.custom.year>
+                        <year>${project.custom.year}</year>
                     </properties>
-                    <excludes>
-                        <exclude>**/README</exclude>
-                        <exclude>**/LICENSE.txt</exclude>
-                        <exclude>src/test/resources/**</exclude>
-                        <exclude>src/main/resources/**</exclude>
-                    </excludes>
+                    <mapping>
+                        <Jenkinsfile>JAVADOC_STYLE</Jenkinsfile>
+                    </mapping>
+                    <licenseSets>
+                        <licenseSet>
+                            <header>${license.custom.license.template}</header>
+                            <excludes>
+                                <exclude>**/README</exclude>
+                                <exclude>**/README.md</exclude>
+                                <exclude>**/README.textile</exclude>
+                                <exclude>**/LICENSE.txt</exclude>
+                                <exclude>**/*.odg</exclude>
+                                <exclude>**/.directory</exclude>
+                                <exclude>src/test/resources/**</exclude>
+                                <exclude>src/main/resources/**</exclude>
+                            </excludes>
+                        </licenseSet>
+                    </licenseSets>
                 </configuration>
                 <executions>
                     <execution>
