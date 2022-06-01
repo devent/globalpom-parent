@@ -23,7 +23,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.6.1</version>
+    <version>4.6.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -67,7 +67,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <properties>
         <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
-        <project.custom.current.year>2021</project.custom.current.year>
+        <project.custom.current.year>2022</project.custom.current.year>
         <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
         <project.custom.user.name>Erwin Müller</project.custom.user.name>
         <project.custom.user.email>erwin.mueller@anrisoftware.com</project.custom.user.email>
@@ -79,9 +79,9 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</project.custom.scm.pub>
         <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
         <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
-        <project.custom.jenkins.url>https://jenkins.anrisoftware.com/job/globalpom-parent-public</project.custom.jenkins.url>
-        <project.custom.jenkins.build.badge.master>${project.custom.jenkins.url}/job/master/badge/icon</project.custom.jenkins.build.badge.master>
-        <project.custom.jenkins.build.link.master>${project.custom.jenkins.url}/job/master</project.custom.jenkins.build.link.master>
+        <project.custom.jenkins.url>https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent</project.custom.jenkins.url>
+        <project.custom.jenkins.build.badge.master>${project.custom.jenkins.url}/job/main/badge/icon</project.custom.jenkins.build.badge.master>
+        <project.custom.jenkins.build.link.master>${project.custom.jenkins.url}/job/main</project.custom.jenkins.build.link.master>
         <project.custom.sonarqube.url>https://sonar.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.url>
         <project.custom.sonarqube.qualitygate.badge>https://sonar.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.qualitygate.badge>
         <project.custom.sonarqube.qualitygate.link>${project.custom.sonarqube.url}</project.custom.sonarqube.qualitygate.link>
@@ -97,21 +97,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
-        <project.custom.anrisoftware.version>4.6.0-SNAPSHOT</project.custom.anrisoftware.version>
-        <project.custom.groovy.version>3.0.9</project.custom.groovy.version>
+        <project.custom.anrisoftware.version>4.6.2-SNAPSHOT</project.custom.anrisoftware.version>
+        <project.custom.groovy.version>3.0.11</project.custom.groovy.version>
         <project.custom.groovy-eclipse-compiler.version>3.7.0</project.custom.groovy-eclipse-compiler.version>
         <project.custom.groovy-eclipse-batch.version>3.0.7-03</project.custom.groovy-eclipse-batch.version>
         <project.custom.source.source>11</project.custom.source.source>
         <project.custom.source.target>11</project.custom.source.target>
         <project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
-        <project.custom.slf4j.version>1.7.32</project.custom.slf4j.version>
-        <project.custom.logback.version>1.2.7</project.custom.logback.version>
+        <project.custom.slf4j.version>1.7.36</project.custom.slf4j.version>
+        <project.custom.logback.version>1.2.11</project.custom.logback.version>
         <project.custom.pax.exam.version>4.13.4</project.custom.pax.exam.version>
         <project.custom.pax.url.version>2.6.7</project.custom.pax.url.version>
-        <project.custom.cxf.version>3.4.5</project.custom.cxf.version>
-        <project.custom.hibernate.version>5.6.1.Final</project.custom.hibernate.version>
+        <project.custom.cxf.version>3.5.2</project.custom.cxf.version>
+        <project.custom.hibernate.version>6.0.2.Final</project.custom.hibernate.version>
         <project.custom.hibernate-validator.version>6.0.10.Final</project.custom.hibernate-validator.version>
-        <project.custom.spring.version>5.2.18.RELEASE</project.custom.spring.version>
+        <project.custom.spring.version>5.2.22.RELEASE</project.custom.spring.version>
         <project.custom.spring-boot.version>2.3.12.RELEASE</project.custom.spring-boot.version>
         <project.custom.querydsl.version>5.0.0</project.custom.querydsl.version>
         <project.custom.jacoco.version>0.8.7</project.custom.jacoco.version>
@@ -130,16 +130,16 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-security.version>5.1.1.RELEASE</spring-security.version>
         <spring-session-bom.version>Bean-RELEASE</spring-session-bom.version>
         <spring-ws.version>3.0.4.RELEASE</spring-ws.version>
-        <project.custom.flywaydb.version>8.0.4</project.custom.flywaydb.version>
+        <project.custom.flywaydb.version>8.5.12</project.custom.flywaydb.version>
         <project.custom.flywaydb.flyway-test-extensions.version>7.0.0</project.custom.flywaydb.flyway-test-extensions.version>
-        <project.custom.fasterxml.version>2.13.0</project.custom.fasterxml.version>
+        <project.custom.fasterxml.version>2.13.3</project.custom.fasterxml.version>
         <project.custom.httpcomponents.version>4.5.13</project.custom.httpcomponents.version>
-        <project.custom.junit.jupiter.version>5.8.1</project.custom.junit.jupiter.version>
+        <project.custom.junit.jupiter.version>5.8.2</project.custom.junit.jupiter.version>
         <project.custom.junit.platform.version>1.8.1</project.custom.junit.platform.version>
-        <project.custom.guice.version>5.0.1</project.custom.guice.version>
-        <project.custom.lombok.version>1.18.20</project.custom.lombok.version>
-        <project.custom.akka.version>2.6.17</project.custom.akka.version>
-        <project.custom.eclipse-collections.version>10.4.0</project.custom.eclipse-collections.version>
+        <project.custom.guice.version>5.1.0</project.custom.guice.version>
+        <project.custom.lombok.version>1.18.24</project.custom.lombok.version>
+        <project.custom.akka.version>2.6.19</project.custom.akka.version>
+        <project.custom.eclipse-collections.version>11.0.0</project.custom.eclipse-collections.version>
         <scala.binary.version>2.13</scala.binary.version>
         <project.custom.auto-service.version>1.0.1</project.custom.auto-service.version>
     </properties>
@@ -247,12 +247,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>4.0.0</version>
+                <version>4.6.0</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>
-                <version>4.0.0</version>
+                <version>4.6.0</version>
             </dependency>
 
             <!-- perf4j -->
@@ -500,7 +500,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
-                <version>3.8</version>
+                <version>3.8.0</version>
             </dependency>
             <dependency>
                 <!-- The codec package contains simple encoder and decoders
@@ -610,7 +610,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- BSD -->
                 <groupId>org.antlr</groupId>
                 <artifactId>ST4</artifactId>
-                <version>4.3.1</version>
+                <version>4.3.3</version>
             </dependency>
 
             <!-- sqlite -->
@@ -635,7 +635,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- BSD style -->
                 <groupId>com.thoughtworks.xstream</groupId>
                 <artifactId>xstream</artifactId>
-                <version>1.4.18</version>
+                <version>1.4.19</version>
             </dependency>
 
             <!-- javacsv -->
@@ -672,7 +672,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>com.hazelcast</groupId>
                 <artifactId>hazelcast-all</artifactId>
-                <version>4.2.2</version>
+                <version>5.1.1</version>
             </dependency>
 
             <!-- piccolo2d -->
@@ -706,7 +706,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
-                <version>2.10.13</version>
+                <version>2.10.14</version>
             </dependency>
 
             <!-- quartz-scheduler -->
@@ -741,12 +741,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna</artifactId>
-                <version>5.10.0</version>
+                <version>5.11.0</version>
             </dependency>
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna-platform</artifactId>
-                <version>5.10.0</version>
+                <version>5.11.0</version>
             </dependency>
 
             <!-- substance look&feel -->
@@ -909,7 +909,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr</artifactId>
-                <version>2.1.26</version>
+                <version>2.2.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
@@ -956,7 +956,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.framework</artifactId>
-                <version>6.0.4</version>
+                <version>7.0.4</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.cdi</groupId>
@@ -968,7 +968,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.karaf.shell</groupId>
                 <artifactId>org.apache.karaf.shell.core</artifactId>
-                <version>4.3.0</version>
+                <version>4.4.0</version>
             </dependency>
 
             <!-- osgi dependencies -->
@@ -1017,7 +1017,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.testing.osgi-mock.junit5</artifactId>
-                <version>3.0.0</version>
+                <version>3.3.0</version>
             </dependency>
 
             <!-- hibernate -->
@@ -1076,7 +1076,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <version>1.4.200</version>
+                <version>2.1.212</version>
             </dependency>
 
             <dependency>
@@ -1210,7 +1210,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>31.0.1-jre</version>
+                <version>31.1-jre</version>
             </dependency>
 
             <dependency>
@@ -1221,7 +1221,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.tinkerpop</groupId>
                 <artifactId>gremlin-core</artifactId>
-                <version>3.5.1</version>
+                <version>3.6.0</version>
             </dependency>
             <dependency>
                 <groupId>com.tinkerpop.gremlin</groupId>
@@ -1231,20 +1231,19 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.json</groupId>
                 <artifactId>json</artifactId>
-                <version>20210307</version>
+                <version>20220320</version>
             </dependency>
 
+            <!-- Caffeine is a high performance, near optimal caching library. -->
             <dependency>
-                <!-- Caffeine is a high performance, near optimal caching
-                    library. -->
                 <groupId>com.github.ben-manes.caffeine</groupId>
                 <artifactId>caffeine</artifactId>
-                <version>3.0.4</version>
+                <version>3.1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.github.ben-manes.caffeine</groupId>
                 <artifactId>jcache</artifactId>
-                <version>3.0.4</version>
+                <version>3.1.1</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -1270,17 +1269,17 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.greenrobot</groupId>
                 <artifactId>eventbus</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.1</version>
             </dependency>
             <dependency>
                 <groupId>com.simsilica</groupId>
                 <artifactId>lemur</artifactId>
-                <version>1.15.0</version>
+                <version>1.16.0</version>
             </dependency>
             <dependency>
                 <groupId>com.simsilica</groupId>
                 <artifactId>lemur-proto</artifactId>
-                <version>1.12.0</version>
+                <version>1.13.0</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -1316,7 +1315,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Units of Measurement RI -->
                 <groupId>tech.units</groupId>
                 <artifactId>indriya</artifactId>
-                <version>2.1.1</version>
+                <version>2.1.3</version>
             </dependency>
 
             <!-- Units of Measurement Libraries -->
@@ -1340,7 +1339,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4</artifactId>
-                <version>4.9.3</version>
+                <version>4.10.1</version>
             </dependency>
 
             <dependency>
@@ -1360,21 +1359,21 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>net.lingala.zip4j</groupId>
                 <artifactId>zip4j</artifactId>
-                <version>2.9.0</version>
+                <version>2.10.0</version>
             </dependency>
 
             <!-- YAML 1.1 parser and emitter for Java -->
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
-                <version>1.29</version>
+                <version>1.30</version>
             </dependency>
 
             <!-- fastutil extends the Java™ Collections Framework by providing type-specific maps, sets, lists and queues with a small memory footprint and fast access and insertion; provides also big (64-bit) arrays, sets and lists, and fast, practical I/O classes for binary and text files. -->
             <dependency>
                 <groupId>it.unimi.dsi</groupId>
                 <artifactId>fastutil</artifactId>
-                <version>8.5.6</version>
+                <version>8.5.8</version>
             </dependency>
 
         </dependencies>
