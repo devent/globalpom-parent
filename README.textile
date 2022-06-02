@@ -1,4 +1,4 @@
-!https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master/badge/icon(Build Status)!:https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master  !https://sonarqube.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent(Quality Gate)!:https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent !https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif(Apache License, Version 2.0)!:http://www.apache.org/licenses/LICENSE-2.0 © 2011&#45;2018 Erwin Müller
+!https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master/badge/icon(Build Status)!:https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master !https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif(Apache License, Version 2.0)!:http://www.apache.org/licenses/LICENSE-2.0 © 2011&#45;2022 Erwin Müller
 
 h1(#description). Description
 
@@ -21,4 +21,4 @@ h1(#packages-overview). Packages Overview
 !https://project.anrisoftware.com/attachments/download/447/packages.svg(Packages Overview)!
 
 
-Copyright ©2011 - 2020 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.
+Copyright ©2011 - 2022 "Advanced Natural Research Institute":https://anrisoftware.com/. All rights reserved.
