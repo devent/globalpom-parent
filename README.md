@@ -1,5 +1,5 @@
-![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon "Build Status"):https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main
-![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif "Apache License, Version 2.0"):http://www.apache.org/licenses/LICENSE-2.0
+!(https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon "Build Status"):https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main
+!(https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif "Apache License, Version 2.0"):http://www.apache.org/licenses/LICENSE-2.0
 © 2011-2022 Erwin Müller
 
 Description
