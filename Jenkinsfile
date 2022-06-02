@@ -18,7 +18,7 @@
  *
  * @author Erwin Mueller, erwin.mueller@deventm.org
  * @since 4.6.2
- * @version 1.4.0
+ * @version 1.4.1
  */
 def groupId
 def artifactId
@@ -57,9 +57,9 @@ pipeline {
             steps {
                 container("maven") {
                     script {
-                        groupId = sh script: 'mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
-                        artifactId = sh script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
-                        version = sh script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
+                        groupId = sh script: 'mvn -s /m2/settings.xml help:evaluate -Dexpression=project.groupId -q -DforceStdout', returnStdout: true
+                        artifactId = sh script: 'mvn -s /m2/settings.xml help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true
+                        version = sh script: 'mvn -s /m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true
                         isSnapshot = (version =~ /(?i).*-snapshot$/).matches()
                         echo "${groupId}/${artifactId}:${version} snapshot: ${isSnapshot}"
                     }
