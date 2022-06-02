@@ -1,4 +1,4 @@
-![Build Status](https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master/badge/icon "Build Status"):https://jenkins.anrisoftware.com/job/globalpom-parent-public/job/master
+![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon "Build Status"):https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main
 ![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif "Apache License, Version 2.0"):http://www.apache.org/licenses/LICENSE-2.0
 © 2011-2022 Erwin Müller
 
@@ -13,27 +13,39 @@ project-tests with the project jar.
 Links
 =====
 
--   [[Generated
-    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.5.1/)]{.externalLink}
--   [[Download
-    (Central)](https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.5.1/pom)]{.externalLink}
--   [[Source
-    code](https://gitea.anrisoftware.com/anrisoftware.com/globalpom-parent.git)]{.externalLink}
--   [[Source code
-    (Github)](https://github.com/devent/globalpom-parent)]{.externalLink}
--   [[Project
-    Home](https://project.anrisoftware.com/projects/globalpom)]{.externalLink}
--   [[Project
-    Roadmap](https://project.anrisoftware.com/projects/globalpom/roadmap)]{.externalLink}
--   [[Project
-    Issues](https://project.anrisoftware.com/projects/globalpom/issues)]{.externalLink}
--   [[Jenkins](https://jenkins.anrisoftware.com/job/globalpom-parent)]{.externalLink}
--   [[SonarQube](https://sonarqube.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent)]{.externalLink}
+-   [Generated
+    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/)
+-   [Download
+    (Central)](https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.2/pom)
+-   [Source
+    code](https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent)
+-   [Source code (Github)](https://github.com/devent/globalpom-parent)
+-   [Project Home](https://project.anrisoftware.com/projects/globalpom)
+-   [Project
+    Roadmap](https://project.anrisoftware.com/projects/globalpom/roadmap)
+-   [Project
+    Issues](https://project.anrisoftware.com/projects/globalpom/issues)
+-   [Jenkins](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent)
 
 Packages Overview
 =================
 
 ![Packages Overview](https://project.anrisoftware.com/attachments/download/447/packages.svg "Packages Overview")
 
-Copyright ©2011 - 2022 [Advanced Natural Research
-Institute](https://anrisoftware.com/). All rights reserved.
+License
+=======
+
+Copyright 2011-2022 Erwin Müller \<erwin.mueller\@anrisoftware.com\>
+
+Licensed under the Apache License, Version 2.0 (the "License");\
+you may not use this file except in compliance with the License.\
+You may obtain a copy of the License at
+
+<http://www.apache.org/licenses/LICENSE-2.0>
+
+Unless required by applicable law or agreed to in writing, software\
+distributed under the License is distributed on an "AS IS" BASIS,\
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied.\
+See the License for the specific language governing permissions and\
+limitations under the License.
