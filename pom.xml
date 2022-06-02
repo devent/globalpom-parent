@@ -1826,7 +1826,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.projectlombok</groupId>
                     <artifactId>lombok-maven-plugin</artifactId>
-                    <version>${project.custom.lombok.version}.0</version>
+                    <version>1.18.20.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${project.custom.lombok.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
             </plugins>
