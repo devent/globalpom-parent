@@ -14,7 +14,7 @@ Links
 =====
 
 -   [Generated
-    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/)
+    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/index.html)
 -   [Download
     (Central)](https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.2/pom)
 -   [Source

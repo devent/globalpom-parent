@@ -6,7 +6,7 @@ Declares all dependencies and all Maven plug&#45;ins needed for a Advanced Natur
 
 h1. Links
 
-* "Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/
+* "Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/index.html
 * "Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.2/pom
 * "Source code":https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent
 * "Source code (Github)":https://github.com/devent/globalpom-parent
@@ -34,3 +34,11 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+h5. Markdown
+
+<pre>
+[![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon)](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main)
+[![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif)](http://www.apache.org/licenses/LICENSE-2.0)
+© 2011-2022 Erwin Müller
+</pre>
