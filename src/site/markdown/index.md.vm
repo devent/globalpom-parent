@@ -17,7 +17,7 @@
  * version 1.0.0
  * since 4.6.2
  *#
-[![Build Status]($context.get("globalpom.custom.jenkins.build.badge.master"))]($context.get("globalpom.custom.jenkins.build.link.master"))
+[![Build Status]($context.get("globalpom.custom.jenkins.build.badge.main"))]($context.get("globalpom.custom.jenkins.build.link.main"))
 [![Apache License, Version 2.0]($context.get("globalpom.custom.license.image.url"))](http://www.apache.org/licenses/LICENSE-2.0) © $context.get("globalpom.custom.year") $context.get("globalpom.custom.user.name")
 
 #[[#]]# Description
