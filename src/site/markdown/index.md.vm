@@ -34,7 +34,6 @@ ${project.description}
 * [Project Roadmap]($context.get("globalpom.custom.home")/roadmap)
 * [Project Issues]($context.get("globalpom.custom.home")/issues)
 * [Jenkins]($context.get("globalpom.custom.jenkins.url"))
-* [SonarQube]($context.get("globalpom.custom.sonarqube.url"))
 
 #[[#]]# Packages Overview
 
