@@ -18,7 +18,7 @@
 -->
 <!--
 version 1.0.0
-since 4.6.4
+since 4.6.2
 -->
 <project name="${project.name}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -31,7 +31,7 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
     <bannerRight>
         <name>Advanced Natural Research Institute Projects</name>
         <src>images/anri_logo_48.png</src>
-        <href>${project.custom.homepage}</href>
+        <href>${globalpom.custom.homepage}</href>
     </bannerRight>
     <skin>
         <groupId>org.apache.maven.skins</groupId>
@@ -45,13 +45,13 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
         <menu name="Overview">
             <item name="Home" href="/index.html" />
             <item name="Download (Central)" href="https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom" />
-            <item name="Source code" href="${project.custom.scm.repo}" />
+            <item name="Source code" href="${globalpom.custom.scm.repo}" />
             <item name="Source code (Github)" href="https://github.com/devent/${project.artifactId}" />
             <item name="Project Home" href="${project.issueManagement.url}" />
             <item name="Project Roadmap" href="${project.issueManagement.url}/roadmap" />
             <item name="Project Issues" href="${project.issueManagement.url}/issues" />
-            <item name="Version 4.6.2" href="${project.custom.homepage}/versions/1699" />
-            <item name="Version 4.6.1" href="${project.custom.homepage}/versions/1686" />
+            <item name="Version 4.6.2" href="${globalpom.custom.homepage}/versions/1699" />
+            <item name="Version 4.6.1" href="${globalpom.custom.homepage}/versions/1686" />
         </menu>
         <menu ref="parent" />
         <menu ref="modules" />

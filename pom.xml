@@ -66,56 +66,56 @@ source and test sources and deploy the project-tests with the project jar.</desc
     </issueManagement>
 
     <properties>
-        <project.custom.homepage>https://project.anrisoftware.com</project.custom.homepage>
-        <project.custom.requireMavenVersion>3.6.0</project.custom.requireMavenVersion>
-        <project.custom.current.year>2022</project.custom.current.year>
-        <project.custom.year>${project.inceptionYear}-${project.custom.current.year}</project.custom.year>
-        <project.custom.user.name>Erwin Müller</project.custom.user.name>
-        <project.custom.user.email>erwin.mueller@anrisoftware.com</project.custom.user.email>
-        <project.custom.home>https://project.anrisoftware.com/projects/globalpom</project.custom.home>
-        <project.custom.license.image.url>https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif</project.custom.license.image.url>
-        <project.custom.central.url>https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom</project.custom.central.url>
-        <project.custom.scm.repo>https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</project.custom.scm.repo>
-        <project.custom.scm.github>https://github.com/devent/globalpom-parent</project.custom.scm.github>
-        <project.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</project.custom.scm.pub>
-        <project.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</project.custom.scm.dev>
-        <project.custom.scm.url>${project.custom.home}/repository</project.custom.scm.url>
-        <project.custom.jenkins.url>https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent</project.custom.jenkins.url>
-        <project.custom.jenkins.build.badge.master>${project.custom.jenkins.url}/job/main/badge/icon</project.custom.jenkins.build.badge.master>
-        <project.custom.jenkins.build.link.master>${project.custom.jenkins.url}/job/main</project.custom.jenkins.build.link.master>
-        <project.custom.sonarqube.url>https://sonar.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.url>
-        <project.custom.sonarqube.qualitygate.badge>https://sonar.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</project.custom.sonarqube.qualitygate.badge>
-        <project.custom.sonarqube.qualitygate.link>${project.custom.sonarqube.url}</project.custom.sonarqube.qualitygate.link>
+        <globalpom.custom.homepage>https://project.anrisoftware.com</globalpom.custom.homepage>
+        <globalpom.custom.requireMavenVersion>3.6.0</globalpom.custom.requireMavenVersion>
+        <globalpom.custom.current.year>2022</globalpom.custom.current.year>
+        <globalpom.custom.year>${project.inceptionYear}-${globalpom.custom.current.year}</globalpom.custom.year>
+        <globalpom.custom.user.name>Erwin Müller</globalpom.custom.user.name>
+        <globalpom.custom.user.email>erwin.mueller@anrisoftware.com</globalpom.custom.user.email>
+        <globalpom.custom.home>https://project.anrisoftware.com/projects/globalpom</globalpom.custom.home>
+        <globalpom.custom.license.image.url>https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif</globalpom.custom.license.image.url>
+        <globalpom.custom.central.url>https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom</globalpom.custom.central.url>
+        <globalpom.custom.scm.repo>https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</globalpom.custom.scm.repo>
+        <globalpom.custom.scm.github>https://github.com/devent/globalpom-parent</globalpom.custom.scm.github>
+        <globalpom.custom.scm.pub>scm:git:https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent.git</globalpom.custom.scm.pub>
+        <globalpom.custom.scm.dev>scm:git:git@anrisoftware.com:anrisoftware.com/globalpom-parent.git</globalpom.custom.scm.dev>
+        <globalpom.custom.scm.url>${globalpom.custom.home}/repository</globalpom.custom.scm.url>
+        <globalpom.custom.jenkins.url>https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent</globalpom.custom.jenkins.url>
+        <globalpom.custom.jenkins.build.badge.master>${globalpom.custom.jenkins.url}/job/main/badge/icon</globalpom.custom.jenkins.build.badge.master>
+        <globalpom.custom.jenkins.build.link.master>${globalpom.custom.jenkins.url}/job/main</globalpom.custom.jenkins.build.link.master>
+        <globalpom.custom.sonarqube.url>https://sonar.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</globalpom.custom.sonarqube.url>
+        <globalpom.custom.sonarqube.qualitygate.badge>https://sonar.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</globalpom.custom.sonarqube.qualitygate.badge>
+        <globalpom.custom.sonarqube.qualitygate.link>${globalpom.custom.sonarqube.url}</globalpom.custom.sonarqube.qualitygate.link>
         <license.custom.license.template>src/main/resources/apache-header.txt</license.custom.license.template>
         <license.custom.license.owner>Erwin Müller</license.custom.license.owner>
         <license.custom.license.email>erwin.mueller@anrisoftware.com</license.custom.license.email>
         <license.licenseName>apache_v2</license.licenseName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <file.encoding>${project.build.sourceEncoding}</file.encoding>
-        <project.custom.resources.escapestring>\</project.custom.resources.escapestring>
+        <globalpom.custom.resources.escapestring>\</globalpom.custom.resources.escapestring>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
         <!-- Sonar -->
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
-        <project.custom.anrisoftware.version>4.6.2-SNAPSHOT</project.custom.anrisoftware.version>
-        <project.custom.groovy.version>3.0.11</project.custom.groovy.version>
-        <project.custom.groovy-eclipse-compiler.version>3.7.0</project.custom.groovy-eclipse-compiler.version>
-        <project.custom.groovy-eclipse-batch.version>3.0.7-03</project.custom.groovy-eclipse-batch.version>
-        <project.custom.source.source>11</project.custom.source.source>
-        <project.custom.source.target>11</project.custom.source.target>
-        <project.custom.izpack.standalone.compiler.version>4.3.5</project.custom.izpack.standalone.compiler.version>
-        <project.custom.slf4j.version>1.7.36</project.custom.slf4j.version>
-        <project.custom.logback.version>1.2.11</project.custom.logback.version>
-        <project.custom.pax.exam.version>4.13.4</project.custom.pax.exam.version>
-        <project.custom.pax.url.version>2.6.7</project.custom.pax.url.version>
-        <project.custom.cxf.version>3.5.2</project.custom.cxf.version>
-        <project.custom.hibernate.version>6.0.2.Final</project.custom.hibernate.version>
-        <project.custom.hibernate-validator.version>6.0.10.Final</project.custom.hibernate-validator.version>
-        <project.custom.spring.version>5.2.22.RELEASE</project.custom.spring.version>
-        <project.custom.spring-boot.version>2.3.12.RELEASE</project.custom.spring-boot.version>
-        <project.custom.querydsl.version>5.0.0</project.custom.querydsl.version>
-        <project.custom.jacoco.version>0.8.8</project.custom.jacoco.version>
+        <globalpom.custom.anrisoftware.version>4.6.2-SNAPSHOT</globalpom.custom.anrisoftware.version>
+        <globalpom.custom.groovy.version>3.0.11</globalpom.custom.groovy.version>
+        <globalpom.custom.groovy-eclipse-compiler.version>3.7.0</globalpom.custom.groovy-eclipse-compiler.version>
+        <globalpom.custom.groovy-eclipse-batch.version>3.0.7-03</globalpom.custom.groovy-eclipse-batch.version>
+        <globalpom.custom.source.source>11</globalpom.custom.source.source>
+        <globalpom.custom.source.target>11</globalpom.custom.source.target>
+        <globalpom.custom.izpack.standalone.compiler.version>4.3.5</globalpom.custom.izpack.standalone.compiler.version>
+        <globalpom.custom.slf4j.version>1.7.36</globalpom.custom.slf4j.version>
+        <globalpom.custom.logback.version>1.2.11</globalpom.custom.logback.version>
+        <globalpom.custom.pax.exam.version>4.13.4</globalpom.custom.pax.exam.version>
+        <globalpom.custom.pax.url.version>2.6.7</globalpom.custom.pax.url.version>
+        <globalpom.custom.cxf.version>3.5.2</globalpom.custom.cxf.version>
+        <globalpom.custom.hibernate.version>6.0.2.Final</globalpom.custom.hibernate.version>
+        <globalpom.custom.hibernate-validator.version>6.0.10.Final</globalpom.custom.hibernate-validator.version>
+        <globalpom.custom.spring.version>5.2.22.RELEASE</globalpom.custom.spring.version>
+        <globalpom.custom.spring-boot.version>2.3.12.RELEASE</globalpom.custom.spring-boot.version>
+        <globalpom.custom.querydsl.version>5.0.0</globalpom.custom.querydsl.version>
+        <globalpom.custom.jacoco.version>0.8.8</globalpom.custom.jacoco.version>
         <spring-amqp.version>2.1.0.RELEASE</spring-amqp.version>
         <spring-batch.version>4.1.0.RELEASE</spring-batch.version>
         <spring-cloud-connectors.version>2.0.3.RELEASE</spring-cloud-connectors.version>
@@ -131,24 +131,24 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-security.version>5.1.1.RELEASE</spring-security.version>
         <spring-session-bom.version>Bean-RELEASE</spring-session-bom.version>
         <spring-ws.version>3.0.4.RELEASE</spring-ws.version>
-        <project.custom.flywaydb.version>8.5.12</project.custom.flywaydb.version>
-        <project.custom.flywaydb.flyway-test-extensions.version>7.0.0</project.custom.flywaydb.flyway-test-extensions.version>
-        <project.custom.fasterxml.version>2.13.3</project.custom.fasterxml.version>
-        <project.custom.httpcomponents.version>4.5.13</project.custom.httpcomponents.version>
-        <project.custom.junit.jupiter.version>5.8.2</project.custom.junit.jupiter.version>
-        <project.custom.junit.platform.version>1.8.1</project.custom.junit.platform.version>
-        <project.custom.guice.version>5.1.0</project.custom.guice.version>
-        <project.custom.lombok.version>1.18.24</project.custom.lombok.version>
-        <project.custom.akka.version>2.6.19</project.custom.akka.version>
-        <project.custom.eclipse-collections.version>11.0.0</project.custom.eclipse-collections.version>
+        <globalpom.custom.flywaydb.version>8.5.12</globalpom.custom.flywaydb.version>
+        <globalpom.custom.flywaydb.flyway-test-extensions.version>7.0.0</globalpom.custom.flywaydb.flyway-test-extensions.version>
+        <globalpom.custom.fasterxml.version>2.13.3</globalpom.custom.fasterxml.version>
+        <globalpom.custom.httpcomponents.version>4.5.13</globalpom.custom.httpcomponents.version>
+        <globalpom.custom.junit.jupiter.version>5.8.2</globalpom.custom.junit.jupiter.version>
+        <globalpom.custom.junit.platform.version>1.8.1</globalpom.custom.junit.platform.version>
+        <globalpom.custom.guice.version>5.1.0</globalpom.custom.guice.version>
+        <globalpom.custom.lombok.version>1.18.24</globalpom.custom.lombok.version>
+        <globalpom.custom.akka.version>2.6.19</globalpom.custom.akka.version>
+        <globalpom.custom.eclipse-collections.version>11.0.0</globalpom.custom.eclipse-collections.version>
         <scala.binary.version>2.13</scala.binary.version>
-        <project.custom.auto-service.version>1.0.1</project.custom.auto-service.version>
+        <globalpom.custom.auto-service.version>1.0.1</globalpom.custom.auto-service.version>
     </properties>
 
     <scm>
-        <connection>${project.custom.scm.pub}</connection>
-        <developerConnection>${project.custom.scm.dev}</developerConnection>
-        <url>${project.custom.scm.url}</url>
+        <connection>${globalpom.custom.scm.pub}</connection>
+        <developerConnection>${globalpom.custom.scm.dev}</developerConnection>
+        <url>${globalpom.custom.scm.url}</url>
         <tag>globalpom-parent-4.3.0</tag>
     </scm>
 
@@ -175,13 +175,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- MIT License -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>${project.custom.slf4j.version}</version>
+                <version>${globalpom.custom.slf4j.version}</version>
             </dependency>
             <dependency>
                 <!-- MIT License -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>${project.custom.slf4j.version}</version>
+                <version>${globalpom.custom.slf4j.version}</version>
             </dependency>
 
             <!-- log4j -->
@@ -195,17 +195,17 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
-                <version>${project.custom.logback.version}</version>
+                <version>${globalpom.custom.logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>${project.custom.logback.version}</version>
+                <version>${globalpom.custom.logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-access</artifactId>
-                <version>${project.custom.logback.version}</version>
+                <version>${globalpom.custom.logback.version}</version>
             </dependency>
 
             <!-- junit -->
@@ -217,27 +217,27 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
-                <version>${project.custom.junit.jupiter.version}</version>
+                <version>${globalpom.custom.junit.jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-engine</artifactId>
-                <version>${project.custom.junit.jupiter.version}</version>
+                <version>${globalpom.custom.junit.jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-params</artifactId>
-                <version>${project.custom.junit.jupiter.version}</version>
+                <version>${globalpom.custom.junit.jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-migrationsupport</artifactId>
-                <version>${project.custom.junit.jupiter.version}</version>
+                <version>${globalpom.custom.junit.jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-launcher</artifactId>
-                <version>${project.custom.junit.platform.version}</version>
+                <version>${globalpom.custom.junit.platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.platform</groupId>
@@ -332,114 +332,114 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-ant</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-bsf</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-console</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-docgenerator</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-groovydoc</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-groovysh</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-jmx</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-json</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-jsr223</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-servlet</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-sql</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-swing</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-templates</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-test</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-testng</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-xml</artifactId>
-                <version>${project.custom.groovy.version}</version>
+                <version>${globalpom.custom.groovy.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-eclipse-batch</artifactId>
-                <version>${project.custom.groovy-eclipse-batch.version}</version>
+                <version>${globalpom.custom.groovy-eclipse-batch.version}</version>
             </dependency>
 
             <!-- apache commons -->
@@ -548,13 +548,13 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <!-- Apache 2.0 -->
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
-                <version>${project.custom.guice.version}</version>
+                <version>${globalpom.custom.guice.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-assistedinject</artifactId>
-                <version>${project.custom.guice.version}</version>
+                <version>${globalpom.custom.guice.version}</version>
             </dependency>
             <dependency>
                 <!-- Apache 2.0 -->
@@ -922,37 +922,37 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>pax-exam</artifactId>
-                <version>${project.custom.pax.exam.version}</version>
+                <version>${globalpom.custom.pax.exam.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>pax-exam-container-native</artifactId>
-                <version>${project.custom.pax.exam.version}</version>
+                <version>${globalpom.custom.pax.exam.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>pax-exam-junit4</artifactId>
-                <version>${project.custom.pax.exam.version}</version>
+                <version>${globalpom.custom.pax.exam.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>pax-exam-link-mvn</artifactId>
-                <version>${project.custom.pax.exam.version}</version>
+                <version>${globalpom.custom.pax.exam.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.exam</groupId>
                 <artifactId>pax-exam-container-karaf</artifactId>
-                <version>${project.custom.pax.exam.version}</version>
+                <version>${globalpom.custom.pax.exam.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.url</groupId>
                 <artifactId>pax-url-aether</artifactId>
-                <version>${project.custom.pax.url.version}</version>
+                <version>${globalpom.custom.pax.url.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.url</groupId>
                 <artifactId>pax-url-wrap</artifactId>
-                <version>${project.custom.pax.url.version}</version>
+                <version>${globalpom.custom.pax.url.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
@@ -1035,42 +1035,42 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-ehcache</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-entitymanager</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-envers</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-java8</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-jpamodelgen</artifactId>
-                <version>${project.custom.hibernate.version}</version>
+                <version>${globalpom.custom.hibernate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>${project.custom.hibernate-validator.version}</version>
+                <version>${globalpom.custom.hibernate-validator.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator-annotation-processor</artifactId>
-                <version>${project.custom.hibernate-validator.version}</version>
+                <version>${globalpom.custom.hibernate-validator.version}</version>
             </dependency>
 
             <!-- h2 database -->
@@ -1108,17 +1108,17 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-                <version>${project.custom.cxf.version}</version>
+                <version>${globalpom.custom.cxf.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-features-logging</artifactId>
-                <version>${project.custom.cxf.version}</version>
+                <version>${globalpom.custom.cxf.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-rt-management</artifactId>
-                <version>${project.custom.cxf.version}</version>
+                <version>${globalpom.custom.cxf.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
@@ -1133,12 +1133,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>${project.custom.spring.version}</version>
+                <version>${globalpom.custom.spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
-                <version>${project.custom.spring.version}</version>
+                <version>${globalpom.custom.spring.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -1147,58 +1147,58 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.querydsl</groupId>
                 <artifactId>querydsl-jpa</artifactId>
-                <version>${project.custom.querydsl.version}</version>
+                <version>${globalpom.custom.querydsl.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.querydsl</groupId>
                 <artifactId>querydsl-core</artifactId>
-                <version>${project.custom.querydsl.version}</version>
+                <version>${globalpom.custom.querydsl.version}</version>
             </dependency>
 
             <!-- flywaydb -->
             <dependency>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
-                <version>${project.custom.flywaydb.version}</version>
+                <version>${globalpom.custom.flywaydb.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.flywaydb.flyway-test-extensions</groupId>
                 <artifactId>flyway-spring4-test</artifactId>
-                <version>${project.custom.flywaydb.flyway-test-extensions.version}</version>
+                <version>${globalpom.custom.flywaydb.flyway-test-extensions.version}</version>
             </dependency>
 
             <!-- fasterxml -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
-                <version>${project.custom.fasterxml.version}</version>
+                <version>${globalpom.custom.fasterxml.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${project.custom.fasterxml.version}</version>
+                <version>${globalpom.custom.fasterxml.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>${project.custom.fasterxml.version}</version>
+                <version>${globalpom.custom.fasterxml.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-joda</artifactId>
-                <version>${project.custom.fasterxml.version}</version>
+                <version>${globalpom.custom.fasterxml.version}</version>
             </dependency>
 
             <!-- REST Request -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>${project.custom.httpcomponents.version}</version>
+                <version>${globalpom.custom.httpcomponents.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>fluent-hc</artifactId>
-                <version>${project.custom.httpcomponents.version}</version>
+                <version>${globalpom.custom.httpcomponents.version}</version>
             </dependency>
 
             <!-- jopendocument -->
@@ -1285,7 +1285,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>${project.custom.lombok.version}</version>
+                <version>${globalpom.custom.lombok.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.lable.oss.uniqueid</groupId>
@@ -1295,12 +1295,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.eclipse.collections</groupId>
                 <artifactId>eclipse-collections-api</artifactId>
-                <version>${project.custom.eclipse-collections.version}</version>
+                <version>${globalpom.custom.eclipse-collections.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.collections</groupId>
                 <artifactId>eclipse-collections</artifactId>
-                <version>${project.custom.eclipse-collections.version}</version>
+                <version>${globalpom.custom.eclipse-collections.version}</version>
             </dependency>
             <dependency>
                 <groupId>name.falgout.jeffrey.testing.junit5</groupId>
@@ -1334,7 +1334,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.typesafe.akka</groupId>
                 <artifactId>akka-actor-typed_${scala.binary.version}</artifactId>
-                <version>${project.custom.akka.version}</version>
+                <version>${globalpom.custom.akka.version}</version>
             </dependency>
 
             <dependency>
@@ -1346,7 +1346,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service</artifactId>
-                <version>${project.custom.auto-service.version}</version>
+                <version>${globalpom.custom.auto-service.version}</version>
             </dependency>
 
             <!-- Java SSH Client -->
@@ -1401,8 +1401,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${project.custom.source.source}</source>
-                    <target>${project.custom.source.target}</target>
+                    <source>${globalpom.custom.source.source}</source>
+                    <target>${globalpom.custom.source.target}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
@@ -1412,7 +1412,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
-                    <escapeString>${project.custom.resources.escapestring}</escapeString>
+                    <escapeString>${globalpom.custom.resources.escapestring}</escapeString>
                 </configuration>
             </plugin>
 
@@ -1471,7 +1471,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <properties>
                         <owner>${license.custom.license.owner}</owner>
                         <email>${license.custom.license.email}</email>
-                        <year>${project.custom.year}</year>
+                        <year>${globalpom.custom.year}</year>
                     </properties>
                     <mapping>
                         <Jenkinsfile>JAVADOC_STYLE</Jenkinsfile>
@@ -1545,7 +1545,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>${project.custom.requireMavenVersion}</version>
+                                    <version>${globalpom.custom.requireMavenVersion}</version>
                                 </requireMavenVersion>
                             </rules>
                         </configuration>
@@ -1815,7 +1815,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>${project.custom.jacoco.version}</version>
+                    <version>${globalpom.custom.jacoco.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1831,7 +1831,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         <dependency>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>${project.custom.lombok.version}</version>
+                            <version>${globalpom.custom.lombok.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -1848,7 +1848,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     generates standard reports for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.3.0</version>
             </plugin>
             <plugin>
                 <!-- The Surefire Report Plugin parses the generated TEST-*.xml
@@ -1856,14 +1855,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     which creates the web interface version of the test results. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.22.0</version>
             </plugin>
             <plugin>
                 <!-- The Apache Maven Javadoc Plugin is a plugin that uses
                     the javadoc tool for generating javadocs for the specified project. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.0.1</version>
             </plugin>
             <plugin>
                 <!-- The JXR Plugin produces a cross-reference of the projectʼs
@@ -1872,7 +1869,6 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     for referencing errors found in the code. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>3.0.0</version>
             </plugin>
             <plugin>
                 <!-- A Maven plugin for the PMD toolkit, that produces a
@@ -1880,11 +1876,10 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     as well as being able to fail the build based on these metrics. -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.11.0</version>
                 <configuration>
                     <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
                     <minimumTokens>100</minimumTokens>
-                    <targetJdk>${project.custom.source.target}</targetJdk>
+                    <targetJdk>${globalpom.custom.source.target}</targetJdk>
                 </configuration>
             </plugin>
             <plugin>
