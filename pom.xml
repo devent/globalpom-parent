@@ -101,7 +101,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <globalpom.custom.anrisoftware.version>4.6.2-SNAPSHOT</globalpom.custom.anrisoftware.version>
         <globalpom.custom.groovy.version>3.0.11</globalpom.custom.groovy.version>
         <globalpom.custom.groovy-eclipse-compiler.version>3.7.0</globalpom.custom.groovy-eclipse-compiler.version>
-        <globalpom.custom.groovy-eclipse-batch.version>3.0.7-03</globalpom.custom.groovy-eclipse-batch.version>
+        <globalpom.custom.groovy-eclipse-batch.version>3.0.8-01</globalpom.custom.groovy-eclipse-batch.version>
         <globalpom.custom.source.source>11</globalpom.custom.source.source>
         <globalpom.custom.source.target>11</globalpom.custom.source.target>
         <globalpom.custom.izpack.standalone.compiler.version>4.3.5</globalpom.custom.izpack.standalone.compiler.version>
@@ -248,12 +248,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>4.6.0</version>
+                <version>4.6.1</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>
-                <version>4.6.0</version>
+                <version>4.6.1</version>
             </dependency>
 
             <!-- perf4j -->
