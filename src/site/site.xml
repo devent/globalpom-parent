@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2011-2021 Erwin Müller <erwin.mueller@anrisoftware.com>
+    Copyright 2011-2022 Erwin Müller <erwin.mueller@anrisoftware.com>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -16,6 +16,10 @@
     limitations under the License.
 
 -->
+<!--
+version 1.0.0
+since 4.6.2
+-->
 <project name="${project.name}" xmlns="http://maven.apache.org/DECORATION/1.0.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
@@ -27,12 +31,12 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
     <bannerRight>
         <name>Advanced Natural Research Institute Projects</name>
         <src>images/anri_logo_48.png</src>
-        <href>https://project.anrisoftware.com/</href>
+        <href>${globalpom.custom.homepage}</href>
     </bannerRight>
     <skin>
         <groupId>org.apache.maven.skins</groupId>
         <artifactId>maven-fluido-skin</artifactId>
-        <version>1.7</version>
+        <version>1.11.0</version>
     </skin>
     <body>
         <links>
@@ -41,11 +45,13 @@ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache
         <menu name="Overview">
             <item name="Home" href="/index.html" />
             <item name="Download (Central)" href="https://search.maven.org/artifact/${project.groupId}/${project.artifactId}/${project.version}/pom" />
-            <item name="Source code" href="https://gitea.anrisoftware.com/anrisoftware.com/${project.artifactId}" />
+            <item name="Source code" href="${globalpom.custom.scm.repo}" />
             <item name="Source code (Github)" href="https://github.com/devent/${project.artifactId}" />
             <item name="Project Home" href="${project.issueManagement.url}" />
             <item name="Project Roadmap" href="${project.issueManagement.url}/roadmap" />
             <item name="Project Issues" href="${project.issueManagement.url}/issues" />
+            <item name="Version 4.6.2" href="${globalpom.custom.homepage}/versions/1699" />
+            <item name="Version 4.6.1" href="${globalpom.custom.homepage}/versions/1686" />
         </menu>
         <menu ref="parent" />
         <menu ref="modules" />
