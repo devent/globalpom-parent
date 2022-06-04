@@ -23,7 +23,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.6.2-SNAPSHOT</version>
+    <version>4.6.2</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -98,7 +98,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
-        <globalpom.custom.anrisoftware.version>4.6.2-SNAPSHOT</globalpom.custom.anrisoftware.version>
+        <globalpom.custom.anrisoftware.version>4.6.2</globalpom.custom.anrisoftware.version>
         <globalpom.custom.groovy.version>3.0.11</globalpom.custom.groovy.version>
         <globalpom.custom.groovy-eclipse-compiler.version>3.7.0</globalpom.custom.groovy-eclipse-compiler.version>
         <globalpom.custom.groovy-eclipse-batch.version>3.0.8-01</globalpom.custom.groovy-eclipse-batch.version>
