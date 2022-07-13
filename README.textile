@@ -6,8 +6,8 @@ Declares all dependencies and all Maven plug&#45;ins needed for a Advanced Natur
 
 h1. Links
 
-* "Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/index.html
-* "Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.2/pom
+* "Generated Site":https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.3/index.html
+* "Download (Central)":https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.3/pom
 * "Source code":https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent
 * "Source code (Github)":https://github.com/devent/globalpom-parent
 * "Project Home":https://project.anrisoftware.com/projects/globalpom
@@ -36,6 +36,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 h5. Markdown
+
+<pre>
+pandoc -t markdown -f textile -o README.md README.textile
+</pre>
 
 <pre>
 [![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon)](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main)
