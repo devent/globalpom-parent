@@ -27,7 +27,7 @@ ${project.description}
 
 #[[#]]# Links
 
-* [Generated Site](${project.url})
+* [Generated Site](${project.url}/index.html)
 * [Download (Central)]($context.get("globalpom.custom.central.url"))
 * [Source code]($context.get("globalpom.custom.scm.repo"))
 * [Source code (Github)]($context.get("globalpom.custom.scm.github"))
