@@ -14,10 +14,11 @@
  * limitations under the License.
  *#
 #*
- * version 1.0.0
- * since 4.6.2
+ * version 1.1.0
+ * since 4.6.3
  *#
 [![Build Status]($context.get("globalpom.custom.jenkins.build.badge.main"))]($context.get("globalpom.custom.jenkins.build.link.main"))
+[![Quality]($context.get("globalpom.custom.sonarqube.qualitygate.badge"))]($context.get("globalpom.custom.sonarqube.qualitygate.link"))
 [![Apache License, Version 2.0]($context.get("globalpom.custom.license.image.url"))](http://www.apache.org/licenses/LICENSE-2.0) © $context.get("globalpom.custom.year") $context.get("globalpom.custom.user.name")
 
 #[[#]]# Description
@@ -26,7 +27,7 @@ ${project.description}
 
 #[[#]]# Links
 
-* [Generated Site](${project.url})
+* [Generated Site](${project.url}/index.html)
 * [Download (Central)]($context.get("globalpom.custom.central.url"))
 * [Source code]($context.get("globalpom.custom.scm.repo"))
 * [Source code (Github)]($context.get("globalpom.custom.scm.github"))

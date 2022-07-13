@@ -1,5 +1,6 @@
-![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon "Build Status"):https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main
-![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif "Apache License, Version 2.0"):http://www.apache.org/licenses/LICENSE-2.0
+[![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon)](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main)
+[![Gate](https://sonarcloud.io/api/project_badges/measure?project=devent_globalpom-parent&metric=alert_status)](https://sonarcloud.io/project/overview?id=devent_globalpom-parent)
+[![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif)](http://www.apache.org/licenses/LICENSE-2.0)
 © 2011-2022 Erwin Müller
 
 Description
@@ -14,9 +15,9 @@ Links
 =====
 
 -   [Generated
-    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.2/index.html)
+    Site](https://javadoc.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent/4.6.3/index.html)
 -   [Download
-    (Central)](https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.2/pom)
+    (Central)](https://search.maven.org/artifact/com.anrisoftware.globalpom/globalpom-parent/4.6.3/pom)
 -   [Source
     code](https://gitea.anrisoftware.com/com.anrisoftware.globalpom/globalpom-parent)
 -   [Source code (Github)](https://github.com/devent/globalpom-parent)
@@ -52,6 +53,9 @@ limitations under the License.
 
 ##### Markdown
 
+    pandoc -t markdown -f textile -o README.md README.textile
+
     [![Build Status](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon)](https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main)
+    [![Gate](https://sonarcloud.io/api/project_badges/measure?project=devent_globalpom-parent&metric=alert_status)](https://sonarcloud.io/project/overview?id=devent_globalpom-parent)
     [![Apache License, Version 2.0](https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif)](http://www.apache.org/licenses/LICENSE-2.0)
     © 2011-2022 Erwin Müller
