@@ -23,7 +23,7 @@
 
     <groupId>com.anrisoftware.globalpom</groupId>
     <artifactId>globalpom-parent</artifactId>
-    <version>4.6.2</version>
+    <version>4.6.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Global POM :: Parent</name>
     <description>Declares all dependencies and all Maven plug-ins needed for a
@@ -83,8 +83,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <globalpom.custom.jenkins.url>https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent</globalpom.custom.jenkins.url>
         <globalpom.custom.jenkins.build.badge.main>${globalpom.custom.jenkins.url}/job/main/badge/icon</globalpom.custom.jenkins.build.badge.main>
         <globalpom.custom.jenkins.build.link.main>${globalpom.custom.jenkins.url}/job/main</globalpom.custom.jenkins.build.link.main>
-        <globalpom.custom.sonarqube.url>https://sonar.anrisoftware.com/dashboard?id=com.anrisoftware.globalpom%3Aglobalpom-parent</globalpom.custom.sonarqube.url>
-        <globalpom.custom.sonarqube.qualitygate.badge>https://sonar.anrisoftware.com/api/badges/gate?key=com.anrisoftware.globalpom%3Aglobalpom-parent</globalpom.custom.sonarqube.qualitygate.badge>
+        <globalpom.custom.sonarqube.url>https://sonarcloud.io/project/overview?id=devent_globalpom-parent</globalpom.custom.sonarqube.url>
+        <globalpom.custom.sonarqube.qualitygate.badge>https://sonarcloud.io/api/project_badges/measure?project=devent_globalpom-parent&amp;metric=alert_status</globalpom.custom.sonarqube.qualitygate.badge>
         <globalpom.custom.sonarqube.qualitygate.link>${globalpom.custom.sonarqube.url}</globalpom.custom.sonarqube.qualitygate.link>
         <license.custom.license.template>src/main/resources/apache-header.txt</license.custom.license.template>
         <license.custom.license.owner>Erwin Müller</license.custom.license.owner>
@@ -109,8 +109,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <globalpom.custom.logback.version>1.2.11</globalpom.custom.logback.version>
         <globalpom.custom.pax.exam.version>4.13.4</globalpom.custom.pax.exam.version>
         <globalpom.custom.pax.url.version>2.6.7</globalpom.custom.pax.url.version>
-        <globalpom.custom.cxf.version>3.5.2</globalpom.custom.cxf.version>
-        <globalpom.custom.hibernate.version>6.0.2.Final</globalpom.custom.hibernate.version>
+        <globalpom.custom.cxf.version>3.5.3</globalpom.custom.cxf.version>
+        <globalpom.custom.hibernate.version>6.1.1.Final</globalpom.custom.hibernate.version>
         <globalpom.custom.hibernate-validator.version>6.0.10.Final</globalpom.custom.hibernate-validator.version>
         <globalpom.custom.spring.version>5.2.22.RELEASE</globalpom.custom.spring.version>
         <globalpom.custom.spring-boot.version>2.3.12.RELEASE</globalpom.custom.spring-boot.version>
@@ -131,7 +131,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-security.version>5.1.1.RELEASE</spring-security.version>
         <spring-session-bom.version>Bean-RELEASE</spring-session-bom.version>
         <spring-ws.version>3.0.4.RELEASE</spring-ws.version>
-        <globalpom.custom.flywaydb.version>8.5.12</globalpom.custom.flywaydb.version>
+        <globalpom.custom.flywaydb.version>8.5.13</globalpom.custom.flywaydb.version>
         <globalpom.custom.flywaydb.flyway-test-extensions.version>7.0.0</globalpom.custom.flywaydb.flyway-test-extensions.version>
         <globalpom.custom.fasterxml.version>2.13.3</globalpom.custom.fasterxml.version>
         <globalpom.custom.httpcomponents.version>4.5.13</globalpom.custom.httpcomponents.version>
@@ -140,7 +140,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <globalpom.custom.guice.version>5.1.0</globalpom.custom.guice.version>
         <globalpom.custom.lombok.version>1.18.24</globalpom.custom.lombok.version>
         <globalpom.custom.akka.version>2.6.19</globalpom.custom.akka.version>
-        <globalpom.custom.eclipse-collections.version>11.0.0</globalpom.custom.eclipse-collections.version>
+        <globalpom.custom.eclipse-collections.version>11.1.0</globalpom.custom.eclipse-collections.version>
         <scala.binary.version>2.13</scala.binary.version>
         <globalpom.custom.auto-service.version>1.0.1</globalpom.custom.auto-service.version>
     </properties>
@@ -742,12 +742,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna</artifactId>
-                <version>5.11.0</version>
+                <version>5.12.1</version>
             </dependency>
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna-platform</artifactId>
-                <version>5.11.0</version>
+                <version>5.12.1</version>
             </dependency>
 
             <!-- substance look&feel -->
@@ -910,7 +910,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr</artifactId>
-                <version>2.2.0</version>
+                <version>2.2.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
@@ -957,7 +957,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.framework</artifactId>
-                <version>7.0.4</version>
+                <version>7.0.5</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.cdi</groupId>
@@ -1353,14 +1353,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
             <dependency>
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-ssh</artifactId>
-                <version>1.6.1</version>
+                <version>1.7.0</version>
             </dependency>
 
             <!-- Zip4j - A Java library for zip files / streams -->
             <dependency>
                 <groupId>net.lingala.zip4j</groupId>
                 <artifactId>zip4j</artifactId>
-                <version>2.10.0</version>
+                <version>2.11.1</version>
             </dependency>
 
             <!-- YAML 1.1 parser and emitter for Java -->
@@ -1560,7 +1560,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <dependency>
                         <groupId>org.apache.maven.doxia</groupId>
                         <artifactId>doxia-module-markdown</artifactId>
-                        <version>2.0.0-M2</version>
+                        <version>2.0.0-M3</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -1630,12 +1630,12 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M6</version>
+                    <version>3.0.0-M7</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.0.0-M5</version>
+                    <version>3.0.0-M6</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1650,7 +1650,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>4.0.0-M1</version>
+                    <version>4.0.0-M2</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin signs all of the project's attached
@@ -1723,14 +1723,14 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <!-- The Loving Iron Fist of Maven -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <!-- A Maven plugin to create archives of your project's
                         sources, classes, dependencies etc. from flexible assembly descriptors. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.4.1</version>
                 </plugin>
                 <plugin>
                     <!-- The Surefire Report Plugin parses the generated
@@ -1738,7 +1738,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         to DOXIA which creates the web interface version of the test results. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>3.0.0-M6</version>
+                    <version>3.0.0-M7</version>
                 </plugin>
                 <plugin>
                     <!-- The JXR Plugin produces a cross-reference of the
@@ -1755,7 +1755,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                         as well as being able to fail the build based on these metrics. -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.16.0</version>
+                    <version>3.17.0</version>
                 </plugin>
                 <plugin>
                     <!-- This plugin contains various small independent goals
@@ -1820,7 +1820,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>3.0.0-M6</version>
+                    <version>3.0.0-M7</version>
                 </plugin>
 
                 <plugin>

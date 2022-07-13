@@ -1,4 +1,4 @@
-!https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon(Build Status)!:https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main !https://project.anrisoftware.com/attachments/download/217/apache2.0-small.gif(Apache License, Version 2.0)!:http://www.apache.org/licenses/LICENSE-2.0 © 2011&#45;2022 Erwin Müller
+!https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main/badge/icon(Build)!:https://jenkins.anrisoftware.com/job/com.anrisoftware.globalpom-globalpom-parent/job/main !https://sonarcloud.io/api/project_badges/measure?project=devent_globalpom-parent&metric=alert_status(Gate)!:https://sonarcloud.io/project/overview?id=devent_globalpom-parent !https://project.anrisoftware.com/attachments/download/474/apache2.0-small.gif(Apache2)! (© 2022 Erwin Müller)
 
 h1. Description
 
