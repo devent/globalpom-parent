@@ -1475,6 +1475,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     </properties>
                     <mapping>
                         <Jenkinsfile>JAVADOC_STYLE</Jenkinsfile>
+                        <Makefile>SCRIPT_STYLE</Makefile>
                     </mapping>
                     <licenseSets>
                         <licenseSet>
