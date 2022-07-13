@@ -154,7 +154,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
 
     <distributionManagement>
         <site>
-            <id>site-dav</id>
+            <id>site-distribution-id</id>
             <url>${site.dav.url}</url>
         </site>
         <repository>
