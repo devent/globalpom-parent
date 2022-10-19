@@ -133,7 +133,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <spring-ws.version>3.0.4.RELEASE</spring-ws.version>
         <globalpom.custom.flywaydb.version>8.5.13</globalpom.custom.flywaydb.version>
         <globalpom.custom.flywaydb.flyway-test-extensions.version>7.0.0</globalpom.custom.flywaydb.flyway-test-extensions.version>
-        <globalpom.custom.fasterxml.version>2.13.3</globalpom.custom.fasterxml.version>
+        <globalpom.custom.fasterxml.version>2.13.4.1</globalpom.custom.fasterxml.version>
         <globalpom.custom.httpcomponents.version>4.5.13</globalpom.custom.httpcomponents.version>
         <globalpom.custom.junit.jupiter.version>5.8.2</globalpom.custom.junit.jupiter.version>
         <globalpom.custom.junit.platform.version>1.8.1</globalpom.custom.junit.platform.version>
