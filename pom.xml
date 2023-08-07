@@ -98,7 +98,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <!-- Versions -->
-        <globalpom.custom.anrisoftware.version>4.7.0</globalpom.custom.anrisoftware.version>
+        <globalpom.custom.anrisoftware.version>4.7.0-SNAPSHOT</globalpom.custom.anrisoftware.version>
         <globalpom.custom.groovy.version>4.0.13</globalpom.custom.groovy.version>
         <globalpom.custom.groovy-eclipse-compiler.version>3.9.0</globalpom.custom.groovy-eclipse-compiler.version>
         <globalpom.custom.groovy-eclipse-batch.version>4.0.13-03</globalpom.custom.groovy-eclipse-batch.version>
