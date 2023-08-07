@@ -100,8 +100,8 @@ source and test sources and deploy the project-tests with the project jar.</desc
         <!-- Versions -->
         <globalpom.custom.anrisoftware.version>4.7.0</globalpom.custom.anrisoftware.version>
         <globalpom.custom.groovy.version>4.0.13</globalpom.custom.groovy.version>
-        <globalpom.custom.groovy-eclipse-compiler.version>3.7.0</globalpom.custom.groovy-eclipse-compiler.version>
-        <globalpom.custom.groovy-eclipse-batch.version>3.0.8-01</globalpom.custom.groovy-eclipse-batch.version>
+        <globalpom.custom.groovy-eclipse-compiler.version>3.9.0</globalpom.custom.groovy-eclipse-compiler.version>
+        <globalpom.custom.groovy-eclipse-batch.version>4.0.13-03</globalpom.custom.groovy-eclipse-batch.version>
         <globalpom.custom.source.source>11</globalpom.custom.source.source>
         <globalpom.custom.source.target>11</globalpom.custom.source.target>
         <globalpom.custom.izpack.standalone.compiler.version>4.3.5</globalpom.custom.izpack.standalone.compiler.version>
