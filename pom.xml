@@ -1395,7 +1395,7 @@ source and test sources and deploy the project-tests with the project jar.</desc
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
